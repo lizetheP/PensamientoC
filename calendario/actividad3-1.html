@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+	
+    <title>Actividad: Autoestudio sobre el uso de la estructura condicional <code>if</code>.</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">            
+                            Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Actividad: Autoestudio sobre el uso de la estructura condicional <code>if</code>: Estatutos condicionales.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                  Autoestudio sobre el uso de la estructura condicional <code>if</code>: Estatutos condicionales. 
+                </h5>
+                <p>Realizarás el autoestudio sobre la estructura de control más usada en la programación, <code>if.</code></p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">Conocer la estructura de control <code>if (if, elif, else </code>anidados) y los operadores relacionales.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+
+                    <li class="collection-item">
+                        <p>Estudia los siguientes conceptos, haz notas y contesta las preguntas en tu libreta. 
+						Te recomendamos el uso de las siguientes fuentes:</p>      
+						<p>Fernandez, A. <i>Python 3: Al Descubierto </i>  Alfaomega, 2013, ISBN 978-607-707-718-3 </p>
+                        <p>Temas / conceptos:</p>
+                        <ol>
+							<li>Principales sentencias de control pag. 52</li>
+							<li>if, else y elif pag. 52</li>
+							<li><a href="https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not"> Tablas de referencia de operadores boleanos y comparación de Python</a></li>
+                        </ol>
+                    </li>
+                    <li class="collection-item">
+                        <p>Responde las siguientes preguntas:</p>
+                        <p>1. Evalúa cada expresión usando los datos de la columna de enmedio.</p>
+                        <table class="striped">
+                            <thead>
+                                <th>Expresión</th>
+                                <th>Datos</th>
+                                <th>Evaluación</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>not variable</code></td>
+                                    <td><code>variable = False</code></td>
+                                    <td> True (ejemplo)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>num > 4.0</code></td>
+                                    <td><code>num = 5.2</code></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><code>not variable 	and (x >= 0)</code></td>
+                                    <td><code>variable = true, num = 5.2</code></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><code>not (variable and (num >= 0) )</code></td>
+                                    <td><code>variable = true, num = 5.2</code></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><code>(x + y) &lt;= 20.5</code></td>
+                                    <td><code>x = 17.1 , y = 3.4 </code></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><code>(n >= 0)  and (100 >= n) </code></td>
+                                    <td><code>n = 20</code></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><code>((a + 2) &lt;= b) and not variable
+                                </code></td>
+                                    <td><code> a = 5, b = 8 y variable = False
+                                </code></td>
+                                    <td> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>2. Desarrolla el código para cada uno de los siguientes problemas:</p>
+                        <ol>
+                            <li>Dado un valor n, convertirlo a su valor absoluto.</li>
+                            <li>Dado un valor n, determinar si es par o impar.</li>
+                        </ol>
+                        <p>3. Para cada uno de los casos, da un ejemplo una situación concreta 
+						donde sea necesario usar esa estructura de decisión. 
+						<strong>Justifica por qué usarías esa estructura en partícular </strong></p>
+                        <pre><code>
+caso 1: (condición única)
+	if(condicion)
+		consecuencia
+ 
+ 
+ caso 2: (condición con exlcusión)
+     if(condicion 1)
+        consecuencia 1
+     else
+        consecuencia default
+
+ caso 3: (exlcusión, 2 opciones y tal vez ninguna consecuencia)
+     if(condicion 1)
+        consecuencia 1
+     else if(condicion 2)
+        consecuencia 2
+
+ caso 4: (exlcusión, varias opciones y consecuencia default)
+     if(condicion 1)
+        consecuencia 1
+     else if(condicion 2)
+        consecuencia 2
+     else
+        consecuencia default
+
+ caso 5: (sin exclusión, puede que ocurran todas las consecuencias o ningua)
+     if(condicion 1)
+        consecuencia 1
+     if(condicion 2)
+        consecuencia 2
+     if(condicion 3)
+        consecuencia 3
+
+						</code></pre>
+                    
+						<p>4. En una breve oración o diagrama explica de que manera usarás condicionales para tu proyecto:
+						¿Qué tipo de deciciones o validaciones son necesarias en tu proyecto?</p>
+					</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>Las preguntas se revisarán en su libreta al inicio de la clase.</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

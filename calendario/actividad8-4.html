@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+    <title>Actividad: Desarrollando programas en Python No. 7: Estatutos de repetición.</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">            
+                            Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Actividad: Desarrollando programas en Python No. 7: Estatutos de repetición.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                  Actividad: Desarrollando programas en Python No. 7: Estatutos de repetición.
+                </h5>
+                <p>Desarrollarás la solución de algunos problemas.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="modalidad">
+                <h5>
+                  <i class="small material-icons">group</i>
+                  Modalidad
+                 </h5>
+                <p>Individual</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">Aplicar los ciclos <code>for</code> y <code>do-while</code> en la solución de problemas.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+
+                    <li class="collection-item">Analiza cada uno de los ejercicios que se presentan a continuación. Identifica cual sería el algoritmo para la solución de cada uno de los ejercicios.</li>
+                    <li class="collection-item">
+                        Escribe un programa en Python para cada uno de los ejercicios siguiendo tu algoritmo y haz las modificaciones necesarias para resolver el problema.
+                    </li>
+                    <li class="collection-item">
+                        Entrega, en la sección de "Envío de Tareas", los archivos .c que contengan el código fuente del programa.
+                    </li>
+                    <li class="collection-item">
+                        La actividad será evaluada usando<a target="_blank" href="documentos/rubrica_codificacion.pdf"> la
+                    siguiente rubrica</a>.
+                    </li>
+                    <li class="collection-item">
+                        <h5>Problemas:</h5>
+                        <p>Utiliza el siguiente esquema como apoyo para desarrollar tu laboratorio:</p>
+                        <img class="responsive-img" alt="" src="imagenes/imagen8-4-1.gif">
+                        <br>
+
+                        <p>La función <code>rand( )</code> de la librería <code>&lt;stdlib.h&gt;</code>, regresa un número entero aleatorio. Si al resultado de esta función le aplicamos la operación % x, podemos generar un número entre 0 y (x-1). El siguiente programa despliega un número aleatorio entre 0 y 49. Utiliza esté código como ejemplo para desarrollar la función números_aleatorios.</p>
+                        <img class="responsive-img" alt="" src="imagenes/imagen8-4-2.png">
+                        <br>
+                    </li>
+                    <li class="collection-item">
+                        <h5>Ejercicio 1</h5>
+                        <p>Utilizando un ciclo for, implementa el procedimiento números_aleatorios, que despliega en pantalla 50 números aleatorios entre 0 y 20.</p>
+                    </li>
+                    <li class="collection-item">
+                        <h5>Ejercicio 2</h5>
+                        <p>Utilizando un ciclo for, implementa la función sumatoria que evalúe la siguiente sumatoria:</p>
+                        <img class="responsive-img" alt="" src="imagenes/imagen8-4-3.gif">
+                        <br>
+                        <p><strong>Casos de prueba<br>
+                        g(3)    = 0.111111<br>
+                        g(4)    = 0.199499<br>
+                        g(5)    = 0.268781<br>
+                        g(6)    = 0.324337<br>
+                        g(7)    = 0.369971<br>
+                        g(8)    = 0.408244<br>
+                        g(9)    = 0.440908
+                        </strong></p>
+                        <li class="collection-item">
+                            <p>El procedimiento menú, que despliegue el siguiente menú en pantalla:</p>
+                            <p><code>MENÚ<br>
+                        a. Números aleatorios<br>
+                        b. Función G<br>
+                        s. Salir<br>
+                        Opción?</code></p>
+                            <p>De acuerdo a la opción seleccionada por el usuario utiliza la función apropiada de las implementadas anteriormente. Utiliza un ciclo <code>do-while</code> para desplegar el menú en pantalla hasta que el usuario seleccione la opción de Salir. Recuerda que la captura de datos y validación de valores debe ser realizada en el <code>main( )</code>, pues las funciones NO pueden realizar las tareas de validación o captura de datos.</p>
+                            <p><strong><i>Incluye el algoritmo como comentario al inicio del programa.</i></strong></p>
+                        </li>
+                        <li class="collection-item">
+                            <h5>Programa Abierto:</h5>
+                            <p>Genera tu propio programa donde apliques ciclos <code>do-while</code> y <code>for</code> (de al menos tres forma diferentes), por formas diferentes se hace referencia a su estructura y forma de contar.</p>
+                            <p>Este programa es tuyo, úsalo para hacer cosas interesante y retadoras <strong>no cosas fáciles.</strong></p>
+                        </li>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+                <ul class="collection">
+                    <li class="collection-item"><a href="https://medium.com/@samanthahdez/ciclos-errores-de-compilaci%C3%B3n-en-c-9d5bc1807ac6#.qxsynyd7e" target="_blank">Errores comunes en Ciclos</a></li>
+                    <li class="collection-item"><a href="http://roa.uaz.edu.mx/roa/index/visuaObj.php?idObjeto=33" target="_blank">Repaso: Estructuras de control.</a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>Los archivos (<strong>el .c  de cada programa</strong>) deberán ser entregados a través de la sección de "Envío de Tareas" de Blackboard los programas tienen que llevar por nombre tu matricula y el número de ejercicio e.g. "A00882900<strong>1</strong>.c"</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+    <title>Actividad: Ejercicios sobre cadenas.</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">            
+                           Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Actividad: Ejercicios sobre cadenas.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                   Ejercicios sobre cadenas.
+                </h5>
+                <p>Desarrollarás, en conjunto con el profesor, los algoritmos de algunos problemas que implican el manejo de cadenas.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="modalidad">
+                <h5>
+                  <i class="small material-icons">group</i>
+                  Modalidad
+                 </h5>
+                <p>Sesión Plenaria.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">Aplicar manejo de cadenas en la solución de problemas.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+                    
+                    <li class="collection-item">
+					Resuelve cualquier duda que te haya quedado del autoestudio previo.</li>
+                    <li class="collection-item">
+                    Desarrolla, en conjunto con el profesor, los siguiente problemas.
+                    </li>
+                    <li class="collection-item">
+                    <h5>Problemas:</h5>
+					Desarrolla la función formato_web, que recibe una cadena de texto y la convierte en texto de una pagina web para lo anterior necesitas varias funciones:
+                    </li>
+                    <li class="collection-item">
+                    La función inserta_html que recibe una cadena de texto e insert al principio de la cadena "&lt;html&gt;&lt;body&gt;" y al final "&lt;/body &gt;&lt;/html&gt;"
+					de tal forma que si se manda a llamar insert_html("Hola mundo"), lo que devolvería la función sería "&lt;html&gt;&lt;body&gt; Hola Mundo &lt;/body &gt;&lt;/html&gt;"
+                    </li>
+                    <li class="collection-item">
+                    La función inserta_saltos de línea, deonde cada vez que encuentre un salto de línea en la cadena "Hola \n mundo" lo remplaza por &lt;br&gt; 
+					de tal forma que si se manda a llamar inserta_saltos("Hola a todos\n mi nombre es Goku!"), la función devuelve "Hola a todos&lt;br&gt; mi nombre es Goku!".                    </li>
+                    <li class="collection-item">
+					Corre la función formato_web y copia la salida de la consola a un archivo de texto. Salva el archivo con la extensión .html y arrastra el archivo a tu navegadro web.
+					Voila! ya haz hecho tu primer código generador de páginas web.
+                    <li class="collection-item">
+					La función es_palindromo que recibe una cadena y devuelve True si la cadenas es palíndromo o False en caso contratio. 
+					Por ejemplo, "Anita lava la tina" es un palíndromo. Ignora los signos de puntuación, espacios en blanco, las mayúsculas y minúsculas.
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>No Aplica.</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

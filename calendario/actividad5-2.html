@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+    <title>Actividad: Ejercicio de Repaso: Estatutos condicionales.</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">            
+                            Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Actividad: Ejercicio de Repaso: Estatutos condicionales.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                  Actividad: Ejercicio de Repaso: Estatutos condicionales. 
+                </h5>
+                <p>Desarrollarás la solución de un problema que requiere de la utilización de todos los conceptos vistos en este parcial.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="modalidad">
+                <h5>
+                  <i class="small material-icons">group</i>
+                  Modalidad
+                 </h5>
+                <p>Individual</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">Aplicar los conceptos vistos durante las sesiones pasadas.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+                    
+                    <li class="collection-item">Analiza cada uno de los ejercicios que se presentan a continuación. Identifica cual sería el algoritmo para la solución de cada uno de los ejercicios. Recuerda documentarlos en tus hojas membretadas.</li>
+                    <li class="collection-item">
+                    Escribe un programa en Python para cada uno de los ejercicios. Recuerda basarte en el algoritmo que generaste.
+                    </li>
+                    <li class="collection-item">
+                    Entrega, en la sección de "Envío de Tareas", los archivos cpp que contengan los programas en C.
+                    </li>
+                    <li class="collection-item">
+                    <h5>Problemas:</h5>
+                        <p>En la compañía donde trabajas, los empleados ahorran su dinero en las cuentas de ahorro de los siguientes bancos: Mi Banquito, Banco del Ahorro y Banco del Oeste.</p>
+                        <p>Has sido asignado para realizar un programa que permita a sus usuarios calcular el saldo que tendrán después de que el banco pague los intereses correspondientes del siguiente mes.</p>
+                        <p>Los bancos manejan este tipo de cuentas de ahorro</p>
+                         <table class="centered">
+                    <thead>
+                      <tr>
+                          <th>Banco</th>
+                          <th>Nombre de la cuenta</th>
+                          <th>Tasa de interés mensual</th>
+                          <th>Saldo mínimo</th>
+                          <th>Cuota por manejo de cuenta</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>Mi Banquito</td>
+                        <td>Mis Ahorritos</td>
+                        <td>1.05%</td>
+                        <td>$750.00</td>
+                        <td>$75.00</td>
+                      </tr>
+                      <tr>
+                        <td>Banco del Ahorro</td>
+                        <td>Ahorrotón</td>
+                        <td>1.35%</td>
+                        <td>$1,000.00</td>
+                        <td>$75.00</td>
+                      </tr>
+                      <tr>
+                        <td>Banco del Oeste</td>
+                        <td>Ahorroeste</td>
+                        <td>0.9%</td>
+                        <td>$2,000.00</td>
+                        <td>$60.00</td>
+                      </tr>
+                    </tbody>
+                    
+                  </table>
+                    <p>Los bancos se rigen por las siguientes políticas para el pago de intereses:</p>
+                        <ol>
+                            <li>Sólo si el saldo de la cuenta es menor al mínimo se cobrará por manejo de cuenta y la cuenta no ganará intereses. Por ejemplo, cuenta en Banco del Ahorro con $800 de saldo, no ganará interés y se le cobrará además los $75 pesos de manejo de cuenta, es decir, quedará con 800 – 75 = $725 de saldo.</li><br>
+                            <li>El porcentaje de intereses que generará una cuenta se calcula multiplicando el saldo por la tasa de interés mensual correspondiente. Por ejemplo, si el trabajador tiene un cuenta con $4500 pesos en Banco del Ahorro: $4,500  *  1.35% = 60.75 pesos de intereses para el siguiente periodo, por lo que su saldo final sería de $4560.75 pesos.</li>
+                        </ol>
+                    </li>
+                    <li class="collection-item">
+                        <h5>Requisitos de la aplicación</h5>
+                        <p>La aplicación debe de mostrar un menú al inicio como el siguiente:</p>
+                        <p><code>OPCIONES<br>
+                        a. Muestra los tipos de cuenta de ahorro (Muestra en pantalla la tabla que se ilustra en el problema. Dar el formato más apropiado.)<br>
+                        b. Calcular el saldo después de intereses o comisiones.<br>
+                        s. Salir <br>
+                        Opcion? </code></p>
+                    </li>
+                    <li class="collection-item">
+                    <h5>Cálculo del saldo</h5>
+                        <p>Cuando el usuario seleccione esta opción, deberá aparecer en pantalla el siguiente menú:</p>
+                        <p><code>TIPO DE CUENTA<br>
+                        a. Mis Ahorritos<br>
+                        b. Ahorrotón<br>
+                        c. Ahorroeste<br>
+                        Opción? </code></p>
+                        <p>Y una vez seleccionado el tipo de cuenta, se debe proceder a realizar las operaciones aplicando las políticas de cada banco.</p>
+                    </li>
+                    <li class="collection-item">
+                    <h5>Notas finales</h5>
+                        <p>Para programar el menú debes utilizar la sentencia de control: switch.</p>
+                        <p>El programa debe verificar valores inválidos para las opciones del menú.</p>
+                        <p><strong><i>Incluye el algoritmo como comentario al inicio del programa.</i></strong></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>Los archivos deberán ser entregados a través de la sección de "Envío de Tareas" de Blackboard.</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
