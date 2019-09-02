@@ -74,39 +74,47 @@ i{line-height:inherit}*,*:before,*:after{box-sizing:inherit}
 .auto-style40 {
 	color: #660066;
 }
-.auto-style41 {
-	font-size: xx-small;
-	color: #FFFFFF;
-}
 .auto-style43 {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.auto-style44 {
+	margin-left: 40px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 .auto-style45 {
+	margin-left: 40px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #000000;
+}
+.auto-style46 {
 	margin-left: 80px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.auto-style46 {
-	border-width: 0;
-	margin-left: 120px;
-	background-color: #FFCCFF;
-}
 .auto-style47 {
+	margin-left: 120px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-size: medium;
-	text-align: center;
-	background-color: #CCCCFF;
 }
 .auto-style48 {
-	text-align: center;
+	font-size: x-large;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 40px;
 }
 .auto-style49 {
-	text-align: center;
-	background-color: #FFFFFF;
+	font-size: xx-small;
+	color: #FFFFFF;
 }
 .auto-style50 {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-size: medium;
-	background-color: #FFFFFF;
+	text-decoration: underline;
+}
+.auto-style51 {
+	border: 1px solid #000000;
+	margin-left: 120px;
+}
+.auto-style52 {
+	border-width: 1px;
+}
+.auto-style53 {
+	background-color: #CCCCFF;
 }
 </style>
 </head>
@@ -121,8 +129,8 @@ i{line-height:inherit}*,*:before,*:after{box-sizing:inherit}
 		<span class="auto-style37">.</span></span></strong></td>
 	</tr>
 </table>
-<p class="auto-style38"><strong>Actividad: Ejercicios sobre la estructura 
-condicional if</strong></p>
+<p class="auto-style38"><strong>Actividad: Desarrollando programas con 
+estructuras de decisión</strong></p>
 <hr class="auto-style18" />
 <p class="auto-style17"><span class="auto-style6"> 
 <img src="imgC1.gif" /> Descripción </span></p>
@@ -130,8 +138,8 @@ condicional if</strong></p>
 <hr class="auto-style18" />
 <p class="auto-style17"><strong><img src="imgE2.gif" /> </strong>
 <span class="auto-style6">Objetivo</span></p>
-<p class="auto-style15">Aplicar la estructura de control if (if, else, elif 
-anidados) y los operadores relacionales. </p>
+<p class="auto-style15">Escribir programas en Python que impliquen el 
+uso de estructuras de decisión. </p>
 <hr class="auto-style18" />
 <p class="auto-style17"><img src="img18.gif" /><span class="auto-style6"> 
 Modalidad y forma de trabajo</span></p>
@@ -153,95 +161,214 @@ Modalidad y forma de trabajo</span></p>
 	programa, apoya a tus compañeros de equipo con dudas que tengan (no hagas el 
 	laboratorio por ellos ya que esto sólo los perjudica) </span> 	</li>
 </ul>
-<p class="auto-style45"><strong>NOTA: Resuelve cualquier duda que haya quedado 
-del autoestudio previo.</strong></p>
 <hr class="auto-style18" />
 <p class="auto-style18"><img src="img11.gif" /><span class="auto-style7">Problemas</span></p>
-<ol class="auto-style19">
-	<li class="auto-style21">Determina la relación existente entre dos números 
-	(mayor, menor o igual).
-	<li class="auto-style21">Calcula la corriente de un circuito conociendo el 
-	voltaje y la resistencia, suponga que el valor de&nbsp; la resistencia no puede 
-	ser negativa ni cero. <strong>I = V / R </strong>Donde I es la corriente, V 
-	el voltaje y R la resistencia.
-	<li class="auto-style21">Dadas tres cantidades enteras positivas, que 
-	representan la longitud de los lados de un triángulo, se quiere determinar 
-	las siguientes situaciones:&nbsp;
-	<ul>
-		<li class="auto-style21">¿Es un triángulo equilátero? Si los tres lados 
-		son de igual longitud. 
-		<li class="auto-style21">¿Es un triángulo isósceles? Si dos de los tres 
-		lados son de igual longitud y uno de distinta longitud. 
-		<li class="auto-style21">¿Es un triángulo escaleno? Si los tres lados 
-		son de distinta longitud.&nbsp; 
-	</ul>
-	<li class="auto-style21">Determinar si un año es bisiesto. Un año es 
-	bisiesto si es múltiplo de 4 (por ejemplo, 1984). Sin embargo, los años 
-	múltiplos de 100 sólo son bisiestos cuando a la vez son múltiplos de 400 
-	(por ejemplo, 1800 no es bisiesto, mientras que 2000 si lo es). 
-	<li class="auto-style21">Imprima el mensaje apropiado para una temperatura 
-	dada por el usuario. Los mensajes a imprimir serán los siguientes:&nbsp; </ol>
-<table class="auto-style46" style="width: 40%">
+<p class="auto-style44">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1. 
+Estacionamiento</strong></p>
+
+<p class="auto-style46">El dueño de un estacionamiento quiere que le 
+	ayudes a calcular el pago de cada auto que utiliza su servicio considerando 
+	los siguientes datos: </p>
+
+<ul class="auto-style19">
+	<li><span class="auto-style43">El encargado del estacionamiento conoce el 
+	tiempo en minutos que permaneció el auto en el estacionamiento. </span>
+	</li>
+	<li><span class="auto-style43">Con base en el tiempo que permaneció quiere 
+	calcular el pago considerando que la tarifa por hora es de $15.00 pesos por 
+	hora o fracción. </span><br />
+	</li>
+</ul>
+<p class="auto-style18"><span class="auto-style45"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Casos de prueba:</strong></span><br class="auto-style43" />
+</p>
+<p class="auto-style47"><strong>Input: </strong>son los valores 
+	introducidos por el usuario.
+<class="auto-style46"></br><strong>Output:</strong> es el resultado de aplicar 
+	las operaciones. </p>
+<p class="auto-style47"><strong>Input: </strong>Introduce el tiempo en minutos: 
+120
+<class="auto-style46"></br><strong>Output:</strong> La tarifa a pagar es de 30 
+pesos </p>
+
+<p class="auto-style47"><strong>Input: </strong>Introduce el tiempo en minutos: 
+125 
+<class="auto-style46"></br><strong>Output:</strong> La tarifa a pagar es de 45 
+pesos </p>
+<p class="auto-style46">Guarda tu archivo con el nombre: <strong>
+L1_A0matrícula.py</strong>. Por ejemplo: L1_A01304328.py.</p>
+
+<p class="auto-style44">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>2. 
+Ley de Ohm</strong></p>
+
+<p class="auto-style15">La ley de Ohm nos dice que: <strong>I = V / R</strong>, que significa 
+<strong>corriente = voltaje / resistencia</strong>.</p>
+<p class="auto-style15">Desarrolla un programa completo en Python que 
+despliegue el siguiente menú y que de acuerdo a la opción seleccionada por el 
+usuario, pida los datos necesarios y calcule el resultado correspondiente: </p>
+<p class="auto-style15"><strong>Menu: Ley de Ohm</strong></p>
+
+<p class="auto-style46"><strong>1. Corriente  </br>
+</strong>
+<class="auto-style46"><strong>2. Voltaje</br>
+</strong>
+<class="auto-style46"><strong>3. Resistencia</br>
+</strong>
+<class="auto-style19"><strong>Introduce una opcion:
+</strong>
+</p>
+<p class="auto-style46">Recuerda hacer las validaciones pertinentes. </p>
+<p class="auto-style46"><strong><span class="auto-style50">Opcion incorrecta:</span>
+</strong>Cualquier opción que no esté entre 1 y 3 se considera incorrecta. </p>
+<p class="auto-style47"><strong>Caso de prueba: </strong> </p>
+<p class="auto-style47"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 4</br>
+<class="auto-style46"> </p>
+
+<p class="auto-style47"><strong>Output: </strong> </br>
+<class="auto-style46">Opción inválida
+</p>
+<p class="auto-style46"><strong><span class="auto-style50">1. Corriente:</span> </strong>Calcula la corriente electrica según la 
+ley Ohm. Asume que la resistencia no puede ser negativa ni 0, en caso de serlo 
+debe escribir un mensaje de error para indicar que la operación no fue exitosa.
+</p>
+<p class="auto-style47"><strong>Casos de prueba: </strong> </p>
+<table class="auto-style51" style="width: 80%; height: 0">
 	<tr>
-		<td class="auto-style47"><strong>Temperatura</strong></td>
-		<td class="auto-style47"><strong>Mensaje</strong></td>
-	</tr>
-	<tr>
-		<td class="auto-style21"><font color="#000000">
-		<span class="auto-style21">100 grados o más</span></font><span class="auto-style21">
-		</span></td>
-		<td class="auto-style48"><font color="#000000">
-		<span class="auto-style21">Vapor</span></font><span class="auto-style21">
-		</span></td>
-	</tr>
-	<tr>
-		<td class="auto-style50"><font color="#000000">
-		<span class="auto-style21">30 grados o más, pero menos de 100 grados</span></font><span class="auto-style21">
-		</span></td>
-		<td class="auto-style49"><font color="#000000">
-		<span class="auto-style21">Caliente</span></font><span class="auto-style21">
-		</span></td>
-	</tr>
-	<tr>
-		<td class="auto-style21"><font color="#000000">0 grados o más, pero 
-		menos de 30 grados</font></td>
-		<td class="auto-style48"><font color="#000000">
-		<span class="auto-style21">Fría</span></font><span class="auto-style21">
-		</span></td>
-	</tr>
-	<tr>
-		<td class="auto-style50"><font color="#000000">
-		<span class="auto-style21">-273 grados o más, pero menos de 0 grados</span></font><span class="auto-style21">
-		</span></td>
-		<td class="auto-style49"><font color="#000000">
-		<span class="auto-style21">Congelada</span></font><span class="auto-style21">
-		</span></td>
-	</tr>
-	<tr>
-		<td class="auto-style21"><font color="#000000">
-		<span class="auto-style21">Menos de -273</span></font><span class="auto-style21">
-		</span></td>
-		<td class="auto-style48"><font color="#000000">
-		<span class="auto-style21">Temperatura inexistente</span></font><span class="auto-style21">
-		</span></td>
+		<td class="auto-style52" style="width: 25%">
+<p class="auto-style43"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 1</br>
+<class="auto-style46">Introduce el voltaje: 1 </br>
+<class="auto-style46">Introduce la resistencia: 2 </br> </p>
+
+<p class="auto-style43"><strong>Output: </strong> </br>
+<class="auto-style46">La corriente es: 0.5
+</p>
+		</td>
+		<td class="auto-style53" style="width: 35%">
+<p class="auto-style43"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 1</br>
+<class="auto-style46">Introduce el voltaje: 1 </br>
+<class="auto-style46">Introduce la resistencia: -2 </br> </p>
+
+<p class="auto-style43"><strong>Output: </strong> </br>
+<class="auto-style46">La corriente no puede ser negativa ni cero
+</p>
+		</td>
+		<td style="width: 35%">
+<p class="auto-style43"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 1</br>
+<class="auto-style46">Introduce el voltaje: 1 </br>
+<class="auto-style46">Introduce la resistencia: 0 </br> </p>
+
+<p class="auto-style43"><strong>Output: </strong> </br>
+<class="auto-style46">La corriente no puede ser negativa ni cero
+</p>
+		</td>
 	</tr>
 </table>
+
+<p class="auto-style46"><strong><span class="auto-style50">2. Voltaje:</span>
+</strong>Calcula el voltaje según la ley Ohm.&nbsp; 
+<p class="auto-style47"><strong>Caso de prueba: </strong> </p>
+<p class="auto-style47"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 2</br>
+<class="auto-style46">Introduce la corriente: 1 </br>
+<class="auto-style46">Introduce la resistencia: 2 </br> </p>
+
+<p class="auto-style47"><strong>Output: </strong> </br>
+<class="auto-style46">El voltaje es: 2.0
+</p>
+
+<p class="auto-style46"><strong><span class="auto-style50">3. Resistencia:</span>
+</strong>Calcula la resistencia según la ley Ohm. 
+Asume que la corriente no puede ser negativa ni 0, en caso de serlo debe 
+escribir un mensaje de error para indicar que la operación no fue exitosa.</p>
+<p class="auto-style47"><strong>Casos de prueba: </strong> </p>
+<table class="auto-style51" style="width: 80%; height: 0">
+	<tr>
+		<td class="auto-style52" style="width: 25%">
+<p class="auto-style43"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 3</br>
+<class="auto-style46">Introduce la corriente: 2 </br>
+<class="auto-style46">Introduce el voltaje: 3 </br> </p>
+
+<p class="auto-style43"><strong>Output: </strong> </br>
+<class="auto-style46">La corriente es: 1.5
+</p>
+		</td>
+		<td class="auto-style53" style="width: 35%">
+<p class="auto-style43"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 3</br>
+<class="auto-style46">Introduce la corriente: -2 </br>
+<class="auto-style46">Introduce el voltaje: 3 </br> </p>
+
+<p class="auto-style43"><strong>Output: </strong> </br>
+<class="auto-style46">La corriente no puede ser negativa ni cero</p>
+		</td>
+		<td style="width: 35%">
+<p class="auto-style43"><strong>Input: </strong> </br>
+<class="auto-style46">Introduce una opcion: 3</br>
+<class="auto-style46">Introduce la corriente: 0 </br>
+<class="auto-style46">Introduce el voltaje: 3 </br> </p>
+
+<p class="auto-style43"><strong>Output: </strong> </br>
+<class="auto-style46">La corriente no puede ser negativa ni cero</p>
+		</td>
+	</tr>
+</table>
+
+<p class="auto-style46">Guarda tu archivo con el nombre: <strong>
+L2_A0matrícula.py</strong>. Por ejemplo: L2_A01304328.py.</p>
+
 <ul>
 	<hr />
 	<p><img src="img19.gif" /> <span class="auto-style7">Recursos</span></p>
 </ul>
-<p class="auto-style45"><a href="documentos/4_Condicionales.pdf">4. 
-Condicionales</a></p>
-<ul>
-	<hr />
-	<p><span class="auto-style7"><img src="img12.gif" /> Especificaciones de entrega</span></p>
+<p><span class="auto-style43">
+<a href="documentos/4_Condicionales.pdf" class="auto-style19">4. 
+		Condicionales</a></span></p>
+
+	<hr class="auto-style18" />
+	<p><span class="auto-style48"><img src="img12.gif" /> Especificaciones de entrega</span></p>
+	
+<ul class="auto-style19">
+	<li>
+	<class="auto-style21"><span class="auto-style43">Algoritmos colaborativos: 
+	Se entregan los algoritmos en una hoja blanca con las matrículas y nombres 
+	de los integrantes del equipo. 	</span> 	</li>
+	<li>
+	<class="auto-style21"><span class="auto-style43">Programas individuales: </span>
+	<ul>
+		<li><span class="auto-style43">Envía tus archivos por Canvas, no se 
+		aceptarán por ningún otro medio. </span></li>
+		<li><span class="auto-style43">Envía solo tus archivos&nbsp;<strong>*.py</strong>. </span>
+		</li>
+		<li><span class="auto-style43">Los archivos enviados posteriormente a la 
+		fecha límite no serán calificados. /span></li>
+	</ul>
+	</li>
 </ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="auto-style43">No aplica</span></p>
-<ul>
-	<hr />
-	<p class="auto-style41">.</p>
-	<table style="width: 100%">
+<p class="auto-style21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+Instrucciones para enviar tus archivos por Canvas:</p>
+<ul class="auto-style19">
+	<li>
+	<class="auto-style21"><span class="auto-style43">Haz clic en el botón de 
+	<strong>Tareas</strong>. 	</span> 	</li>
+	<li>
+	<class="auto-style21"><span class="auto-style43">Haz clic en la actividad de 
+	<strong>EntregaLaboratorioIF</strong>.</span><li>
+	Haz clic en el botón de <strong>Entregar tarea</strong>.<li>
+	En el fólder de <strong>Carga del archivo</strong>, haz clic en el botón de
+	<span class="auto-style43"><strong>Examinar</strong>&nbsp;y localiza el archivo&nbsp;*.py. Si necesitas agregar más archivos, 
+	haz clic en <strong>+Agregue otro archivo</strong>, haz clic en el botón de
+	<strong>Examinar</strong>&nbsp;y localiza el otro archivo&nbsp;*.py.
+	<li class="auto-style43">
+	Cuando hayas terminado de subir tus archivos, haz clic en&nbsp;el botón de<strong> 
+	Entregar tarea</strong> y listo!!</ul>
+
+	<hr class="auto-style18" style="height: -12px" />
+	<p class="auto-style49">.</p>
+	<table style="width: 100%" class="auto-style18">
 		<tr>
 			<td class="auto-style33" style="height: 22px"><strong>
 			<span class="auto-style35"><br /></span><span class="auto-style39">© 2019 Escuela de Computación y 
@@ -249,7 +376,6 @@ Condicionales</a></p>
 			<span class="auto-style40">.</span></span></strong></td>
 		</tr>
 	</table>
-</ul>
 
 </body>
 
