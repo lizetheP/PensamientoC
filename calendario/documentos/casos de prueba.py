@@ -27,8 +27,7 @@ print("caso 6 valor %i,  es %r debe ser %r" % (0.0 ,precio(0), False))
 print("caso 7 valor %i,  es %r debe ser %r" % (-10 ,precio(-10), False))
 
 
-#cuando sepas usar condicionales correctamente 
-#puedes hacer cosas más avanzadas como: 
+#También puedes realizar casos de prueba con condicionales:
 
 pruebas = 0
 if precio(6) == True:
