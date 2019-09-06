@@ -99,9 +99,6 @@ i{line-height:inherit}*,*:before,*:after{box-sizing:inherit}
 	font-size: xx-small;
 	color: #FFFFFF;
 }
-.auto-style50 {
-	text-decoration: underline;
-}
 .auto-style51 {
 	border: 1px solid #000000;
 	margin-left: 120px;
@@ -174,11 +171,11 @@ dolares_a_pesos)</br>
 <table class="auto-style51" style="width: 80%; height: 0">
 	<tr>
 		<td class="auto-style52" style="width: 25%">
-<p class="auto-style43"><strong>Input: 1</strong></br>
-<class="auto-style43"><strong>Input: 1</strong></br>
+<p class="auto-style43"><strong>Input: </strong>1</br>
+<class="auto-style43"><strong>Input: </strong>1</br>
 <class="auto-style46">
 <class="auto-style46">
-<class="auto-style46"> <strong>Output: 19.41</strong><class="auto-style46"> </p>
+<class="auto-style46"> <strong>Output: </strong>19.41<class="auto-style46"> </p>
 		</td>
 		<td class="auto-style53" style="width: 35%">
 		<class="auto-style46">
@@ -221,14 +218,14 @@ costo_hotel)</br>
 <table class="auto-style51" style="width: 80%; height: 0">
 	<tr>
 		<td class="auto-style52" style="width: 25%">
-<p class="auto-style43"><strong>Input: 2</strong></br>
-<class="auto-style43"><strong>Input: 1</strong></br>
+<p class="auto-style43"><strong>Input: </strong>2</br>
+<class="auto-style43"><strong>Input: </strong>1</br>
 <class="auto-style46">
 <class="auto-style46">
-<class="auto-style46"> <strong>Output: 185.0</strong><class="auto-style46">
+<class="auto-style46"> <strong>Output:</strong> 185.0<class="auto-style46">
 		<class="auto-style46">
 <class="auto-style46">
-<class="auto-style46"> <class="auto-style46"> &nbsp;</p>
+<class="auto-style46"> <class="auto-style46">&nbsp;</p>
 		</td>
 		<td class="auto-style53" style="width: 35%">
 		<class="auto-style46">
@@ -257,28 +254,93 @@ costo_hotel)</br>
 	</tr>
 </table>
 
-<p class="auto-style46"><strong>3. costo_viaje(noches, pasajeros)</strong></p>
+<p class="auto-style46"><strong>3. costo_avion(pasajeros)</strong></p>
 
-<p class="auto-style15">Esta función recibe noches como parametro y devuelve el 
-costo total en dólares. Cada noche se cobra en 185.0 dólares. ue recibe noches y 
-pasajeros como parámetros y devuelve el costo total del viaje en pesos. El costo 
-toal es la suma de las noches de hotel y los costos de avión. Manda a llamar 
-todas las funciones que desarrollaste previamente dentro de esta. </p>
+<p class="auto-style15">Esta función recibe como parámetro el número de 
+pasajeros y devuelve el costo total en dólares. Cada boleto redondo cuesta 410.0 
+dólares por pasajero. . </p>
 <p class="auto-style18"><span class="auto-style45"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 Casos de prueba:</strong></span><br class="auto-style43" />
 </p>
-<p class="auto-style47"><strong>Input:</strong> Número de opción (2. 
-costo_hotel)</br>
-<class="auto-style47"><strong>Input: </strong>Número de noches
+<p class="auto-style47"><strong>Input:</strong> Número de opción (3. 
+costo_avion)</br>
+<class="auto-style47"><strong>Input: </strong>Número de pasajeros
 <class="auto-style46"></br><strong>Output:</strong> Costo total en dólares </p>
 <table class="auto-style51" style="width: 80%; height: 0">
 	<tr>
 		<td class="auto-style52" style="width: 25%">
-<p class="auto-style43"><strong>Input: 2</strong></br>
+<p class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style43"><strong>Input: </strong>1</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>410.0<class="auto-style46">
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46">&nbsp;</p>
+		</td>
+		<td class="auto-style53" style="width: 35%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<p class="auto-style43">
+		<strong>Input: 3</strong></br>
 <class="auto-style43"><strong>Input: 1</strong></br>
 <class="auto-style46">
 <class="auto-style46">
-<class="auto-style46"> <strong>Output: 185.0</strong><class="auto-style46">
+<class="auto-style46"> <strong>Output: 410.0</strong><class="auto-style46">
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46">&nbsp;<class="auto-style46"><class="auto-style43"><class="auto-style46"><class="auto-style46"><class="auto-style46">
+</p>
+		</td>
+		<td style="width: 35%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<p class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> <strong>Input: 3</strong></br>
+<class="auto-style43"><strong>Input: 1</strong></br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: 410.0</strong><class="auto-style46">
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46">&nbsp;
+</p>
+		</td>
+	</tr>
+</table>
+
+<p class="auto-style46"><strong>4. costo_viaje(noches, pasajeros)</strong></p>
+
+<p class="auto-style15">Esta función recibe noches y pasajeros como parámetros y 
+devuelve el costo total del viaje en pesos. El costo total es la suma de las 
+noches del hotel y los costos del avión. Manda a llamar todas las funciones que 
+desarrollaste previamente dentro de esta. </p>
+<p class="auto-style18"><span class="auto-style45"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Casos de prueba:</strong></span><br class="auto-style43" />
+</p>
+<p class="auto-style47"><strong>Input:</strong> Número de opción (4. 
+costo_viaje)</br>
+<class="auto-style47"><strong>Input: </strong>Número de noches </br>
+<class="auto-style47"><strong>Input: </strong>Número de pasajeros
+<class="auto-style46"></br><strong>Output:</strong> 
+Costo total en pesos </p>
+<table class="auto-style51" style="width: 80%; height: 0">
+	<tr>
+		<td class="auto-style52" style="width: 25%">
+<p class="auto-style43"><strong>Input: 4</strong></br>
+<class="auto-style43"><strong>Input: 1</strong></br>
+		<class="auto-style43">
+		<class="auto-style43">
+<class="auto-style43"><strong>Input: 1</strong></br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: 11548.95</strong><class="auto-style46">
 		<class="auto-style46">
 <class="auto-style46">
 <class="auto-style46"> <class="auto-style46"> &nbsp;</p>
@@ -310,171 +372,24 @@ costo_hotel)</br>
 	</tr>
 </table>
 
-<p class="auto-style15">&nbsp;</p>
-
-<p class="auto-style15">&nbsp;</p>
-<p class="auto-style15">Desarrolla un programa completo en Python que 
-despliegue el siguiente menú y que de acuerdo a la opción seleccionada por el 
-usuario, pida los datos necesarios y calcule el resultado correspondiente: </p>
-<p class="auto-style15"><strong>Menu: Ley de Ohm</strong></p>
-
-<p class="auto-style46"><strong>1. Corriente  </br>
-</strong>
-<class="auto-style46"><strong>2. Voltaje</br>
-</strong>
-<class="auto-style46"><strong>3. Resistencia</br>
-</strong>
-<class="auto-style19"><strong>Introduce una opcion:
-</strong>
-</p>
-<p class="auto-style46">Recuerda hacer las validaciones pertinentes. </p>
-<p class="auto-style46"><strong><span class="auto-style50">Opcion incorrecta:</span>
-</strong>Cualquier opción que no esté entre 1 y 3 se considera incorrecta. </p>
-<p class="auto-style47"><strong>Caso de prueba: </strong> </p>
-<p class="auto-style47"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 4</br>
-<class="auto-style46"> </p>
-
-<p class="auto-style47"><strong>Output: </strong> </br>
-<class="auto-style46">Opción inválida
-</p>
-<p class="auto-style46"><strong><span class="auto-style50">1. Corriente:</span> </strong>Calcula la corriente electrica según la 
-ley Ohm. Asume que la resistencia no puede ser negativa ni 0, en caso de serlo 
-debe escribir un mensaje de error para indicar que la operación no fue exitosa.
-</p>
-<p class="auto-style47"><strong>Casos de prueba: </strong> </p>
-<table class="auto-style51" style="width: 80%; height: 0">
-	<tr>
-		<td class="auto-style52" style="width: 25%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 1</br>
-<class="auto-style46">Introduce el voltaje: 1 </br>
-<class="auto-style46">Introduce la resistencia: 2 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La corriente es: 0.5
-</p>
-		</td>
-		<td class="auto-style53" style="width: 35%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 1</br>
-<class="auto-style46">Introduce el voltaje: 1 </br>
-<class="auto-style46">Introduce la resistencia: -2 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La resistencia no puede ser negativa ni cero
-</p>
-		</td>
-		<td style="width: 35%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 1</br>
-<class="auto-style46">Introduce el voltaje: 1 </br>
-<class="auto-style46">Introduce la resistencia: 0 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La resistencia no puede ser negativa ni cero
-</p>
-		</td>
-	</tr>
-</table>
-
-<p class="auto-style46"><strong><span class="auto-style50">2. Voltaje:</span>
-</strong>Calcula el voltaje según la ley Ohm. Asume que la resistencia no puede 
-ser negativa, en caso de serlo debe escribir un mensaje de error para indicar 
-que la operación no fue exitosa.&nbsp; 
-<p class="auto-style47"><strong>Caso de prueba: </strong> </p>
-<table class="auto-style51" style="width: 80%; height: 0">
-	<tr>
-		<td class="auto-style52" style="width: 25%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 2</br>
-<class="auto-style46">Introduce la corriente: 1 </br>
-<class="auto-style46">Introduce la resistencia: 2 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">El voltaje es: 2.0
-</p>
-		</td>
-		<td class="auto-style53" style="width: 35%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 2</br>
-<class="auto-style46">Introduce la corriente: 1 </br>
-<class="auto-style46">Introduce la resistencia: -2
-		<class="auto-style46">
-<class="auto-style46">
-<class="auto-style46">&nbsp;</br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La resistencia no puede ser negativa</p>
-		</td>
-		<td style="width: 35%">
-<p class="auto-style43"><strong>Input: </br>
-</strong>
-<class="auto-style46">Introduce una opcion: 2</br>
-<class="auto-style46">Introduce la corriente: 1 </br>
-<class="auto-style46">Introduce la resistencia: 0
-		<strong>
-<class="auto-style46">
-<class="auto-style46">
-<class="auto-style46">&nbsp;</br> </strong>
-<class="auto-style46">
-<class="auto-style46">
-<class="auto-style46"> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">El voltaje es: 0.0</p>
-		</td>
-	</tr>
-</table>
-
-<p class="auto-style46"><strong><span class="auto-style50">3. Resistencia:</span>
-</strong>Calcula la resistencia según la ley Ohm. 
-Asume que la corriente no puede ser negativa ni 0, en caso de serlo debe 
-escribir un mensaje de error para indicar que la operación no fue exitosa.</p>
-<p class="auto-style47"><strong>Casos de prueba: </strong> </p>
-<table class="auto-style51" style="width: 80%; height: 0">
-	<tr>
-		<td class="auto-style52" style="width: 25%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 3</br>
-<class="auto-style46">Introduce la corriente: 2 </br>
-<class="auto-style46">Introduce el voltaje: 3 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La resistencia es: 1.5
-</p>
-		</td>
-		<td class="auto-style53" style="width: 35%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 3</br>
-<class="auto-style46">Introduce la corriente: -2 </br>
-<class="auto-style46">Introduce el voltaje: 3 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La corriente no puede ser negativa ni cero</p>
-		</td>
-		<td style="width: 35%">
-<p class="auto-style43"><strong>Input: </strong> </br>
-<class="auto-style46">Introduce una opcion: 3</br>
-<class="auto-style46">Introduce la corriente: 0 </br>
-<class="auto-style46">Introduce el voltaje: 3 </br> </p>
-
-<p class="auto-style43"><strong>Output: </strong> </br>
-<class="auto-style46">La corriente no puede ser negativa ni cero</p>
-		</td>
-	</tr>
-</table>
+<p class="auto-style15">Para poder probar el programa agrega el siguiente código 
+al final de tu programa. Asegurate que el código quede pegado a la izquierda 
+como se muestra en la imagen. </p>
+<p class="auto-style15">
+<img height="368" src="opciones%20lab.png" width="548" /></p>
 
 <p class="auto-style46">Guarda tu archivo con el nombre: <strong>
-L2_A0matrícula.py</strong>. Por ejemplo: L2_A01304328.py.</p>
+L3_A0matrícula.py</strong>. Por ejemplo: L3_A01304328.py.</p>
 
 <ul>
 	<hr />
 	<p><img src="img19.gif" /> <span class="auto-style7">Recursos</span></p>
 </ul>
-<p><span class="auto-style43">
+<p class="auto-style43">
 <a href="documentos/4_Condicionales.pdf" class="auto-style19">4. 
-		Condicionales</a></span></p>
+		Condicionales</a></br>
+<class="auto-style46">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="documentos/5_Funciones.pdf">5. Funciones</a></p>
 
 	<hr class="auto-style18" />
 	<p><span class="auto-style48"><img src="img12.gif" /> Especificaciones de entrega</span></p>
@@ -492,34 +407,11 @@ L2_A0matrícula.py</strong>. Por ejemplo: L2_A01304328.py.</p>
 		<li><span class="auto-style43">Envía solo tus archivos&nbsp;<strong>*.py</strong>. </span>
 		</li>
 		<li><span class="auto-style43">Los archivos enviados posteriormente a la 
-		fecha límite no serán calificados. /span></li>
+		fecha límite no serán calificados. </li>
 	</ul>
 	</li>
 </ul>
-<p class="auto-style21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
-Instrucciones para enviar tus archivos por Canvas:</p>
-<ul class="auto-style19">
-	<li>
-	<class="auto-style21"><span class="auto-style43"><span class="auto-style39">Haz clic en el botón de 
-	</span> 
-	<strong><span class="auto-style39">Tareas</span></strong><span class="auto-style39">. 	
-	</span> 	</span> 	</li>
-	<li>
-	<class="auto-style21"><span class="auto-style43"><span class="auto-style39">Haz clic en la actividad de 
-	</span> 
-	<strong><span class="auto-style39">EntregaLaboratorioIF</span></strong><span class="auto-style39">.</span></span><li>
-	<span class="auto-style43"><span class="auto-style39">Haz clic en el botón de
-	</span> 
-	<strong><span class="auto-style39">Entregar tarea</span></strong><span class="auto-style39">.</span></span><li>
-	<span class="auto-style43"><span class="auto-style39">En el fólder de
-	<strong>Carga del archivo</strong>, haz clic en el botón de <strong>
-	Examinar&nbsp;</strong>y localiza el archivo&nbsp;*.py. Si necesitas agregar más 
-	archivos, haz clic en <strong>+Agregue otro archivo</strong>, haz clic en el 
-	botón de <strong>Examinar&nbsp;</strong>y localiza el otro archivo&nbsp;*.py. </span>
-	</span><span class="auto-style43">
-	<li class="auto-style43">
-	<span class="auto-style39">Cuando hayas terminado de subir tus archivos, haz clic en&nbsp;el botón de</span><strong><span class="auto-style39"> 
-	Entregar tarea</span></strong><span class="auto-style39"> y listo!!</span></ul>
+<p class="auto-style21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
 
 	<hr class="auto-style18" style="height: -12px" />
 	<p class="auto-style49">.</p>
