@@ -85,6 +85,13 @@ i{line-height:inherit}*,*:before,*:after{box-sizing:inherit}
 .auto-style50 {
 	margin-left: 80px;
 }
+.auto-style51 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin-left: 120px;
+}
+.auto-style52 {
+	color: #FF0000;
+}
 </style>
 </head>
 
@@ -98,10 +105,11 @@ i{line-height:inherit}*,*:before,*:after{box-sizing:inherit}
 		<span class="auto-style37">.</span></span></strong></td>
 	</tr>
 </table>
-<p class="auto-style38"><strong>Actividad: Autoestudio sobre listas anidadas</strong></p>
+<p class="auto-style38"><strong>Actividad: Autoestudio sobre listas anidadas o 
+matrices</strong></p>
 <hr class="auto-style18" />
 <p class="auto-style17"><span class="auto-style6"> 
-<img src="imgA1.gif" /> Autoestudio sobre listas anidadas. </span></p>
+<img src="imgA1.gif" /> Autoestudio sobre listas anidadas o matrices </span></p>
 <p class="auto-style15">&nbsp;Realizarás el autoestudio sobre el concepto de 
 listas anidadas (matrices). </p>
 <hr class="auto-style18" />
@@ -111,7 +119,7 @@ Modalidad</span></p>
 <hr class="auto-style18" />
 <p class="auto-style17"><strong><img src="imgE2.gif" /> </strong>
 <span class="auto-style6">Objetivos</span></p>
-<p class="auto-style49">Entender el cocepto de listas anidadas.
+<p class="auto-style49">Entender el cocepto de listas anidadas o matrices.
 </p>
 <hr class="auto-style18" />
 <p class="auto-style18"><img src="img11.gif" /><span class="auto-style7">Instrucciones</span></p>
@@ -135,45 +143,42 @@ las preguntas de <strong>Revisión de autoestudio</strong> en tu libreta. </p>
 <span class="auto-style38"> 
 			<strong><img src="img8.gif" /> </strong></span>Revisión de 
 autoestudio</span></p>
-<p class="auto-style49"><strong>1. </strong>El primero usa los iteradores inatos 
+<p class="auto-style49">El primero usa los iteradores inatos 
 del ciclo for, donde guarda un arreglo de 2 elementos en cada vuelta [0,1] y 
-columna guarda un elemento del arreglo de en cada vuelta 0.<p class="auto-style49">
-<strong>&nbsp;matriz = [[0,1],[2,3],[4,5]] </strong></br>
+columna guarda un elemento del arreglo en cada vuelta 0.<p class="auto-style51">
+<strong>matriz = [[0,1],[2,3],[4,5]] </strong></br>
 <class="auto-style49"><strong>valor = 0 </strong></br>
-<class="auto-style49"><strong>for linea in matriz: </strong></br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; for columna in linea: </strong></br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valor = valor + columna #usamos los iteradores </strong></br>
+<class="auto-style49"><strong>for <span class="auto-style52">linea</span> in 
+<span class="auto-style52">matriz</span>: </strong></br>
+<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; for <span class="auto-style52">
+elemento</span> in <span class="auto-style52">linea</span>: </strong></br>
+<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valor = 
+valor + <span class="auto-style52">elemento</span> </strong>#usamos los iteradores </br>
 <class="auto-style49"><strong>print(valor) </strong></br>
 <p class="auto-style49">El segundo usa índices directamente sobre la matriz o 
 arreglo multidimensional.
-Donde i es usado como índice del arreglo exterio de 3 
-elementos [0,1],[2,3],[4,5] y j es usada como el índice del interior de cada 
+Donde <strong>i </strong>es usado como índice del arreglo exterior de 3 
+elementos [0,1],[2,3],[4,5] y <strong>j </strong>es usada como el índice del interior de cada 
 arreglo de 2 [0,1]
-<p class="auto-style49"><strong>matriz = [[0,1],[2,3],[4,5]] </strong> </br>
+<p class="auto-style51"><strong>matriz = [[0,1],[2,3],[4,5]] </strong> </br>
 <class="auto-style49"><strong>valor = 0 </strong> </br>
-<class="auto-style49"><strong>i = 0</strong>
-<class="auto-style49"><strong>#indice i (renglones) </strong> </br>
-<class="auto-style49"><strong>for linea in matriz: </strong></br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; j = 0</strong>
-<class="auto-style49"><strong>#indice</strong>
-<class="auto-style49"><strong>j (columnas) </strong> </br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; for columna in linea:</strong> </br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valor = valor + matriz[i][j] &nbsp;#usamos los indices </strong></br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; j = j + 1</strong>
-<class="auto-style49"><strong>#incremento de columna </strong> </br>
-<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; i = i + 1</strong>
-<class="auto-style49"><strong>#incremento de renglon </strong> </br>
+<class="auto-style49">#indice i (renglones)</br>
+<class="auto-style49"><strong>for <span class="auto-style52">i </span>in range (
+<span class="auto-style52">0, len( matriz )</span> ): </strong></br>
+<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; </strong>#indice j (columnas) </br>
+<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp; for <span class="auto-style52">
+j</span> in range ( <span class="auto-style52">0, len( matriz[i] )</span> ):</strong> </br>
+<class="auto-style49"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valor = 
+valor + <span class="auto-style52">matriz[i][j]</span> &nbsp;</strong>#usamos los indices </br>
+<class="auto-style49">
 <class="auto-style49"><strong>print(valor) </strong> </br>
 <p class="auto-style49"><strong>1.</strong> Haz una lista anidada que guarde 4 listas de tamaño 2 
-(osea una matriz de 4 * 2) llénala con pares de buena combinaciones como:<p class="auto-style49">
-<strong>&nbsp;['café','leche'] 
+(o sea una matriz de 4 * 2) llénala con pares de buena combinaciones como:<p class="auto-style49">
+<strong>&nbsp;&nbsp;&nbsp;&nbsp; ['café','leche'] 
 o ['rol','pizza'] o ['rick', 'morty'], etc..
 </strong>
-<p class="auto-style49"><strong>2. </strong>Haz la función imprime_matriz que recibe una lista 
+<p class="auto-style49"><strong>2. </strong>Haz la función <strong>imprimeMatriz</strong> que recibe una lista 
 anidada y la imprime en forma de matriz (renglón salto de línea)
-<p class="auto-style49"><strong>3. </strong>Haz la función suma matrices, que recibe 2 matrices 
-de 3 * 3 y devuelve una&nbsp;<a href="https://www.youtube.com/watch?v=wCOOD3zsofk">suma 
-de matrices</a>
 							<hr class="auto-style18" />
 <p class="auto-style18"><img src="img19.gif" /> <span class="auto-style7">
 Recursos</span></p>
