@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+	
+    <title>Actividad: Autoestudio sobre matrices: Arreglos.
+</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">            
+                            Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Actividad: Autoestudio sobre listas anidadas.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                  Autoestudio sobre sobre listas anidadas.
+                </h5>
+                <p>Realizarás el autoestudio que presenta el concepto de sobre listas anidadas (matrices).</p>
+            </div>
+            <div class="divider"></div>
+			
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">Conocer el concepto de sobre listas anidadas.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+                    
+                    <li class="collection-item">
+                        <p>Estudia los siguientes conceptos, haz notas y contesta las preguntas en tu libreta. 
+						Te recomendamos el uso de las siguientes fuentes:</p>      
+						<p>Fernandez, A. <i>Python 3: Al Descubierto </i>  Alfaomega, 2013, ISBN 978-607-707-718-3 </p>
+                        <p>Temas / conceptos:</p>
+                        <ol>
+							<li>Matrices pag. 45 </li>
+						</ol>	
+					</li>
+                    <li class="collection-item">
+                    <p>Corre los siguientes códigos en python y analiza lo que pasa, despues responde las preguntas que vienen abajo:</p>
+					<p>Los siguientes código explican como recorrer listas anidadas en python:</p>
+					<br>
+					<p>El primero usa los iteradores inatos del ciclo for, donde guarda un arreglo 
+							de 2 elementos en cada vuelta [0,1] y columna guarda un elemento del arreglo de en 
+							cada vuelta 0.</p>
+					<code><pre> 
+		matriz = [[0,1],[2,3],[4,5]]
+		valor = 0 
+		for linea in matriz:
+		  for columna in linea:
+			valor = valor + columna  #usamos los iteradores
+		print(valor)
+					</pre></code> 
+					<p>	El segundo usa índices directamente sobre la matriz o arreglo multidimensional. 
+					Donde i es usado como índice del arreglo exterio de 3 elementos [0,1],[2,3],[4,5]
+					y j es usada como el índice del interior de cada arreglo de 2 [0,1]</p>
+					<code><pre> 
+		matriz = [[0,1],[2,3],[4,5]]
+		valor = 0 
+		i = 0  #indice i (renglones)
+		for linea in matriz:
+		  j = 0  #indice j (columnas)
+		  for columna in linea:
+			  valor =  valor + matriz[i][j] #usamos los indices
+			  j = j + 1  #incremento de columna
+		  i = i + 1  #incremento de renglon
+		print(valor)							
+					</pre></code>
+					<p>1. Haz una lista anidada que guarde 4 listas de tamaño 2 (osea una matriz de 4 * 2) 
+					llénala con pares de buena combinaciones como: ['café','leche'] o ['rol','pizza'] o ['rick', 'morty'], etc.. </p>
+					<p>2. Haz la función imprime_matriz que recibe una lista anidada y la imprime 
+					en forma de matriz (renglón salto de línea)</p>
+					<p>3. Haz la función suma matrices, que recibe 2 matrices de 3 * 3 y devuelve
+					una <a href="https://www.youtube.com/watch?v=wCOOD3zsofk"> suma de matrices </a></p>
+					<p>4. ¿Qué parte de tu proyecto se puede modelar con una matriz o una lista anidada?</p>	                  
+                    </li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>Las preguntas se revisarán en su libreta al inicio de la clase.</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

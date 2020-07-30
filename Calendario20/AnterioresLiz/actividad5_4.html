@@ -1,0 +1,961 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="es-mx" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Pensamiento Computacional para I</title>
+<style type="text/css">
+i.small{font-size:2rem}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+i{line-height:inherit}*,*:before,*:after{box-sizing:inherit}
+.auto-style6 {
+	font-size: x-large;
+}
+.auto-style7 {
+	font-size: x-large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style15 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: medium;
+	margin-left: 80px;
+}
+.auto-style17 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	margin-left: 40px;
+}
+.auto-style18 {
+	margin-left: 40px;
+}
+.auto-style19 {
+	margin-left: 80px;
+}
+.auto-style33 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-align: left;
+	background-color: #660066;
+}
+.auto-style35 {
+	font-size: large;
+}
+.auto-style37 {
+	color: #808000;
+}
+.auto-style38 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	margin-left: 40px;
+	color: #808000;
+	text-align: left;
+}
+.auto-style39 {
+	font-size: medium;
+}
+.auto-style40 {
+	color: #660066;
+}
+.auto-style43 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.auto-style45 {
+	margin-left: 40px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #000000;
+}
+.auto-style46 {
+	margin-left: 80px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.auto-style47 {
+	margin-left: 120px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.auto-style48 {
+	font-size: x-large;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 40px;
+}
+.auto-style49 {
+	font-size: xx-small;
+	color: #FFFFFF;
+}
+.auto-style51 {
+	border: 1px solid #000000;
+	margin-left: 120px;
+}
+.auto-style52 {
+	border-width: 1px;
+}
+.auto-style53 {
+	background-color: #CCCCFF;
+}
+.auto-style54 {
+	font-weight: normal;
+}
+.auto-style55 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: medium;
+}
+</style>
+</head>
+
+<body>
+
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style33" style="height: 22px"><strong>
+		<span class="auto-style35"><br />
+		TC 1028. Pensamiento Computacional para Ingeniería<br />
+		<span class="auto-style37">.</span></span></strong></td>
+	</tr>
+</table>
+<p class="auto-style38"><strong>Actividad: Desarrollando programas con 
+estructuras de repetición</strong></p>
+<hr class="auto-style18" />
+<p class="auto-style17"><span class="auto-style6"> 
+<img src="imgC1.gif" /> Descripción </span></p>
+<p class="auto-style15">&nbsp;Desarrollarán la solución de algunos problemas. </p>
+<hr class="auto-style18" />
+<p class="auto-style17"><strong><img src="imgE2.gif" /> </strong>
+<span class="auto-style6">Objetivo</span></p>
+<p class="auto-style15">Escribir programas en Python que hagan uso de 
+estructuras de repetición y que entiendan cómo modelar ciclos. </p>
+<hr class="auto-style18" />
+<p class="auto-style17"><img src="img18.gif" /><span class="auto-style6"> 
+Modalidad y forma de trabajo</span></p>
+<p class="auto-style15">Diseño colaborativo, <strong>implementación individual</strong>.</p>
+<ul class="auto-style19">
+	<li>
+	<class="auto-style21"><span class="auto-style43">Intégrate con tu equipo colaborativo y junto con tus 
+	compañeros, analiza cada uno de los ejercicios que se presentan a 
+	continuación. 	</span> 	</li>
+	<li>
+	<class="auto-style21"><span class="auto-style43">Identifiquen, en equipo, cual sería el algoritmo 
+	para la solución de cada uno de los ejercicios. </span> </li>
+	<li>
+	<class="auto-style21"><span class="auto-style43"><strong>De manera individual</strong> escribe un 
+	programa en Python para cada uno de los ejercicios. Recuerda basarte en el 
+	algoritmo que se generó en el equipo. </span> 	</li>
+	<li>
+	<span class="auto-style43">Una vez que hayas terminado tu 
+	programa, apoya a tus compañeros de equipo con dudas que tengan (no hagas el 
+	laboratorio por ellos ya que esto sólo los perjudica) </span> 	</li>
+</ul>
+<hr class="auto-style18" />
+<p class="auto-style18"><img src="img11.gif" /><span class="auto-style7">Problemas</span></p>
+<p class="auto-style46">&nbsp;En un mismo programa desarrolla las siguiente 
+funciones y el script principal: </p>
+<p class="auto-style46"><strong>1. elevaPotencia(num, potencia)</strong></p>
+
+<p class="auto-style46">La función <strong>elevaPotencia(num, potencia)</strong> 
+que recibe dos números enteros, num y potencia. La función regresa el resultado 
+de elevar num a la potencia. La función debe funcionar con un ciclo mediantes 
+multiplicaciones, divisiones y acumuladores. NOTA: No usar el operador de potencia de python. </p>
+<p class="auto-style46">Recuerda que las potencias negativas se calculan de la 
+siguiente forma:</p>
+<p class="auto-style46"><strong>8</strong><sup><strong>-1</strong></sup> = 1 / 8 
+= 0.125 </br>
+<class="auto-style46"><strong>5</strong><sup><strong>-3</strong></sup> = 1 / 5 
+/ 5 / 5 = 0.008 </p>
+<p class="auto-style18"><span class="auto-style45"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Casos de prueba:</strong></span><br class="auto-style43" />
+</p>
+<p class="auto-style47"><strong>Input:</strong> Número de opción (1. 
+elevaPotencia)</br>
+<class="auto-style47"><strong>Input: </strong>Número a elevar</br>
+<class="auto-style47"><strong>Input: </strong>
+Potencia a la que será elevado el número</br><strong>Output:</strong> Número elevado a 
+la potencia </p>
+<table class="auto-style51" style="width: 80%; height: 0">
+	<tr>
+		<td class="auto-style52" style="width: 16%">
+<p class="auto-style43"><strong>Input: </strong>1</br>
+<class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style43"><strong>Input: </strong>2</br>
+<class="auto-style46"> <strong>Output: </strong>9<class="auto-style46">.0000 </p>
+		</td>
+		<td class="auto-style53" style="width: 16%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<p class="auto-style43">
+		<class="auto-style46"><strong>Input: </strong>1<strong></br>
+<class="auto-style43">Input: <span class="auto-style54">2</span></br>
+<class="auto-style43">Input: <span class="auto-style54">-4</span></br>
+<class="auto-style46"> Output: </strong>0.0625<class="auto-style43"><class="auto-style46"><class="auto-style46"><class="auto-style46"> 
+</p>
+		</td>
+		<td style="width: 16%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<p class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> <strong>Input: </strong>1</br>
+<class="auto-style43"><strong>Input: </strong>-5</br>
+<class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style46"> <strong>Output: </strong>-125.0000</p>
+		</td>
+		<td style="width: 16%" class="auto-style53">
+		<span class="auto-style43"><strong>Input: </strong></span>1<br class="auto-style43">
+		<class="auto-style43"><span class="auto-style43"><strong>Input: </strong>2</span><br class="auto-style43">
+		<class="auto-style43"><span class="auto-style43"><strong>Input: </strong></span>
+		10<br class="auto-style43">
+		<class="auto-style46"> <span class="auto-style43"> <strong>Output: </strong>
+		1024.0000</span></td>
+		<td style="width: 16%">
+		<span class="auto-style43"><strong>Input: </strong></span>1<br class="auto-style43">
+		<class="auto-style43"><span class="auto-style43"><strong>Input: </strong>2</span><br class="auto-style43">
+		<class="auto-style43"><span class="auto-style43"><strong>Input: </strong></span>
+		9<br class="auto-style43">
+		<class="auto-style46"> <span class="auto-style43"> <strong>Output: </strong>
+		512.0000</span></td>
+		<td style="width: 16%" class="auto-style53">
+		<span class="auto-style43"><strong>Input: </strong></span>1<br class="auto-style43">
+		<class="auto-style43"><span class="auto-style43"><strong>Input: </strong>10</span><br class="auto-style43">
+		<class="auto-style43"><span class="auto-style43"><strong>Input: </strong></span>
+		0<br class="auto-style43">
+		<class="auto-style46"> <span class="auto-style43"> <strong>Output: </strong>
+		1.0000</span></td>
+	</tr>
+</table>
+
+<p class="auto-style46"><strong>2. aproximacionPI(num)</strong></p>
+
+<p class="auto-style15">Existen diferentes algoritmos que nos permiten obtener 
+una cercana aproximación al valor de la constante PI, uno de ellos es el 
+Algoritmo de Gottfried Wilhem von Leibniz: </p>
+<p class="auto-style15">
+<img height="53" src="imagenes/imagen7-4-3.gif" width="232" /></p>
+<p class="auto-style15">Entre mayor sea el límite de la serie (N), más cercana 
+la aproximación que se obtiene. La función <strong>aproximacionPI(num)</strong>, 
+que recibe el límite N de la serie para calcular la aproximación de PI. </p>
+<p class="auto-style18"><span class="auto-style45"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Casos de prueba:</strong></span><br class="auto-style43" />
+</p>
+<p class="auto-style47"><strong>Input:</strong> Número de opción (2. 
+aproximacionPI)</br>
+<class="auto-style47"><strong>Input: </strong>Número límite de la serie
+<class="auto-style46"></br><strong>Output:</strong> Aproximación de PI </p>
+<table class="auto-style51" style="width: 80%; height: 0">
+	<tr>
+		<td class="auto-style52" style="width: 25%">
+<p class="auto-style43"><strong>Input: </strong>2</br>
+<class="auto-style43"><strong>Input: </strong>1</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output:</strong> 4.0<class="auto-style46">00
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46">&nbsp;</p>
+		</td>
+		<td class="auto-style53" style="width: 25%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<p class="auto-style43">
+		<class="auto-style46"><strong>Input: </strong>2</br>
+<class="auto-style43"><strong>Input:</strong> 0</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>0.0000</p>
+		</td>
+		<td style="width: 25%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<p class="auto-style43">
+		<class="auto-style46"><strong>Input: </strong>2</br>
+<class="auto-style43"><strong>Input: </strong>-10</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>0.0000</p>
+		</td>
+		<td style="width: 25%" class="auto-style53">
+		<span class="auto-style55"><strong>Input: </strong>2</span><br class="auto-style55">
+		<class="auto-style43"><span class="auto-style43"><strong>
+		<span class="auto-style39">Input: </span></strong>
+		<span class="auto-style39">22</span></span><br class="auto-style55">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> <span class="auto-style43"> <strong>
+		<span class="auto-style39">Output: </span></strong>
+		<span class="auto-style39">3.2323</span></span></td>
+	</tr>
+</table>
+
+<p class="auto-style46"><strong>3. dateSimPikachu( )</strong></p>
+
+<p class="auto-style15">La función <strong>dateSimPikachu() </strong>que no 
+recibe parametros y no regresa algo. Lo único que hace la función es reponder al 
+usuario, si el usuario dice: </p>
+<p class="auto-style18"><span class="auto-style45"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Casos de prueba:</strong></span><br class="auto-style43" />
+</p>
+<p class="auto-style47"><strong>Input:</strong> Número de opción (3. 
+dateSlimPikachu)</br>
+<class="auto-style47"><strong>Input: </strong>string usuario
+<class="auto-style46"></br><strong>Output:</strong> Respuesta de la computadora </p>
+<table class="auto-style51" style="width: 80%; height: 0">
+	<tr>
+		<td class="auto-style52" style="width: 25%">
+<p class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style43"><strong>Input: </strong>pikapika</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>chu<class="auto-style46">
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46"></p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikapika</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>chu</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pika!</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pika</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikapika</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>chu</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikachu</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pikachu!!! (Sale del ciclo)</p>
+		</td>
+		<td class="auto-style53" style="width: 25%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+<p class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style43"><strong>Input: </strong>pikapika</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>chu<class="auto-style46">
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46"></p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>musgo</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>???</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pika!</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pika</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikapika</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>chu</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikachu</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pikachu!!! (Sale del ciclo)</p>
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		</td>
+		<td style="width: 25%">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+<p class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style43"><strong>Input: </strong>pika!</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pika<class="auto-style46">
+		<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <class="auto-style46"></p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pika!</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pika</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pika!</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pika</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikapika</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>chu</p>
+		<p class="auto-style43">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style43"><strong>Input: </strong>pikachu</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pikachu!!! (Sale del ciclo)</p>
+		<class="auto-style46">
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style43">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		</td>
+		<td style="width: 25%" class="auto-style53">
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+		<class="auto-style46">
+		<class="auto-style46">
+		<class="auto-style46"> 
+<p class="auto-style43"><strong>Input: </strong>3</br>
+<class="auto-style43"><strong>Input: </strong>pikachu</br>
+<class="auto-style46">
+<class="auto-style46">
+<class="auto-style46"> <strong>Output: </strong>pika<class="auto-style46">chu!!! 
+(Sale del ciclo)</p>
+		</td>
+	</tr>
+</table>
+
+<p class="auto-style46"><strong>4. Script principal</strong></p>
+
+<p class="auto-style15">Desarrolla un programa en Python que de acuerdo a la opción seleccionada por el usuario le dé la oportunidad de 
+ejecutar cualquiera de las funciones que han sido construidas. </p>
+<p class="auto-style15"> <strong>opcion = int(input())<br />if opcion == 1:<br />
+<br />
+</strong>
+<class="auto-style15"> <strong>elif opcion == 2:<br /><br />
+</strong>
+<class="auto-style15"> <strong>elif opcion == 3:<br /><br />
+</strong>
+<class="auto-style15"> <strong>else:<br />
+</strong>
+<class="auto-style15"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("Opción inválida")</strong></p>
+<ul class="auto-style19">
+
+<li>
+	<class="auto-style15"><span class="auto-style43">No olvides verificar que tu 
+	programa imprima el número de decimales 
+	indicados en los <strong>Casos de prueba</strong>. (Modifica el código que se te muestra para 
+	que imprima los decimales correspondientes)</span><li>
+	<span class="auto-style43">Crea una carpeta con el nombre de <strong>
+	LaboratorioW </strong>y guarda ahí tu archivo con el nombre: <strong>
+	program.py</strong>. </span></ul>
+	</li>
+	<hr class="auto-style18" />
+<p class="auto-style18"><img src="img19.gif" /> <span class="auto-style7">Recursos</span></p>
+<p class="auto-style43">
+<a class="auto-style19" href="documentos/4_Condicionales.pdf">4. Condicionales</br>
+<class="auto-style43">
+<a a="" class="auto-style19" href="documentos/5_Funciones.pdf">5. Funciones</a></br>
+<class="auto-style43">
+<a a="" class="auto-style19" href="documentos/6_While.pdf"><span class="auto-style43">6. While</span><class="auto-style43"></a></p>
+
+
+<hr class="auto-style18" />
+	<p><span class="auto-style48"><img src="img12.gif" /> Especificaciones de entrega</span></p>
+	
+<ul class="auto-style19">
+	<li>
+	<class="auto-style21"><span class="auto-style43">Algoritmos colaborativos: 
+	Se entregan los algoritmos en una hoja blanca con las matrículas y nombres 
+	de los integrantes del equipo. 	</span> 	</li>
+	<li>
+	<class="auto-style21"><span class="auto-style43">Programas individuales: </span>
+	<ul>
+		<li class="auto-style43">Guarda tu archivo con el nombre: <strong>
+		program.py</strong></li>
+		<li class="auto-style43">Compacta tu archivo en un .zip (<strong>program.zip</strong>)</li>
+		<li class="auto-style43">Envía tu archivo compactado por Alphagrader.</li>
+	</ul>
+	</li>
+</ul>
+
+	<p class="auto-style46">&nbsp;&nbsp;&nbsp;&nbsp; Instrucciones para enviar 
+	tu archivo por Alphagrader (<strong>www.alphagrader.com</strong>):</p>
+	<ul class="auto-style19">
+		<li class="auto-style43">Ir a pestaña/tab de <strong>Submissions</strong>. 
+		</li>
+		<li class="auto-style43">Presionar el botón <strong>Create team</strong>. 
+		</li>
+		<li class="auto-style43">Selecciona solo tu matricula y presiona <strong>Save</strong>. 
+		</li>
+		<li class="auto-style43">Presiona el botón <strong>Upload New Submission</strong>. 
+		</li>
+		<li class="auto-style21"><span class="auto-style43">Seleccionas tu programa. (tu programa debe llamarse
+		<strong>program.py</strong> y estar comprimido).
+		</span>
+		<ul>
+			<li class="auto-style43">Para comprimir el archivo da clic derecho sobre 
+		el → <strong>Enviar a→ Carpeta comprimida (en zip)</strong>. Ejemplo:
+			<strong>program.zip</strong></li>
+		</ul>
+		</li>
+		<li class="auto-style43">Seleccionas en el lenguaje <strong>"Python"</strong>. 
+		</li>
+		<li class="auto-style43">Presionas el botón <strong>save</strong>. </li>
+	</ul>
+<span class="auto-style43">
+
+	<hr class="auto-style18" style="height: -12px" />
+	<p class="auto-style49">.</p>
+	<table style="width: 100%" class="auto-style18">
+		<tr>
+			<td class="auto-style33" style="height: 22px"><strong>
+			<span class="auto-style35"><br /></span><span class="auto-style39">© 2019 Escuela de Computación y 
+		Mecatrónica</span><span class="auto-style35"><br />
+			<span class="auto-style40">.</span></span></strong></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>

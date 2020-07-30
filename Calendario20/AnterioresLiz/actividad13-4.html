@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+    <title>Desarrollando programas en Python No. 11: Archivos (Escritura).</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Desarrollando programas en Python No. 11: Archivos (Escritura).</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                    Desarrollando programas en Python No. 11: Archivos (Escritura).
+                </h5>
+                <p>Desarrollarás la solución de algunos problemas.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="modalidad">
+                <h5>
+                  <i class="small material-icons">group</i>
+                  Modalidad
+                 </h5>
+                <p>Individual</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">
+                    Aplicar los conceptos de flujo de datos en la solución de problemas.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+                    
+                    <li class="collection-item">Analiza cada uno de los ejercicios que se presentan a continuación. Identifica cual sería el algoritmo para la solución de cada uno de los ejercicios.</li>
+                    <li class="collection-item">
+                    Escribe un programa en Python para cada uno de los ejercicios. Recuerda basarte en el algoritmo que generaste.</li>
+                    <li class="collection-item">
+                    Entrega, en la sección de "Envío de Tareas", los archivos que contengan los programas en C.</li>
+                    <li class="collection-item">La actividad será evaluada usando <a target="_blank" href="documentos/rubrica_codificacion.pdf">la
+                    siguiente rubrica</a>.</li>
+                    <li class="collection-item"><h5>Problemas:</h5>
+                    <p>Desarrolla un programa en C, que incluya las siguientes funciones:<br>decide cuando en que caso es mejor utilizar  la función fgets() o  la función fscanf().</p></li>
+                    <li class="collection-item">
+                    <h5>Ejercicio 1</h5>
+                    <p>Desarrolla el procedimiento escribir_en_archivo que recibe un arreglo con el nombre del archivo a crear. El procedimiento pide al usuario 5 oraciones o frases de menos de 50 caracteres y las guarda en un archivo de texto. El encabezado del procedimiento podría ser el  siguiente:</p>
+                    <p><code>void escribir_en_archivo (char nombre_archivo[])</code></p>
+                    </li>
+                    <li class="collection-item"><h5>Ejercicio 2</h5>
+                    <p>Se desea almacenar en un archivo de texto el nombre, la carrera y la calificación final de los alumnos del curso de Pensamiento Computacional para Ingeniería con el siguiente formato: Pedro,ISC,95. Desarrolla el procedimiento escribir_con_formato que pide al usuario los datos que se desean almacenar y los escribe en un archivo de texto. <strong>El archivo debe de llamarse "califica.txt"</strong>. El encabezado del procedimiento es el siguiente:</p>
+                    <p><code>void escribir_con_formato()</code></p></li>
+                    <li class="collection-item"><h5>Ejercico 3</h5><p>Desarrolla el procedimiento escribir_en_bitacora que recibe el nombre del archivo a crear. El procedimiento pide oraciones u oraciones al usuario de menos de 200 caracteres hasta que este presione \Esc (investiga como escribirlo ya sea normal o en ASCII) y las guarda en un archivo de texto. Cada oración debe tener al principio la fecha. </p>
+                    <p><code>void escribir_en_bitacora (char nombre_archivo[])</code></p></li>
+                    <li class="collection-item"><h5>Ejercicio 4</h5><p>Desarrolla el procedimiento esconde_en_archivo. El procedimiento pide 1 frase de menos 20 caracteres, modifica la frase cambiando un letra por su inmediate siguiente en el abecedario y la agrega al archivo <strong>"mensaje secreto.txt"</strong> el encabezado puede ser:</p><p><code>void esconde_en_archivo ()</code></p></li>
+                    <li class="collection-item"><p>En el <code>main()</code> construye un menú que muestre las siguientes opciones:</p>
+                    <p><code>MENÚ<br>
+                    A. Escribir en archivo<br>
+                    B. Guarda datos de alumnos<br>
+                    C. Escribir en bitácora<br>
+                    D. Esconde en Archivo<br>
+                    S. Salir<br>
+                    Opción?</code></p>
+                    <p>De acuerdo a la opción seleccionada por el usuario utiliza la función apropiada de las implementadas anteriormente. Utiliza un ciclo <code>do-while</code> para desplegar el menú en pantalla hasta que el usuario seleccione la opción de Salir. Recuerda que la captura de datos (<strong>El nombre del archivo</strong>) y validación de valores debe ser realizada en el <code>main( ).</code></p><p><strong>Nota que las opciones del menú son alfabéticas y el usuario podrá seleccionar la opción del menú presionando la letra mayúscula o minúscula correspondiente.</strong></p>
+                    <p><strong><i>Incluye el algoritmo como comentario al inicio del programa.</i></strong></p></li>
+                    <li class="collection-item"><h5>Programa abierto</h5><p>Desarrolla un programa de tu interés que pida información al usuario la procese  (al menos de dos formas diferentes) y la escriba en archivos, algunas ideas pueden ser:</p>
+                        <ol><li>encriptar / desencriptar</li>
+                            <li>dar un fomato particular al texto</li>
+                            <li>autocompletar</li>
+                            <li>generar comentarios automáticos de lo que se escribe</li>
+                        </ol>        
+                    <p>Este programa es tuyo, úsalo para hacer cosas interesante y retadoras <strong>no cosas fáciles.</strong></p>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>Los archivos (<strong>el .c  de cada programa</strong>) deberán ser entregados a través de la sección de "Envío de Tareas" de Blackboard los programas tienen que llevar por nombre tu matricula y el número de ejercicio e.g. "A00882900<strong>1</strong>.c".</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

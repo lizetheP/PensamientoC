@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	
+	<meta name="author" content="Eduardo Juárez">
+	
+	<meta name="author" content="Benjamín Valdés">
+
+	<meta name="author" content="Becari@ Anónimo">
+    <title>Actividad: Tarea sobre el ciclo <code>while</code>: Estatutos de repetición.</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="blue darken-1 nav-wrapper">
+                    <a href="index.html" class="brand-logo"><acronym title="Pensamiento Computacional para Ingeniería">            
+                            Pensamiento Computacional para Ingeniería</acronym></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="section">
+                <h3>Actividad: Tarea sobre el ciclo <code>while</code>: Estatutos de repetición.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" id="descripcion">
+                <h5>
+                  <i class="small material-icons">info_outline</i>
+                  Actividad: Tarea sobre el ciclo <code>while</code>: Estatutos de repetición. 
+                </h5>
+                <p>Desarrollarás la solución de algunos problemas.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="modalidad">
+                <h5>
+                  <i class="small material-icons">group</i>
+                  Modalidad
+                 </h5>
+                <p>Individual</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="objetivos">
+                <h5>
+                <i class="small material-icons">check</i>
+                Objetivos de aprendizaje</h5>
+                <ul class="collection with-header">
+                    <li class="collection-item">Aplicar el ciclo <code>while</code> en la solución de problemas.</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="instrucciones">
+                <h5>
+                  <i class="small material-icons">list</i>
+                  Instrucciones</h5>
+                <ul class="collection">
+                    
+                    <li class="collection-item">Desarrolla el algoritmo e impleméntalo en un programa en Python para cada uno de los ejercicios que se presentan a continuación.</li>
+                    
+                    <li class="collection-item">
+                    Entrega, en la sección de "Envío de Tareas", los archivos que contengan los programas en C. <strong><i>Es importante que al inicio de cada archivo coloques el o los algoritmos que utilizaste.</i></strong>
+                    </li>
+                    
+                    <li class="collection-item">
+                    La actividad será evaluada usando <a target="_blank" href="documentos/rubrica_codificacion.pdf">la
+                    siguiente rubrica</a>.
+                    </li>
+                    
+                    <li class="collection-item">
+                        <h5>Problemas:</h5>
+                        <p>Utiliza el siguiente esquema como apoyo para desarrollar tus soluciones:</p>
+                        
+                        <img class="responsive-img" alt="" src="imagenes/imagen8-4-1.gif"><br>
+                        
+                    </li>
+                    
+                    <li class="collection-item">
+                        <h5>Ejercicio 1</h5>
+                        <p>Desarrolla un programa en C, que incluya las siguientes funciones:</p>
+                        <p>La función f1 que recibe un valor entero mayor o igual a uno; y utilizando un ciclo for regresa el resultado de la siguiente sumatoria:</p>
+                        <img class="responsive-img" alt="" src="imagenes/imagen9-1-1.gif"><br>
+                  
+                        <p>Por ejemplo:<br><code>f1(3) = 2(1) + 2(2) + 2(3) = 12<br>
+                        f1(6) = 2(1) + 2(2) + 2(3) + 2(4) + 2(5) + 2(6) = 42</code></p>
+                        <p>La función f2 que recibe un valor entero mayor o igual a uno; y utilizando un ciclo for regresa el resultado de la siguiente multiplicatoria:</p>
+                        <img class="responsive-img" alt="" src="imagenes/imagen9-1-2.gif"><br>
+                 
+                        <p>Por ejemplo:<br><code>f2(2) = (3(1)-1)*(3(2)-1) = 10<br>
+                        f2(4) = (3(1)-1)*(3(2)-1)*(3(3)-1)*(3(4)-1)= 880</code></p>
+                        <p>La función f3 que recibe un valor entero mayor o igual a uno; y utilizando un ciclo for regresa el resultado de la siguiente serie:</p>
+                        <p><code><center>f3 ( n ) = - 1 + 2 - 3 + 4 - 5 + ... n</center></code></p>
+                        <p>Por ejemplo:<br><code>f3( 1 ) = -1<br>
+                        f3( 2 ) = -1 + 2 = 1<br>
+                        f3( 3 ) = -1 + 2 - 3 = -2<br>
+                        f3( 4 ) = -1 + 2 - 3 + 4 = 2</code></p>
+                        <p>El procedimiento f4 que recibe 2 parámetros reales, el limite superior de la serie LS y el limite inferior de la serie LI .Y utilizando un ciclo for, el procedimiento deberá desplegar en pantalla la secuencia de números desde LS hasta el LI en decrementos de 0.4. Por ejemplo:</p>
+                        <p><code>f4(5.0,3.0), desplegará en pantalla:  5.0, 4.6, 4.2, 3.8, 3.4, 3.0<br>
+                        f4(7.3,3.1), desplegará en pantalla:  7.3, 6.9, 6.5  ........  3.7, 3.3</code></p>
+                        <p>El procedimiento imprime_6_cada_vez( ), que utilizando un do-while, desplegará en pantalla 6 números consecutivos. Cada 6 números el procedimiento deberá preguntar al usuario si desea continuar, de ser así seguirá con la impresión de la secuencia de números siguientes en pantalla; en caso contrario termina el procedimiento. Por ejemplo:<br><code>imprime_6_cada_vez();</code><br>desplegará en pantalla lo siguiente:<br><code>1 2 3 4 5 6<br>Desea continuar (S/N):   S<br>
+                        7 8 9 10 11 12<br>
+                        Desea continuar (S/N):   S<br>
+                        13 14 15 16 17 18<br>
+                        Desea continuar (S/N):   N<br>
+                        Fin del procedimiento....
+                        </code></p>
+                        <p>En el <code>main()</code> construye un menú que muestre las siguientes opciones:</p>
+                        <p><code>MENÚ<br>
+                        A. Sumatoria<br>
+                        B. Multiplicatoria<br>
+                        C. Serie Alterna<br>
+                        D. Serie en decremento<br>
+                        E. Imprime 6 cada vez<br>
+                        S. Salir<br>
+                        Opción?</code></p>
+                        <p>Utiliza un ciclo <code>do-while</code> para desplegar el menú en pantalla hasta que el usuario seleccione la opción de Salir. Recuerda que la captura de datos y validación de valores debe ser realizada en el <code>main()</code>, pues las funciones NO pueden realizar las tareas de validación o captura de datos.</p>
+                        <p><strong>Nota que las opciones del menú son alfabéticas y el usuario podrá seleccionar la opción del menú presionando la letra mayúscula o minúscula correspondiente.</strong></p>
+                        <p><strong><i>Incluye el algoritmo como comentario al inicio del programa.</i></strong></p>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="recursos">
+                <h5><i class="small material-icons">attachment</i>Recursos</h5>
+                <p><a href="https://medium.com/@samanthahdez/ciclos-errores-de-compilaci%C3%B3n-en-c-9d5bc1807ac6#.qxsynyd7e" target="_blank">Errores comunes en Ciclos</a></p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="section" id="entrega">
+                <h5>
+              <i class="small material-icons">offline_pin</i>
+              Especificaciones de entrega
+            </h5>
+                <p>Los archivos deberán ser entregados a través de la sección de "Envío de Tareas" de Blackboard.</p>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </main>
+
+    <footer class="blue darken-1 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5 class="white-text">Secciones</h5>
+                    <ol class="grey-text text-lighten-3">
+                        <li><a class="grey-text text-lighten-3" href="#descripcion">Descripción</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#modalidad">Modalidad</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#objetivos">Objetivos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#instrucciones">Instrucciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#recursos">Recursos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#entrega">Especificaciones de entrega</a></li>
+                    </ol>
+                </div>
+            </div>
+            <p class="grey-text text-lighten-4">Powered by <a href="http://materializecss.com/" target="_blank" class="white-text text-lighten-4">Materialize</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+               © 2019 Escuela de Ingeniería y Ciencias - Tecnológico de Monterrey.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
