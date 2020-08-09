@@ -1,0 +1,4 @@
+Juan Lopez  IIS  95.8  
+Pedro Perez IBT  98.3  
+Laura Sanchez IMT 90.2  
+Luisa Juarez IC 92.4
