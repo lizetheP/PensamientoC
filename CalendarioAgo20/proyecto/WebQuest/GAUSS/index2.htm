@@ -1,0 +1,391 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>WebQuest: M&eacute;todo de Gauss</title>
+<script language="JavaScript" fptype="dynamicanimation">
+
+</script>
+<script language="JavaScript1.2" fptype="dynamicanimation" src="animate.js">
+</script>
+<meta name="Microsoft Border" content="tlb, default">
+</head>
+
+<body background="backg.gif" bgproperties="fixed" " leftmargin="0" marginwidth="0" topmargin="0" marginheight="0"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+    <td> <p><img border="0" src="gildedage.gif" width="600" height="93"></p>
+
+</td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+
+                      <table border="0" cellpadding="0" cellspacing="5" width="110">
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP44'].imgRolln=document['fpAnimswapImgFP44'].src;document['fpAnimswapImgFP44'].src=document['fpAnimswapImgFP44'].lowsrc;" onmouseout="document['fpAnimswapImgFP44'].src=document['fpAnimswapImgFP44'].imgRolln" href="index.htm"><img border="0" src="button_intro.gif" id="fpAnimswapImgFP44" name="fpAnimswapImgFP44" dynamicanimation="fpAnimswapImgFP44" lowsrc="button_intro_glow.gif" alt="Introduction" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP45'].imgRolln=document['fpAnimswapImgFP45'].src;document['fpAnimswapImgFP45'].src=document['fpAnimswapImgFP45'].lowsrc;" onmouseout="document['fpAnimswapImgFP45'].src=document['fpAnimswapImgFP45'].imgRolln" href="task.htm"><img border="0" src="button_task.gif" id="fpAnimswapImgFP45" name="fpAnimswapImgFP45" dynamicanimation="fpAnimswapImgFP45" lowsrc="button_task_glow.gif" alt="Task" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP46'].imgRolln=document['fpAnimswapImgFP46'].src;document['fpAnimswapImgFP46'].src=document['fpAnimswapImgFP46'].lowsrc;" onmouseout="document['fpAnimswapImgFP46'].src=document['fpAnimswapImgFP46'].imgRolln" href="process.htm"><img border="0" src="button_process.gif" id="fpAnimswapImgFP46" name="fpAnimswapImgFP46" dynamicanimation="fpAnimswapImgFP46" lowsrc="button_process_glow.gif" alt="Process" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP47'].imgRolln=document['fpAnimswapImgFP47'].src;document['fpAnimswapImgFP47'].src=document['fpAnimswapImgFP47'].lowsrc;" onmouseout="document['fpAnimswapImgFP47'].src=document['fpAnimswapImgFP47'].imgRolln" href="segment.htm"><img border="0" src="button_segments.gif" id="fpAnimswapImgFP47" name="fpAnimswapImgFP47" dynamicanimation="fpAnimswapImgFP47" lowsrc="button_segments_glow.gif" alt="Segments" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP48'].imgRolln=document['fpAnimswapImgFP48'].src;document['fpAnimswapImgFP48'].src=document['fpAnimswapImgFP48'].lowsrc;" onmouseout="document['fpAnimswapImgFP48'].src=document['fpAnimswapImgFP48'].imgRolln" href="roles.htm"><img border="0" src="button_roles.gif" id="fpAnimswapImgFP48" name="fpAnimswapImgFP48" dynamicanimation="fpAnimswapImgFP48" lowsrc="button_roles_glow.gif" alt="Roles" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP49'].imgRolln=document['fpAnimswapImgFP49'].src;document['fpAnimswapImgFP49'].src=document['fpAnimswapImgFP49'].lowsrc;" onmouseout="document['fpAnimswapImgFP49'].src=document['fpAnimswapImgFP49'].imgRolln" href="resources.htm"><img border="0" src="button_resources.gif" id="fpAnimswapImgFP49" name="fpAnimswapImgFP49" dynamicanimation="fpAnimswapImgFP49" lowsrc="button_resources_glow.gif" alt="Resources" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP50'].imgRolln=document['fpAnimswapImgFP50'].src;document['fpAnimswapImgFP50'].src=document['fpAnimswapImgFP50'].lowsrc;" onmouseout="document['fpAnimswapImgFP50'].src=document['fpAnimswapImgFP50'].imgRolln" href="evaluation.htm"><img border="0" src="button_evaluation.gif" id="fpAnimswapImgFP50" name="fpAnimswapImgFP50" dynamicanimation="fpAnimswapImgFP50" lowsrc="button_evaluation_glow.gif" alt="Evaluation" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td><a onmouseover="document['fpAnimswapImgFP51'].imgRolln=document['fpAnimswapImgFP51'].src;document['fpAnimswapImgFP51'].src=document['fpAnimswapImgFP51'].lowsrc;" onmouseout="document['fpAnimswapImgFP51'].src=document['fpAnimswapImgFP51'].imgRolln" href="conclusion.htm"><img border="0" src="button_conclusion.gif" id="fpAnimswapImgFP51" name="fpAnimswapImgFP51" dynamicanimation="fpAnimswapImgFP51" lowsrc="button_conclusion_glow.gif" alt="Conclusion" width="99" height="32"></a></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </table>
+
+</td><td valign="top" width="24"></td><!--msnavigation--><td valign="top">
+<div align="left">
+        <table border="0" cellpadding="0" cellspacing="5" width="100%" height="100%" align="left">
+          <tr> <br>
+            <td valign="top" width="100%" height="112%"><p><b><font face="Arial" size="5">Introducci&oacute;n<br>
+                </font></b><IMG SRC="titlega.jpg" NATURALSIZEFLAG="3" height=276 width=300 ALIGN=left alt="Recursion"><b><font face="Arial" size="4"><br>
+                </font></b></p>
+              <p>El m&eacute;todo de Gauss es utilizado en &aacute;lbegra lineal 
+                para m&uacute;ltiples usos. Lleva el nombre de su inventor. <br>
+                Actualmente una de las aplicaciones para las que m&aacute;s frecuentemente 
+                es usado es para la resoluci&oacute;n de sistemas de ecuaciones. 
+              </p>
+              <p>La metodolog&iacute;a de c&oacute;mo aplicarlo se describe a 
+                continuaci&oacute;n. </p>
+              <blockquote> 
+                <p><br>
+                  <br>
+                </p>
+                <p>&nbsp;</p>
+                <p><br>
+                  <br>
+                  <br>
+                  Cabe mencionar que el M. de Gauss puede resolver sistemas con 
+                  N número de ecuaciones. Sin embargo, para este WebQuest vamos 
+                  a recibir como m&aacute;ximo 3 ecuaciones.</p>
+                <p>Deber&aacute;s incluir opciones para recibir las ecuaciones 
+                  ya sea directo del usuario o a trav&eacute;s de un archivo de 
+                  texto. </p>
+                <p>Para explicar mejor c&oacute;mo funciona el m&eacute;todo se 
+                  van a ilustrar los pasos con un ejemplo. <br>
+                  Tomemos como ejemplo las ecuaciones: </p>
+                <ul>
+                  <blockquote> 
+                    <blockquote> 
+                      <blockquote> 
+                        <ul>
+                          <li>4X + 9Y + 12Z = 0</li>
+                          <li>3X + Y + 5Z = 2</li>
+                          <li>6X + 9Y + 2Z = 1</li>
+                        </ul>
+                      </blockquote>
+                    </blockquote>
+                  </blockquote>
+                </ul>
+                <p>El formato en que deber&aacute;s recibir estas ecuaciones es 
+                  el siguiente:</p>
+                <p><strong>Figura 1</strong>.</p>
+                <div align="center"> 
+                  <p><img src="ejemplo.jpg" width="206" height="89"></p>
+                  <p align="left">Nota que para trabajar con este m&eacute;todo 
+                    s&oacute;lo necesitas los coeficientes de las ecuaciones, 
+                    y por esto es importante el orden de estos, ya que su posici&oacute;n 
+                    indica si se trata de un coeficiente de X, Y o Z. Deber&aacute;s 
+                    de hacer las validaciones para que estos valores los puedas 
+                    recibir del usuario o de un archivo de texto. El formato que 
+                    tenga el archivo de texto se deja completamente a tu consideraci&oacute;n, 
+                    puedes separar cada valor por un espacio, tabulador o lo que 
+                    creas m&aacute;s conveniente. </p>
+                  <p align="left">Casos especiales: Si por ejemplo, la primer 
+                    ecuaci&oacute;n hubiera sido 4X + 9Y = 0 entonces en la posici&oacute;n 
+                    (0,2) de la matriz de la figura 1, en lugar de introducir 
+                    un 12, se hubiera introducido un 0, esta es la forma de representar 
+                    cuando una de las variables no fue inclu&iacute;da en la ecuaci&oacute;n.<br>
+                    De igual manera, si la ecuaci&oacute;n hubiera sido 4X - 9Y 
+                    + 12Z = 0, entonces en la posici&oacute;n (0,1) de la matriz 
+                    de la figura 1, en lugar de haber un 9, ser&iacute;a un -9. 
+                  </p>
+                  <p align="left">Ten siempre presente que estas ecuaciones son 
+                    s&oacute;lo un ejemplo con el &uacute;nico prop&oacute;sito 
+                    de mostrarte el formato. En la pr&aacute;ctica recibir&aacute;s 
+                    ecuaciones con diferentes valores en los coeficientes. </p>
+                  <p align="left">Esta matriz de coeficientes es la base que utilizaremos 
+                    para trabajar con el m&eacute;todo de Gauss.</p>
+                  <p align="left">&nbsp;</p>
+                  <p align="center"><font color="#0000FF" size="+2">M&eacute;todo 
+                    de Gauss.</font></p>
+                </div>
+              </blockquote>
+              <p>Gauss tiene tres operaciones b&aacute;sicas:</p>
+              <blockquote> 
+                <blockquote> 
+                  <blockquote> 
+                    <blockquote> 
+                      <ul>
+                        <li>Multiplicaci&oacute;n de un escalar por un rengl&oacute;n 
+                          de la matriz.</li>
+                        <li>Intercambiar renglones de la matriz.</li>
+                        <li>Sumar a un rengl&oacute;n el m&uacute;ltiplo de otro.</li>
+                      </ul>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <p>Estas operaciones son muy simples y en conjunto te permiten resolver 
+                el sistema.<br>
+                Comenzaremos por ver cada una de estas operaciones de forma individual 
+                para despu&eacute;s ver como combinarlas. <br>
+              </p>
+              <p><em><strong>Multiplicaci&oacute;n de un escalar por un rengl&oacute;n</strong></em></p>
+              <p align="left">El nombre de esta operaci&oacute;n lo dice todo. 
+                De lo que se trata es que dado un valor <strong>X</strong> (entero 
+                o fraccional), y un n&uacute;mero <strong>Y</strong> que sea un 
+                rengl&oacute;n de la matriz; se va a multiplicar el valor <strong>X</strong> 
+                por cada elemento del rengl&oacute;n <strong>Y</strong> de la 
+                matriz.<br>
+                Un ejemplo, si se multiplica el segundo rengl&oacute;n de la matriz 
+                de la figura 1, por 3. El resultado de esto ser&iacute;a:</p>
+              <p align="center"><img src="ejemplo.jpg" width="206" height="89">-------&gt; 
+                <img src="mulren.jpg" width="172" height="62"></p>
+              <p align="left">Nota como el proceso fue el de simplemente multiplicar 
+                cada n&uacute;mero del rengl&oacute;n seleccionado por el n&uacute;mero 
+                3. <br>
+                <font color="#FF0000">Nota importante:</font> Para esta operación, 
+                está prohibido la multiplicación por "0"<em><strong>.</strong></em></p>
+              <p align="left">&nbsp;</p>
+              <p align="left"><em><strong>Intercambiar renglones de la matriz.</strong></em></p>
+              <p>La segunda funci&oacute;n es la m&aacute;s sencilla ya que s&oacute;lo 
+                consiste en intercambiar dos renglones dados de la matriz. <br>
+                Como entrada recibes la matriz y dos n&uacute;meros que representan 
+                los renglones de la matriz que se van a intercambiar. En la matriz 
+                de ejemplo (figura 1), intercambiar los renglones 2 y 3 se reflejar&iacute;a 
+                as&iacute;: 
+              <div align="center"> 
+                <p><img src="exchange.jpg" width="181" height="63" align="center"></p>
+                <p>&nbsp;</p>
+              </div></p>
+              <p><em><strong>Sumar a un rengl&oacute;n el m&uacute;ltiplo de otro.</strong></em></p>
+              <p>Esta operaci&oacute;n se visualiza mejor si comenzamos a estudiarla 
+                s&oacute;lo con dos n&uacute;meros y posteriormente regresamos 
+                a la matriz.<br>
+                Por ejemplo, para esta operaci&oacute;n se te podr&iacute;a pedir 
+                que le sumaras a un n&uacute;mero <strong>A</strong> la mitad 
+                de un valor <strong>B</strong>. Ahora, dados los valores A=3 y 
+                B=4. El resultado de la operaci&oacute;n ser&iacute;a 5. Ya que 
+                A+1/2(B) =&gt; 3 + 1/2(4) = 5.<br>
+                En este ejemplo en particular se especific&oacute; que a <strong>A</strong> 
+                se le sumara la mitad de <strong>B</strong>, sin embargo para 
+                el m&eacute;todo de Gauss la proporci&oacute;n es variable, es 
+                decir, podr&aacute;s necesitar a veces sumar a <strong>A</strong> 
+                dos veces el valor de <strong>B</strong> o sumar a <strong>A</strong> 
+                una tercera parte el valor de <strong>B</strong>, etc. </p>
+              <p>En otras palabras lo que vas a hacer es: <strong>A=A+num*B</strong>.<br>
+                Donde <strong>A</strong>,<strong>B</strong> y <strong>num</strong> 
+                son números flotantes. &quot;num&quot; es el valor que est&aacute; 
+                indicando si se desea sumar la mitad (1/2), el doble(2), la tercera 
+                parte(1/3) o qu&eacute; relaci&oacute;n. </p>
+              <p>Ahora, aplicando esto a la operaci&oacute;n del m&eacute;todo 
+                de Gauss, el procedimiento es el mismo, s&oacute;lo que aplicado 
+                a dos renglones de la matriz. Es decir, a cada n&uacute;mero contenido 
+                en un rengl&oacute;n A se le va a sumar un m&uacute;ltiplo del 
+                n&uacute;mero contenido en la misma posici&oacute;n del rengl&oacute;n 
+                B. </p>
+              <p align="center"> RenglonA(posici&oacute;nX) = RenglonA(posici&oacute;nX) 
+                + Num * RenglonB(posici&oacute;nX) </p>
+              <p>Ejemplo. Para la matriz de la figura 1. Si se necesitara realizar 
+                la suma de la mitad del primer rengl&oacute;n al segundo rengl&oacute;n, 
+                el resultado final ser&iacute;a el siguiente:</p>
+              <p align="center"><img src="sumaren.jpg" width="318" height="61"></p>
+              <p>Para el primer elemento del segundo rengl&oacute;n se sigui&oacute; 
+                la operaci&oacute;n que se describ&iacute;a en el inicio de esta 
+                secci&oacute;n, es decir:</p>
+              <blockquote> 
+                <blockquote> 
+                  <p>3+1/2(4)=5;</p>
+                  <p>1+1/2(9)=5.5;</p>
+                  <p>Y as&iacute; sucesivamente hasta terminar con todos los elementos.</p>
+                  <p>&nbsp;</p>
+                </blockquote>
+              </blockquote>
+              <p><font color="#0000FF" size="+1">&iquest;C&oacute;mo utilizo esto 
+                para resolver un sistema de ecuaciones?</font></p>
+              <blockquote>
+                <p>Lo que nosotros queremos al resolver un sistema de ecuaciones 
+                  es encontrar el valor de las variables, despejar <strong>X</strong>, 
+                  <strong>Y</strong> y <strong>Z</strong> de la ecuaci&oacute;n. 
+                  Recuerda que cada columna tiene los coeficientes que representan 
+                  cada variable, es decir la primera a X, la segunda a Y, y la 
+                  tercera a Z. La &uacute;ltima columna es la de las constantes. 
+                </p>
+                <p>El m&eacute;todo de Gauss lo que propone es hacer uso de sus 
+                  operaciones b&aacute;sicas, aplicarlas a una matriz como la 
+                  de la figura 1. Para llegar a una matriz como la siguiente:</p>
+                <p><strong>Figura 2</strong>.</p>
+                <p align="center"><img src="resEx.jpg" width="169" height="55"></p>
+                <p>Si recuerdas todas las indicaciones que ya se han explicado 
+                  a lo largo de este documento, sabr&aacute;s que la interpretaci&oacute;n 
+                  de esa matriz es:</p>
+                <p align="center">X=8<br>
+                  Y=5<br>
+                  Z=2</p>
+                <p align="center">&nbsp;</p>
+                <p align="left">Con lo cual ya estar&iacute;a resuelto el sistema 
+                  de ecuaciones. Esto es importante porque deber&aacute;s mantener 
+                  en mente cu&aacute;l es el estado final al que deber&aacute; 
+                  de llegar tu matriz.<br> Por supuesto que los valores de 8, 5 y 
+                  2 dados son s&oacute;lo un ejemplo. El verdadero valor que deber&iacute;as 
+                  de obtener al realizar el m&eacute;todo de Gauss sobre la matriz 
+                  de la figura 1, es el siguiente. </p>
+              </blockquote>
+              <p align="center">&nbsp;</p>
+              <p align="center"> <img src="solucion1Ejemplo.jpg" width="398" height="81"></p>
+              <p>&nbsp;</p>
+              <p>Como puedes ver, los valores de la diagonal deben quedar en uno 
+                y el resto en 0, sin incluir a la columna de constantes, es decir, 
+                las operaciones que realizes ser&aacute;n desde la primer columna 
+                hasta la &uacute;ltima - 1.</p>
+              <p>Comenzar&aacute;s el proceso de conversi&oacute;n desde el primer 
+                elemento de la primer columna. Para un valor de 1, deberas multiplicar 
+                el regl&oacute;n en el que te encuentres por el inverso del elemento 
+                a convertir en 1. <br>
+                Por ejemplo, para que el cuatro sea 1, deber&aacute;s multiplicar 
+                todo el rengl&oacute;n por 1/4. De este modo al multiplicar 4 
+                por 1/4, obtendr&aacute;s el 1. </p>
+              <p>Para lograr convertir en cero un elemento usar&aacute;s la operaci&oacute;n 
+                3: Sumar un m&uacute;ltiplo de otro rengl&oacute;n. <br>
+                El valor m&uacute;ltiplo que usar&aacute;s deber&aacute; ser el 
+                mismo que el n&uacute;mero que quieres convertir en 0, pero con 
+                el signo invertido.Y el rengl&oacute;n del cu&aacute;l sacar&aacute;s 
+                su m&uacute;ltiplo ser&aacute; aquel del que ya hayas convertido 
+                a un n&uacute;mero 1 en la misma columna. </p>
+              <p>Por ejemplo, el primer elemento del segundo rengl&oacute;n, el 
+                3. </p>
+              <p>&quot;Tomas como m&uacute;ltiplo el mismo valor pero con signo 
+                invertido&quot;: -3.</p>
+              <p>&quot;Y tomas como rengl&oacute;n aquel en el que haya un 1 en 
+                la misma columna del elemento a convertir en cero&quot;: El 3 
+                est&aacute; en la primer columna.Y ya sabes que en esa columna, 
+                en el primer rengl&oacute;n hab&iacute;a un 4 que fue convertido 
+                a 1, as&iacute; que voy a sumar al rengl&oacute;n 2 el m&uacute;ltiplo 
+                -3 del primer rengl&oacute;n que es donde est&aacute; el 1. </p>
+              <p>De esta forma tendr&aacute;s la siguiente operaci&oacute;n: 3 
+                + (-3)*(1)=0.</p>
+              <p>Y as&iacute; generamos el 0. </p>
+              <p>Esta misma operaci&oacute;n la realizas para los renglones que 
+                sigan hacia abajo y hacia arriba (si es que los tiene), del 1 
+                que hayas convertido. El resultado ser&aacute; que en un recorrido 
+                de la matriz, convertir&aacute;s primero en 1 el valor que est&aacute; 
+                sobre la diagonal y despu&eacute;s en 0's el resto de los valores 
+                de esa misma columna.</p>
+              <p>Recuerda que no puedes multiplicar por 0. </p>
+              <p>Una &uacute;ltima nota. <br>
+                Debes verificar la siguiente condici&oacute;n antes de intentar 
+                convertir en 1: Si el valor que est&aacute; en la diagonal es 
+                0 entonces deber&aacute;s intercambiar ese rengl&oacute;n por 
+                otro en el que en esa posici&oacute;n haya un valor diferente 
+                de 0. Puede ser el de la columna superior o inferior, no existe 
+                una regla para esto. Y ser&aacute; necesario comenzar el proceso 
+                de nuevo desde el principio.</p>
+              <p>Ten presente que vas a detenerte en la &uacute;ltima columna 
+                menos uno. Ya que en la &uacute;ltima columna se &quot;guardan&quot; 
+                de forma impl&iacute;cita los valores finales de X, Y, Z. Como 
+                lo viste en un principio.</p>
+              <p>Recuerda que siempre estar&aacute;s recibiendo una matriz de 
+                3 X 4. Y no olvides que debe funcionar para cualquier valor en 
+                los coeficientes. La matriz introducida como ejemplo dio como 
+                resultado valores fraccionales, as&iacute; que la matriz que manejar&aacute;s 
+                ser&aacute; de valores flotantes.</p>
+              <p>Al final de esta p&aacute;gina encontrar&aacute;s una serie de 
+                im&aacute;genes del proceso de resoluci&oacute;n de la matriz 
+                de la figura 1, paso a paso. </p>
+              <p>&nbsp;</p>
+              <p align="center"><font color="#0000FF" size="+2">Interpretaci&oacute;n 
+                de los resultados.</font></p>
+              <p>Es importante poder interpretar el resultado de este m&eacute;todo. 
+                <br>
+                Para el ejemplo de la figura 1, presentado anteriormente, el resultado 
+                de someterlo al m&eacute;todo de Gauss ser&iacute;a el siguiente:</p>
+              <p><strong>Figura 9</strong>.</p>
+              <p align="center"><img src="solucion1Ejemplo.jpg" width="398" height="81"></p>
+              <p align="left">C&oacute;mo ya se hab&iacute;a mencionado antes, 
+                la matriz contiene los coeficientes de las ecuaciones, teniendo 
+                la primer columna los coeficientes de X, la segunda los de Y, 
+                la tercera los de Z y la &uacute;ltima columna los valores constantes. 
+                <br>
+                <br>
+                Por esto , el significado del primer rengl&oacute;n es X+0Y+0Z=213/296. 
+                Es decir que X=213/296. <br>
+                El segundo rengl&oacute;n: 0X + Y + 0Z = -14/37 <strong><font color="#FF0000">=&gt;</font></strong> 
+                Y= -14/37.<br>
+                El tercer rengl&oacute;n: 0X + 0Y + Z = 13/296 <font color="#FF0000"><strong>=&gt;</strong></font> 
+                Z=13/296.</p>
+              <p align="left">De este modo ya tienes los valores resultantes.</p>
+              <p align="left">No es el caso del sistema de la figura 1, pero puedes 
+                tener casos en los que al terminar el m&eacute;todo te encuentres 
+                con resultados en los que el no obtienes una matriz como la de 
+                la figura 9. Es decir,el valor &quot;1&quot; s&oacute;lo en la 
+                diagonal de la matriz y el resto en ceros. Son principalmente 
+                tres interpretaciones las que pueden tener estos casos. Estos 
+                casos no lo necesitas programar, tu trabajo termina al terminar 
+                el m&eacute;todo de Gauss, pero es importante que sepas que existen 
+                estas posibilidades y que sepas como interpretarlas. </p>
+              <p align="left"><em>Caso 1.</em></p>
+              <p align="center"><img src="ex2.jpg" width="264" height="124"></p>
+              <p align="left">Se interpretar&iacute;a de la siguiente manera: 
+                X + Y = 213/296.<br>
+                Casos como este suceden por la naturaleza tan sencilla del m&eacute;todo. 
+                El m&eacute;todo ha terminado, pero el proceso de soluci&oacute;n 
+                del sistema no ha terminado. Para este ejemplo en particular ser&iacute;a 
+                necesario substituir el valor de <strong>Y</strong> del segundo 
+                rengl&oacute;n para poder obtener el valor de X. </p>
+              <p align="left"><em>Caso 2. </em></p>
+              <p align="center"><img src="caso2.jpg" width="273" height="121"></p>
+              <p align="left">En este caso, el primer rengl&oacute;n, correspondiente 
+                a X, no hay ni siquiera un valor para el coeficiente, esto quiere 
+                decir que hay varias posibles soluciones para este valor.</p>
+              <p align="left"><em>Caso 3.</em></p>
+              <p align="center"><img src="caso3.jpg" width="275" height="119"></p>
+              <p>Este &uacute;ltimo caso es importante ya que indica que el sistema 
+                no tiene soluci&oacute;n. <br>
+                Mira la interpretaci&oacute;n que esto tendr&iacute;a: 0X+0Y+0Z=1 
+                <font color="#FF0000">=&gt;</font> 0=1. No tiene sentido, por 
+                esto se interpreta como que no tiene soluci&oacute;n.</p>
+              <p>&nbsp;</p>
+              <p align="center"><font color="#0000FF" size="+2">Proceso de soluci&oacute;n 
+                de la matriz de la figura 1.</font></p>
+              <p align="center"><font color="#0000FF" size="+2"><img src="proceso-1.jpg" width="207" height="84"></font></p>
+              <p align="center"><font color="#0000FF" size="+2"><img src="proceso0.jpg" width="330" height="607"></font></p>
+              <div align="center"> 
+                <center>
+                  <p><img src="proceso1.jpg" width="332" height="606"></p>
+                  <p><img src="proceso2.jpg" width="328" height="607"></p>
+                </center>
+              </div></td>
+          </tr>
+          <tr>
+            <td valign="top" height="112%"><p>&nbsp;</p>
+              <p>&nbsp;</p></td>
+          </tr>
+        </table>
+      </div>
+&nbsp;
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    
+&nbsp;<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+</td></tr><!--msnavigation--></table></body></html>

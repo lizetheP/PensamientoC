@@ -1,0 +1,19 @@
+                                                   
+printf("   ,,,,,,,,,,,      \n");                            
+printf("   ,.        ,      \n");                            
+printf("   ,.        ,      \n");                            
+printf("   ,.       ####    \n");                            
+printf("   ,.      ######   \n");                           
+printf("   ,.      #HMHM#   \n");                           
+printf("   ,.       #@@#    \n");                           
+printf("   ,.        #      \n");                            
+printf("   ,.        #      \n");                            
+printf("   ,.        #####  \n");                            
+printf("   ,.   ######      \n");                            
+printf("   ,.        #.     \n");                           
+printf("   ,.        ##     \n");                            
+printf("   ,.      ##  #    \n");                            
+printf("   ,.     #     #   \n");                           
+printf("   ,                \n");                            
+printf("   ,,,,,,,,,,,,,,,,,, \n");                          
+printf("   ,################# \n");                             
