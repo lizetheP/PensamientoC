@@ -1478,6 +1478,21 @@
 
 
 
+  .auto-style133 {
+	margin-left: 80px;
+	color: #000000;
+}
+        
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
   <body>
@@ -1786,7 +1801,8 @@
 	 <ul>
 		 <ul>
 			 <li class="auto-style89"><font face="Arial,Helvetica" size="-1">
-			 La función <span class="auto-style76"><strong>llena_lista (lista, 
+			 La función <span class="auto-style76"><strong>
+			 inicializa_lista (lista, 
 			 valor)
 			 </strong></span><span class="auto-style26">que recibe una lista o 
 			 arreglo de números y un valor por default. La función cambia todos 
@@ -1797,7 +1813,7 @@
 	 </ul>
           <font color="#330033" face="Arial,Helvetica">
 	 <p><font face="Arial,Helvetica" size="-1" class="auto-style49">
-	 <span class="auto-style26"><strong>Ejemplo: </strong>llena_lista (lista, 5)</span></font></p>
+	 <span class="auto-style26"><strong>Ejemplo: </strong>linicializa_lista (lista, 5)</span></font></p>
 	 <table class="auto-style96" style="width: 30%">
 		 <tr>
 			 <td class="auto-style91" style="width: 5%"><strong>5</strong></td>
@@ -1871,7 +1887,7 @@
 			 entonces se pedirán tres valores.</span></font></font></p>
 	 <ul class="auto-style99">
 		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Input:</strong> Número de opción (2. llena_lista (lista, valor) )</span></font>
+		 <strong>Input:</strong> Número de opción (2. inicializa_lista (lista, valor) )</span></font>
 		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
 		 <strong>Input: </strong> Tamaño de la lista en crea_lista (tam) </span> </font>
          <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
@@ -2111,16 +2127,22 @@
 		 	 <font color="#330033" face="Arial,Helvetica" size="-1">
 	 	<span class="auto-style26"> 
           <span class="auto-style45">
+	 <class="auto-style53">
+	 <font color="#330033" face="Arial,Helvetica">
+
+		 	 <font color="#330033" face="Arial,Helvetica" size="-1">
+	 <font color="#330033" face="Arial,Helvetica">
+
 	 <ul>
 		 <ul>
-			 <li class="auto-style48"><font size="-1">La función </font>
-	 	</span><font size="-1"><span class="auto-style76"> 
-             <strong>cuenta_pares (lista)</strong></span></font><span class="auto-style26"><font
+			 <li class="auto-style48"><font size="-1">La función 
+			 <span class="auto-style76"> 
+             <strong>suma_impares (lista)</strong></span></font><font
  size="-1" color="#333333" face="Arial,Helvetica"><font
  size="-1" face="Arial,Helvetica" class="auto-style26"><font
  size="-1"><span class="auto-style21"> que recibe un arreglo o lista de números 
-			 enteros. La función regresa cuántos elementos del arreglo son 
-			 pares. Para mandar llamar esta función antes debes usar <strong>
+			 enteros. La función regresa la suma de todos los elementos impares 
+			 de la lista. Para mandar llamar esta función antes debes de usar <strong>
 			 crea_lista </strong>para asegurarte que la lista tiene valores.<font face="Arial,Helvetica" size="-1" color="#330033"> </font></span></font></font></font></li>
 		 </ul>
 	 </ul>
@@ -2135,31 +2157,28 @@
 		  resultado de la función sería:  
           </span>  
           <span class="auto-style124">
-             <strong>2</strong></span></font></p>
+             <strong>24</strong></span></font></p>
 	 <p class="auto-style53">
 	 <font class="auto-style49" color="#330033" face="Arial,Helvetica">
-	 <font face="Arial,Helvetica" size="-1"><strong><span class="auto-style26">
-	 Casos de prueba: 
+	 <font face="Arial,Helvetica" size="-1"><strong><span class="auto-style26">Casos de prueba: 
 	 </span> </strong><span class="auto-style26">Si la lista a crear es de 
 	 tamaño 3, entonces se pedirán tres valores.&nbsp;
 	 </span>
 	 </font></font></p>
 	 <ul class="auto-style99">
 		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Input:</strong> Número de opción (3. cuenta_pares (lista) ) </span> </font>
+		 <strong>Input:</strong> Número de opción (3. suma_impares (lista) ) </span> </font>
 		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Input: </strong> Tamaño a usar en creaLista(tam) </span> </font>
+		 <strong>Input: </strong> Tamaño a usar en creaLista(tam) </span></font>
+		<li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Valor 1 </span></font>
+		  <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Valor 2 </span></font>
 		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Input: </strong> Valor 1 </span> </font>
+		 <strong>Input: </strong> Valor 3 </span></font>
 		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Input: </strong> Valor 2 </span> </font>
-		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Input: </strong> Valor 3 </span> </font>
-		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
-		 <strong>Output: </strong> El número de elementos pares en la lista 
-		 (número entero)</span></font></ul>
+		 <strong>Output: </strong>La suma de todos los elementos impares en la lista (número entero)</span></font></ul>
           <font color="#330033" face="Arial,Helvetica">
-          <span class="auto-style45">
 	
 	 <p>
 	 <table class="auto-style106" style="width: 50%">
@@ -2395,6 +2414,12 @@
 		 </tr>
 	 </table>
 	 </p>
+                                  
+     </font>
+                                  
+     </font>
+	 <font face="Arial,Helvetica" size="-1">
+	 <font color="#330033" face="Arial,Helvetica">
 
 	 <ul>
 		 <ul>
@@ -2402,12 +2427,13 @@
 			 <font face="Arial,Helvetica" size="-1">La función </font>
 			 </span>
 			 <font face="Arial,Helvetica" size="-1"><span class="auto-style76">
-			 <strong>sustituye_lista (lista, x, y)</strong></span>
+			 <strong>modifica_lista (lista, x)</strong></span>
 			 <span class="auto-style26"> 
-			 que recibe una lista o arreglo de números, un valor entero <strong>
-			 x</strong> y un valor entero <strong>y</strong>. La función debe 
-			 sustituir las ocurrencias de <strong>x</strong> en la lista por el 
-			 valor de <strong>y</strong>. Para mandar llamar esta función antes 
+			 que recibe una lista o arreglo de números y un valor entero <strong>
+			 x</strong>. La función debe 
+			 de multiplicar cada localidad de la lista por <strong>x</strong> y 
+			 el resultado de la multiplicación asignarla a su respectiva 
+			 casilla. Para mandar llamar esta función antes 
 			 debes usar <strong>crea_lista</strong> para asegurarte que tienes 
 			 valores en la lista.</span></font></li>
 		 </ul>
@@ -2420,16 +2446,20 @@
 		 <b>Ejemplo: </b>
 	 </font>
 		 </span>
-	 </span></font><font face="Arial,Helvetica" size="-1">
-		  <span class="auto-style26">sustituye_lista (lista, x, y), suponiendo 
-		  que <strong>x = 3</strong>, <strong>y = 7</strong></span></font></p>
-	 <p class="auto-style49"> 
-                               
-          <font color="#330033" face="Arial,Helvetica">
-	 	 <span class="auto-style26"> 
-          <span class="auto-style45">
+	 </span></font></p>
+	 <font face="Arial,Helvetica" size="-1">
+
+	 <p class="auto-style133"> 
           <font face="Arial,Helvetica" size="-1">
-			 <img alt="" height="137" src="../imagenes/image6B3_2.JPG" width="371"></font></span></span></font></p>
+		  Suponiendo que la lista original tiene asignados los siguientes valores:</font></p>
+	 </font>
+	 <p class="auto-style49"> 
+          <img alt="" height="63" src="../imagenes/modifica.JPG" width="350"></p>
+	 <p class="auto-style133"> 
+          Al aplicar la función <strong>modifica_lista(lista, 2)</strong> la lista quedaría con 
+		  los siguientes valores:</p>
+	 <p class="auto-style49"> 
+          <img alt="" height="55" src="../imagenes/imageVPO.JPG" width="367"></p>
 	 <font face="Arial,Helvetica" size="-1">
 	 </font>
 	 <p><font color="#330033" face="Arial,Helvetica" class="auto-style49">
@@ -2437,44 +2467,24 @@
 	 <span class="auto-style26"><strong>Casos de prueba:</strong> Si la lista a 
 	 crear es de tamaño 3, entonces se pedirán tres valores.&nbsp; </span></font></span>
 	 </font></p>
-	 <ul class="auto-style49">
-		 <li><font color="#330033" face="Arial,Helvetica">
-		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Input:</strong> Número de opción (4. 
-		 sustituye_lista (lista) ) </span></font></span></font></li>
-		 <li><font color="#330033" face="Arial,Helvetica">
-		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Input:</strong> Tamaño a usar en 
-		 crea_lista(tam) </span></font></span></font></li>
-		 <li><font color="#330033" face="Arial,Helvetica">
-		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Input: </strong>Valor 1 </span>
-		 </font></span></font></li>
-		 <li><font color="#330033" face="Arial,Helvetica">
-		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Input: </strong>Valor 2 </span>
-		 </font></span></font></li>
-		 <li><font color="#330033" face="Arial,Helvetica">
-		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Input:</strong> Valor 3 </span>
-		 </font></span></font></li>
-          <font color="#330033" face="Arial,Helvetica">
-	 	<span class="auto-style26"> 
-          <span class="auto-style45">
-		 <li><font face="Arial,Helvetica" size="-1">
-		 <strong>Input: </strong>Valor x
-		 </font></li>
-		 <li><font face="Arial,Helvetica" size="-1">
-		 <strong>Input: </strong>Valor y
-		 </font></li>
-		 </span>
-	 	</span>
-	 	</font>
-		 <li><font color="#330033" face="Arial,Helvetica">
-		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Output:</strong> La lista 
-		 modificada. </span></font></span></font></li>
-	 </ul>
+	 </font></font></span>
+	 <font face="Arial,Helvetica" size="-1">
+	 <ul class="auto-style99">
+		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input:</strong> Número de opción (4. modifica_lista (lista) ) </span> </font>
+		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Tamaño a usar en creaLista(tam) </span></font>
+		<li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Valor 1 </span></font>
+		  <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Valor 2 </span></font>
+		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Valor 3 </span></font>
+		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Input: </strong> Valor de x </span></font>
+		 <li><font face="Arial,Helvetica" size="-1"><span class="auto-style26">
+		 <strong>Output: </strong>La lista con los valores modificados.</span></font></ul>
+	 </font></span>
 	 <p>
 	 <table class="auto-style106" style="width: 50%">
 		 <tr>
@@ -2484,7 +2494,6 @@
 	 		<span class="auto-style26"> 
           <span class="auto-style45">
           <font color="#330033" face="Arial,Helvetica" size="-1">
-          <font color="#330033" face="Arial,Helvetica">
           <font face="Arial,Helvetica" class="auto-style124" size="-1">
 			 <class="auto-style43">
 			 <class="auto-style46">
@@ -2494,22 +2503,25 @@
 			 <class="auto-style46">
 			 <class="auto-style46">
 			 <class="auto-style46">
-			 <class="auto-style46">[48, <strong>4</strong>, 7]</font></font></font></span></span></font></p>
+			 <class="auto-style46">[-3, 8, 4, -7]</font></font></span></span></font></p>
 			 <p class="auto-style43"><strong><span class="auto-style104">Input:
 			 </span></strong>4<br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong>3<br class="auto-style104">
+			 </strong>4<br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong><span class="auto-style104">48<font color="#330033" face="Arial,Helvetica"><span class="auto-style26"><span class="auto-style45"><class="auto-style43"><br class="auto-style104">
+			 </strong><span class="auto-style104">
+			 <font color="#330033" face="Arial,Helvetica">
+			 <span class="auto-style26"><span class="auto-style45">
+			 <class="auto-style43">-3<br class="auto-style104">
+<class="auto-style43"><strong>Input: 
+			 </strong>8<br class="auto-style104">
 <class="auto-style43"><strong>Input: 
 			 </strong>4<br class="auto-style104">
-<class="auto-style43"><strong>Input: 
-			 </strong>7<br class="auto-style104">
 			 <class="auto-style43">
 			 <class="auto-style43"> <strong>Input:
-			 </strong>4</span></span></font></span><br class="auto-style104">
+			 </strong>-7</span></span></font></span><br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong>9<br class="auto-style104">
+			 </strong>2<br class="auto-style104">
 			 <class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43"> <strong><span class="auto-style104">Output: </span>
@@ -2522,7 +2534,7 @@
 			 <class="auto-style46">
 			 <class="auto-style46">
 			 <class="auto-style46">
-			 <class="auto-style46">[48, <strong>9</strong>, 7]</p>
+			 <class="auto-style46">[-6, 16, 8, -14]</p>
 			 </td>
 			 <td class="auto-style103">
 		<class="auto-style46">
@@ -2573,7 +2585,7 @@
 <class="auto-style46">
 <class="auto-style46">
 <class="auto-style46">
-<class="auto-style46">[2, -3, <strong>5</strong>, 7, <strong>5</strong>, 9]</font></font><class="auto-style46"></font></span></span></font><class="auto-style46"></p>
+<class="auto-style46">[2, -3, 5, 7, 6]</font></font><class="auto-style46"></font></span></span></font><class="auto-style46"></p>
 			 <p class="auto-style43">
 			 <class="auto-style46">
 			 <class="auto-style43">
@@ -2594,13 +2606,13 @@
 			 <class="auto-style46">
 			 <class="auto-style46">
 			 <class="auto-style46"> <strong>Input: </strong>4<br>
-<class="auto-style43"><strong>Input: </strong>6<br>
+<class="auto-style43"><strong>Input: </strong>5<br>
 <class="auto-style43"><strong>Input: </strong>2<br>
 <class="auto-style43"><strong>Input: </strong>-3<br>
 <class="auto-style43"><strong>Input: </strong>5<br>
 <class="auto-style43"><strong>Input: </strong>7<br>
-<class="auto-style43"><strong>Input: </strong>5<br>
-<class="auto-style43"><strong>Input: </strong>
+<class="auto-style43"><strong>Input: </strong>6<br>
+			 <class="auto-style43">
 			 <class="auto-style46">
 			 <class="auto-style43">
 			 <class="auto-style46">
@@ -2609,9 +2621,10 @@
 			 <class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43">
-			 <class="auto-style43">9<class="auto-style43"><br>
-<class="auto-style43"><strong>Input: </strong>5<br>
-<class="auto-style43"><strong>Input: </strong>
+			 <class="auto-style43">
+			 <class="auto-style43">
+			 <class="auto-style43">
+			 <class="auto-style43"><strong>Input: </strong>
 			 <class="auto-style46">
 			 <class="auto-style43">
 			 <class="auto-style46">
@@ -2620,7 +2633,7 @@
 			 <class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43">
-			 <class="auto-style43">8<br>
+			 <class="auto-style43">3<br>
 			 <class="auto-style43">
 			 <class="auto-style43"> <strong>Output: </strong>
 <class="auto-style43">
@@ -2631,7 +2644,7 @@
 <class="auto-style46">
 <class="auto-style46">
 <class="auto-style46">
-<class="auto-style46">[2, -3, <strong>8</strong>, 7, <strong>8</strong>, 9]</span></span></p>
+<class="auto-style46">[6, -9, 15, 21, 18]</span></span></p>
 			 </td>
 			 <td class="auto-style107">
 		<class="auto-style46">
@@ -2652,7 +2665,7 @@
 		<class="auto-style46">
 			 <span class="auto-style104"> <font color="#330033" face="Arial,Helvetica"><class="auto-style43"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46">
 			 [1, 
-			 <strong>2</strong>, 3, <strong>2</strong>]</font></span></font></span></span></font><class="auto-style46"></p>
+			 2, 3]</font></span></font></span></span></font><class="auto-style46"></p>
 			 <p class="auto-style26">
 			 <class="auto-style46">
 			 <class="auto-style43">
@@ -2661,7 +2674,7 @@
 			 <class="auto-style46"> <strong><span class="auto-style104">Input: </span>
 			 </strong>4<br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong>4<br class="auto-style104">
+			 </strong>3<br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
 			 </strong>1<br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
@@ -2678,11 +2691,11 @@
 			 <class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43">
-			 <class="auto-style43">2<font color="#330033" face="Arial,Helvetica"><span class="auto-style26"><span class="auto-style45"><br class="auto-style104">
-<class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong>2<br class="auto-style104">
-<class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong>
+			 <class="auto-style43"><font color="#330033" face="Arial,Helvetica">
+			 <span class="auto-style26"><span class="auto-style45">5<br class="auto-style104">
+			 </span></span></font>
+			 <class="auto-style43">
+			 <class="auto-style43">
 			 <class="auto-style46">
 			 <class="auto-style43">
 			 <class="auto-style46">
@@ -2691,9 +2704,9 @@
 			 <class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43">
-			 <class="auto-style43">7</span></span></font><br class="auto-style104">
-<class="auto-style43">
-<class="auto-style43"> <span class="auto-style104"> <strong>Output:  
+			 <class="auto-style43">
+			 <class="auto-style43">
+			 <class="auto-style43"> <span class="auto-style104"> <strong>Output:  
           <font color="#330033" face="Arial,Helvetica">
 	 		<span class="auto-style26"> 
           <span class="auto-style45">
@@ -2719,8 +2732,8 @@
 			 <class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43">
-			 <class="auto-style43"> &nbsp;</span></span></font></strong><font color="#330033" face="Arial,Helvetica"><span class="auto-style26"><span class="auto-style45"><class="auto-style43"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46">[1, 
-			 <strong>7</strong>, 3, <strong>7</strong>]</span></span></span></p>
+			 <class="auto-style43"> &nbsp;</span></span></font></strong><font color="#330033" face="Arial,Helvetica"><span class="auto-style26"><span class="auto-style45"><class="auto-style43"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46"><class="auto-style46">[5, 
+			 10, 15]</span></span></span></p>
 			 </td>
 		 </tr>
 	 </table>
@@ -2729,12 +2742,12 @@
           <ul>
 		 	 <ul>
 			 	<li class="auto-style89">La función 
-			 <span class="auto-style76"><strong>suma_multiplos (lista, x) </strong>
+			 <span class="auto-style76"><strong>cuenta_multiplos (lista, x) </strong>
 			 </span><span class="auto-style26">que recibe una lista o arreglo de 
 			 números y un entero <strong>x</strong>. La función deberá regresar 
-			 el resultado de sumar todos los elementos múltiplos de <strong>x</strong> 
-			 contenidos en la lista. Para mandar llamar esta función antes de 
-			 debes de usar
+			 el resultado de contar todos los elementos múltiplos de <strong>x</strong> 
+			 contenidos en la lista. Para mandar llamar esta función antes  
+			 debes usar
 			 <strong>crea_lista </strong>para asegurarte que tienes valores en 
 			 la lista. </span></li>
 		 </ul>
@@ -2748,9 +2761,11 @@
 			 <p class="auto-style49">
 			 <font face="Arial,Helvetica" size="-1"><span class="auto-style26">
 			 Al aplicar la función <b>
-			 suma_multiplos (A, x) </b>y suponiendo que <strong>x </strong>tuviera 
+			 cuenta_multiplos (A, x) </b>y suponiendo que <strong>x </strong>tuviera 
 			 el valor de<strong> 5</strong>. El valor que regresaría la función 
-			 sería: <b>15</b></span>.</font></p>
+			 sería: <b>3</b>, porque los valores negativos no son 
+			 contemplados. NOTA: Solamente cuenta los 
+			 valores positivos.</span></font></p>
 	 <p><font color="#330033" face="Arial,Helvetica" class="auto-style49">
 	 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
 	 <span class="auto-style26"><strong>Casos de prueba: </strong>Si la lista a 
@@ -2760,7 +2775,7 @@
 		 <li><font color="#330033" face="Arial,Helvetica">
 		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
 		 <span class="auto-style26"><strong>Input:</strong> Número de opción (5. 
-		 suma_multiplos (lista, x) ) </span></font></span></font></li>
+		 cuenta_multiplos (lista, x)) </span></font></span></font></li>
 		 <li><font color="#330033" face="Arial,Helvetica">
 		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
 		 <span class="auto-style26"><strong>Input: </strong>Tamaño a usar en 
@@ -2780,13 +2795,13 @@
           <font color="#330033" face="Arial,Helvetica">
 		 <span class="auto-style26"><span class="auto-style45">
 		 <li><font face="Arial,Helvetica" size="-1"><strong>Input: </strong>
-		 Valor x
+		 Valor de x
 			 </font></li>
 		 </span></span></font>
 		 <li><font color="#330033" face="Arial,Helvetica">
 		 <span class="auto-style45"><font face="Arial,Helvetica" size="-1">
-		 <span class="auto-style26"><strong>Output:</strong> La suma de todos 
-		 los elementos múltiplos de <strong>x</strong> contenidos en la lista. </span></font></span></font></li>
+		 <span class="auto-style26"><strong>Output:</strong> El número de 
+		 elementos múltiplos de <strong>x</strong> contenidos en la lista.&nbsp; </span></font></span></font></li>
 	 </ul>
 	 <p>
 	 <table class="auto-style106" style="width: 50%">
@@ -2835,7 +2850,7 @@
 			 <class="auto-style46">
 			 <class="auto-style46">
 			 <class="auto-style46">
-			 <class="auto-style46"><span class="auto-style104">52</span></p>
+			 <class="auto-style46"><span class="auto-style104">2</span></p>
 			 </td>
 			 <td class="auto-style107">
 			 <p class="auto-style43"> 
@@ -2893,7 +2908,7 @@
 			 <class="auto-style46">
 			 <class="auto-style46">
 			 <class="auto-style46">
-			 <class="auto-style46">[10, 4, 15, 3]</font></font><class="auto-style46"></font></span></span></font></p>
+			 <class="auto-style46">[10, -5, 15, 3]</font></font><class="auto-style46"></font></span></span></font></p>
 			 <p class="auto-style43"><span class="auto-style26"><strong>
 			 <span class="auto-style104">Input: </span></strong>
 			 <span class="auto-style104">5</span><br class="auto-style104">
@@ -2901,8 +2916,8 @@
 			 </strong><span class="auto-style104">4</span><br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
 			 </strong><span class="auto-style104">10</span><br class="auto-style104">
-<class="auto-style43"><strong><span class="auto-style104">Input: </span>
-			 </strong><span class="auto-style104">4</span><br class="auto-style104">
+<class="auto-style43"><span class="auto-style104"><strong>Input: 
+			 </strong>-5</span><br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
 			 </strong><span class="auto-style104">15</span></span><font color="#330033" face="Arial,Helvetica"><span class="auto-style26"><span class="auto-style45"><br class="auto-style104">
 <class="auto-style43"><strong><span class="auto-style104">Input: </span>
@@ -2919,7 +2934,7 @@
 			 <class="auto-style46">
 			 <class="auto-style46">
 			 <class="auto-style46">
-			 <class="auto-style46"><span class="auto-style104">25</span></p>
+			 <class="auto-style46"><span class="auto-style104">2</span></p>
 			 <p class="auto-style43">
 			 <class="auto-style43">
 			 <class="auto-style43">
@@ -3005,16 +3020,15 @@
 	 </strong></span></font></br>
 	 <class="auto-style53"><font
  size="-1" face="Arial,Helvetica"><span class="auto-style85"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		  3. Cuenta pares<font color="#330033" face="Arial,Helvetica"><span class="auto-style45"><span class="auto-style51"><font
+		  3. Suma impares<font color="#330033" face="Arial,Helvetica"><span class="auto-style45"><span class="auto-style51"><font
  size="-1" face="Arial,Helvetica"> </font></br>
 	 <class="auto-style53"><font
  size="-1" face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		  4. Sustituye </font></br>
+		  4. Modifica lista </font></br>
 	 <class="auto-style53">
 	 </span><font
  size="-1" face="Arial,Helvetica"><span class="auto-style51">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		  5. Suma múltiplos x</span><span class="auto-style26"><font face="Arial,Helvetica" class="auto-style51"><font face="Arial,Helvetica" class="auto-style45"><class="auto-style53"><font
- size="-1" face="Arial,Helvetica"> </font></br>
+		  5. Cuenta múltiplos</span><span class="auto-style26"><font face="Arial,Helvetica" class="auto-style51"><font face="Arial,Helvetica" class="auto-style45"><class="auto-style53"></br>
 	 <class="auto-style53"><font
  size="-1" face="Arial,Helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
 	 </font>
@@ -3534,13 +3548,14 @@
      <font size="-1">
                                   
 	 <img src="../imagenes/idisco.jpg" height="70" width="70" align="left">
-	 <br><b><font color="#330033" face="Arial,Helvetica">&nbsp;</font></b></font></font></font></font></strong></font></font></span></span></span><span class="auto-style125"><strong>Especificaciones 
+	 <br><b><font color="#330033" face="Arial,Helvetica">&nbsp;</font></b></font></font></font></font></strong></font></font></span></font></font></span><font color="#330033" face="Arial,Helvetica"><font face="Arial,Helvetica" size="-1"><span class="auto-style125"><strong>Especificaciones 
 	 de entrega en Vocareum: <br> </strong></span>
 	 </span>
                                   
      </font>
 	 <class="auto-style48">
-	  	 <class="auto-style49"><font size="-1" face="Arial,Helvetica">
+	  <math.h>
+	 	 <class="auto-style49"><font size="-1" face="Arial,Helvetica">
                                   
       	  <b>
                                   
@@ -3588,9 +3603,9 @@
                                   
      </font></span>
                                   
-		  </font><b><font size="-1" face="Arial,Helvetica">
+		  <b><font size="-1" face="Arial,Helvetica">
 	 <span class="auto-style26"> 
-	 <p class="auto-style72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font size="-1" face="Arial,Helvetica" color="#330033"><span class="auto-style26"><font size="-1" face="Arial,Helvetica"><strong>&nbsp;&nbsp;&nbsp;&nbsp;<img height="460" src="imgB.jpg" width="250"></p>
+	 <p class="auto-style72">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><font size="-1" face="Arial,Helvetica" color="#330033"><span class="auto-style26"><font size="-1" face="Arial,Helvetica"><strong>&nbsp;&nbsp;&nbsp;<img height="460" src="imgB.jpg" width="250"></p>
 	 </strong></font>
 		  </span>
 		  </td>
