@@ -12,7 +12,7 @@ def sumatoria(n):
     i = 1
     acum = 0
     while i <= n:
-        acum = math.sqrt(3/4*i) / (math.sqrt(potencia(i,5)) - potencia(i,2) + 1)
+        acum = acum + math.sqrt(3/4*i) / (math.sqrt(potencia(i,5)) - potencia(i,2) + 1)
         i = i + 1
     return acum
 
