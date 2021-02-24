@@ -60,22 +60,22 @@ def main():
         res = f1(n)
         print(res)
     elif opcion == 2:
-        n = int(input("Introduce n: "))
+        n = int(input())
         res = f2(n)
-        print("El resultado es:", res)
+        print(res)
     elif opcion == 3:
-        n = int(input("Introduce n: "))
+        n = int(input())
         res = f3(n)
-        print("El resultado es:", res)
+        print(res)
     elif opcion == 4:
-        n = int(input("Introduce n: "))
+        n = int(input())
         res = f4(n)
-        print("El resultado es: %.2f" % res)
+        print("%.2f" % res)
     elif opcion == 5:
-        n1 = int(input("Introduce num1: "))
-        n2 = int(input("Introduce num2: "))
+        n1 = int(input())
+        n2 = int(input())
         res = multiplicacion(n1, n2)
-        print("El resultado es:", res)
+        print(res)
     elif opcion == 6:
         print("Adios")
     else:
