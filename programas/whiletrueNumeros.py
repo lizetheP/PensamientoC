@@ -4,7 +4,7 @@ def menu():
     
 def main():    
     continua = True
-    while continua:
+    while continua == True:
         print("\n")
         menu()
         opcion = int (input("Introduce una opcion: "))

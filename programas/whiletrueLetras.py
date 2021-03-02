@@ -1,5 +1,5 @@
 continua = True
-while continua:
+while continua == True:
     print("\nMENU\n")
     print("a) Imprime Mensaje")
     print("s) Salir")
@@ -11,7 +11,8 @@ while continua:
         continua = False
     else:
         print("\nERROR OPCION INVALIDA")
-        continua = False
+        
+
         
         
         
