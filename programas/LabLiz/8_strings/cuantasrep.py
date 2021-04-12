@@ -1,7 +1,7 @@
 def cuantas_repeticiones(cadena, letra):
     cont = 0
     for i in range(0, len(cadena)):
-        if (letra== cadena[i]):       
+        if (letra.upper()== cadena[i].upper()):       
             cont = cont+1
     return cont
 
