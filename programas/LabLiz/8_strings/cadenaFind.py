@@ -1,0 +1,6 @@
+cadena = str(input("Introduce una cadena: "))
+#caracter = str(input("Introduce una letra: "))
+#pos = cadena.find(caracter)
+cadena2 = cadena.replace("hola", "adios")
+print(cadena)
+print(cadena2)
