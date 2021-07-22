@@ -1,0 +1,16 @@
+Acuerdos Pensamiento Computacional para Ingeniería
+* Examenes rápidos, parcial e integrador, son exámenes de desarrollo.
+* Los exámenes rápidos, parcial e integrador, se realizan utilizando RESPONDUS.
+* Examen rápido de for (opcional), podemos dejar ejercicios de preparación para el examen
+  parcial.
+* Hay examen tipo del examen final.
+* Fecha de presentación del proyecto final.
+* No se requiere entrevistar a todos los alumnos para el 
+  proyecto.
+* Ligas para conocer Github Classroom.
+* Examen tipo final.
+* Laboratorios se entregan o no?
+* Tareas se entregan L J los Sábados, M V los Domingos.
+* Fechas de entrega de avances del proyecto Integrador.
+
+
