@@ -12,5 +12,6 @@ Acuerdos Pensamiento Computacional para Ingeniería
 * Laboratorios se entregan o no?
 * Tareas se entregan L J los Sábados, M V los Domingos.
 * Fechas de entrega de avances del proyecto Integrador.
-
+* Asesorías extras.
+* Ejercicios de preparación: Elegir algunos ejercicios
 
