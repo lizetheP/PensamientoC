@@ -1,0 +1,36 @@
+Ejercicios: Estatutos de decisión
+
+Ejercicio 1
+Escribe un programa que pida que se teclee un valor entero e indique si el número es:
+Par positivo
+Impar positivo
+Par negativo
+Impar negativo
+Para este ejercicio considera el valor 0 como par positivo.
+
+While
+--------------
+La funcion pares(a, b) que recibe los valores a y b y muestre todos los números pares que van desde a hasta b incluyendo los límites. Suponer que siempre a < b. Para este ejercicio considera el valor 0 como par.Ejemplo: 
+Si a = -3 y b = 6 
+La función mostrará los valores: -2 0 2 4 6 
+
+La función cuentaSuma( ) que lea del teclado números enteros y los vaya contando y sumando. La función se debe detener cuando la suma de los números leídos sea 1000 o más. Cuando la suma sea 1000 o más, el programa debe mostrar el total de la suma, y la cantidad de números que se sumaron. Ejemplo: 
+Si se teclea 100 50 200 430 250 
+La función mostrará: suma = 1030, cantidad de números = 5 
+
+La función perfecto(n) que recibe un número n y despliegue al mensaje "EL NUMERO ES PERFECTO" o "EL NÚMERO NO ES PERFECTO". Los divisores propios de un número n son aquellos divisores positivos menores que n. Un número entero positivo n se dice que es perfecto si la suma de sus divisores propios es igual a n. Así, 6 es un número perfecto porque sus divisores propios son 1, 2 y 3; y 6 = 1 + 2 + 3. Los siguientes números perfectos son 28, 496 y 8128. Ejemplo: 
+Si n = 6, la función mostrará el mensaje: EL NUMERO ES PERFECTO
+Si n = 5, la función mostrará el mensaje: EL NUMERO NO ES PERFECTO 
+
+For
+-------------------
+Ejercicio 1
+Escribe un programa que lea un número entero positivo n y muestre una lista de números que empieza en 1 e incrementa de uno en uno hasta llegar a n y después decrementa de uno en uno hasta llegar a 1:
+1, 2, ... n, n-1, n-2 ... 1
+
+Por ejemplo:
+
+Si n = 5 el programa debe mostrar:
+1, 2, 3, 4, 5, 4, 3, 2, 1
+
+Nota que los números deben estar separados por una coma y después un espacio. Y nota que después del último número no hay coma.
