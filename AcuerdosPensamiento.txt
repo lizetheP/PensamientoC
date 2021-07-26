@@ -16,5 +16,6 @@ Acuerdos Pensamiento Computacional para Ingeniería
 * Examen rápido Matrices Martes o Viernes
 * Proyectos no usen programación orientada a objetos.
 * Por cada avance no entregado, se bajan 5 puntos.
+* Proyecto debe incluir listas y matrices.
 
 
