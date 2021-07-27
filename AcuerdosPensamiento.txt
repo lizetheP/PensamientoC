@@ -1,21 +1,28 @@
 Acuerdos Pensamiento Computacional para Ingeniería
-* Examenes rápidos, parcial e integrador, son exámenes de desarrollo.
-* Los exámenes rápidos, parcial e integrador, se realizan utilizando RESPONDUS.
-* Examen rápido de for (opcional), podemos dejar ejercicios de preparación para el examen
-  parcial.
-* Hay examen tipo del examen final y del examen parcial.
-* Fecha de presentación del proyecto final.
-* No se requiere entrevistar a todos los alumnos para el 
-  proyecto.
-* Ligas para conocer Github Classroom.
-* Laboratorios se entregan o no?
-* Tareas se entregan L J los Sábados, M V los Domingos.
-* Fechas de entrega de avances del proyecto Integrador.
-* Asesorías extras fuera del horario establecido, cada uno se encarga de asesorar a sus alumnos.
-* Ejercicios de preparación: Elegir algunos ejercicios
-* Examen rápido Matrices Martes o Viernes
-* Proyectos no usen programación orientada a objetos.
-* Por cada avance no entregado, se bajan 5 puntos.
-* Proyecto debe incluir listas y matrices.
-
+*. Examenes rápidos, parcial e integrador, son exámenes de desarrollo.
+*. No pueden utilizar las funciones predefinidas de python, en exámenes de desarrollo. 
+*. Los exámenes rápidos, parcial e integrador, se realizan utilizando RESPONDUS. 
+   Respetar las fechas de exámenes. 
+*. Examen rápido de for (opcional), podemos dejar ejercicios de preparación para el examen
+   parcial.
+*. Hay examen tipo del examen final y del examen parcial.
+*. Fecha de presentación del proyecto final.
+*. No se requiere entrevistar a todos los alumnos para el proyecto.
+*. Ligas para conocer Github Classroom. Uso opcional. 
+*. Laboratorios se entregan o no. Opcional. Puede ser que se les solicite sin previo aviso
+   que suban su laboratorio en Canvas.
+*. Tareas se entregan L J los Sábados, M V los Domingos. Libertad de cátedra.
+*. Fechas de entrega de avances del proyecto Integrador.
+*. Asesorías extras fuera del horario establecido.
+   NOTA IMPORTANTE: Cada uno se encarga de asesorar a sus alumnos.
+*. Ejercicios de preparación: Elegir algunos ejercicios (2 ejercicios)
+*. Examen rápido Matrices Martes o Viernes
+*. Proyectos no usen programación orientada a objetos. 
+   Integrar alguna tecnología de vanguardia, pero no todo el proyecto.
+   Utilizar listas o matrices con el uso del ciclo for y for anidados.
+*. Por cada avance no entregado, se bajan 5 puntos.
+*. Proyecto debe incluir listas o matrices, haciendo uso correcto del for y for anidado.
+   Uso mínimo de librerías.
+*. Aclarar rúbrica de evaluación
+*. No se puede utilizar Thony para el desarrollo de ningún examen.
 
