@@ -5,24 +5,23 @@ Acuerdos Pensamiento Computacional para Ingeniería
    Respetar las fechas de exámenes. 
 *. Examen rápido de for (opcional), podemos dejar ejercicios de preparación para el examen
    parcial.
-*. Hay examen tipo del examen final y del examen parcial.
-*. Fecha de presentación del proyecto final.
+*. Hay examen tipo del examen final, del examen parcial y de los exámenes rápidos.
+*. Fechas de avances del proyecto integrador.
 *. No se requiere entrevistar a todos los alumnos para el proyecto.
 *. Ligas para conocer Github Classroom. Uso opcional. 
 *. Laboratorios se entregan o no. Opcional. Puede ser que se les solicite sin previo aviso
    que suban su laboratorio en Canvas.
 *. Tareas se entregan L J los Sábados, M V los Domingos. Libertad de cátedra.
-*. Fechas de entrega de avances del proyecto Integrador.
 *. Asesorías extras fuera del horario establecido.
    NOTA IMPORTANTE: Cada uno se encarga de asesorar a sus alumnos.
 *. Ejercicios de preparación: Elegir algunos ejercicios (2 ejercicios)
-*. Examen rápido Matrices Martes o Viernes
-*. Proyectos no usen programación orientada a objetos. 
+*. Examenes rápidos pueden ser martes o viernes, dependiendo el avance de los temas.(Ejemplo matrices)
+*. Proyectos integradores no usen programación orientada a objetos. 
    Integrar alguna tecnología de vanguardia, pero no todo el proyecto.
    Utilizar listas o matrices con el uso del ciclo for y for anidados.
 *. Por cada avance no entregado, se bajan 5 puntos.
 *. Proyecto debe incluir listas o matrices, haciendo uso correcto del for y for anidado.
    Uso mínimo de librerías.
-*. Aclarar rúbrica de evaluación
+*. Aclarar rúbrica de evaluación del proyecto integrador.
 *. No se puede utilizar Thony para el desarrollo de ningún examen.
-
+*. Grabar las clases (petición Dir. Depto).
