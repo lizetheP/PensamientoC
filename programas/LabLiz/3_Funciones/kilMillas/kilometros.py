@@ -1,12 +1,12 @@
-def kilometrosMillas(km):
+def kilometros_millas(km):
     return km/1.6
 
-def millasKilometros(millas):
+def millas_kilometros(millas):
     return millas*1.6
 
-def unidadesLongitud():
-    print("1.KilometrosMillas")
-    print("2.MillasKilometros")
+def unidades_longitud():
+    print("1.Kilometros a millas")
+    print("2.Millas a kilometros")
     print("3.Salir")
     
 def main():

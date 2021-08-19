@@ -17,16 +17,16 @@ def identidades():
     print("3.Salir")
     
 def main():
-    identidades()
-    opcion = int(input("Introduce una opcion: "))
+    #identidades()
+    opcion = int(input())
     if opcion == 1:
-        grados = float(input("Introduce los grados: "))
+        grados = float(input())
         resultado = secante_cuadrada(grados)
-        print("secante(%.1f) = %.1f" % (grados,resultado))
+        print("%.1f" % (resultado))
     elif opcion == 2:
-        grados = float(input("Introduce los grados: "))
+        grados = float(input())
         resultado = cotangente(grados)
-        print("cotangente(%.1f) = %.1f" % (grados,resultado))
+        print("%.1f" % (resultado))
     elif opcion == 3:
         print("Adios")
     else:
