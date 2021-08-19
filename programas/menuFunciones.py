@@ -13,6 +13,8 @@ def main():
     elif opcion == 4:
         print("Adios")
     else:
-        print("ERROR OPCION INVALIDA")
+        print("Opcion_invalida")
     
-main()     
+main()
+
+
