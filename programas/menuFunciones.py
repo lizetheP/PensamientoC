@@ -3,7 +3,7 @@ def menu():
     
 def main():
     menu()
-    opcion = int (input("Introduce una opcion: "))
+    opcion = int(input("Introduce una opcion: "))
     if opcion == 1:
         
     elif opcion == 2:
@@ -16,5 +16,7 @@ def main():
         print("Opcion_invalida")
     
 main()
+
+
 
 
