@@ -1,16 +1,16 @@
-def potencia(x, n):
-    cont = 1
-    acum = 1
-    while cont <= n:
-        acum = acum * x
-        cont = cont + 1
-    return acum
+def ciclo2():
+    d = 0
+    r = 13
+    s = r / 2
+    while s > 2 or r % 2 == 0 :
+        d = d + 1
+        r = r - 2
+        s = s - 2
+    print(str(d) + " " + str(r) + " " + str(s))
 
 def main():
-    x = int(input("Dame x: "))
-    n = int(input("Dame n: "))
-    res = potencia(x, n)
-    print("El resultado es: ", res)
-    
+    ciclo2()
+
 main()
+
 
