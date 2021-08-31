@@ -5,7 +5,7 @@ def menu():
     
 def main():
     continua = True
-    while continua:
+    while continua == True:
         menu()
         opcion = int (input("Introduce una opcion: "))
         if opcion == 1:
@@ -15,7 +15,6 @@ def main():
             continua = False
         else:
             print("ERROR OPCION INVALIDA")
-            continua = False
-    
+            
 main()
 
