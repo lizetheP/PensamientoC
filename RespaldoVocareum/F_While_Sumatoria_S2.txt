@@ -1,0 +1,34 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo while  </h3>
+El archivo se debe llamar <strong>while.py</strong>
+
+Utilice un ciclo <strong>while</strong> para construir la función<strong> s1(n)</strong>, que recibe un número entero <strong>n</strong> y regresa el resultado de la siguiente sumatoria: 
+
+<strong>                 <sub>n</sub></strong>
+<strong>s1(n)  =   Σ    2 <sup>i</sup> + 5 </strong>
+<strong>                <sup>i=0</sup></strong>
+
+<strong>Ejemplos:</strong> 
+
+s1(0) = 6
+s1(2) = 22
+s1(3) = 35
+
+En la función <strong> main() </strong>:
+
+1. Pide un número entero.
+2. Llame a la función <strong>s1</strong> con el número dado por el usuario. 
+3. Imprime el resultado de la función.
+
+Casos de prueba: 
+
+Input: Valor del número n.
+Output: El resultado de la función.
+
+>>> 3
+35
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

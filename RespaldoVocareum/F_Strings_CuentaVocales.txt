@@ -1,0 +1,32 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Strings o cadenas  </h3>
+El archivo se debe llamar <strong>cadena.py</strong>
+
+La función <strong>cuenta_vocales(cadena) </strong> que recibe una cadena de texto y despliega el número de a's, e's, i's, o's y u's contenidas en la cadena. Debes contar las vocales sin importar que estén escritas en minúsculas o mayúsculas, por lo que se recomienda utilizar el método upper( ) o lower( ). 
+
+<strong>Ejemplo:</strong> Al llamar a <strong>cuenta_vocales("Hola y ADIOS")</strong> la función desplegaría:
+Vocal a: 2
+Vocal e: 0
+Vocal i: 1
+Vocal o: 2
+Vocal u: 0
+
+En la función <strong> main() </strong>:
+1. Pide una cadena de texto.
+2. Llama a la función <strong>cuenta_vocales</strong> con la cadena de texto. 
+
+Casos de prueba: 
+Input: Cadena de texto
+Output: Número de a's, e's, i's, o's y u's contenidas en la cadena.
+ 
+>>> batman es un MURCIELAGO
+Vocal a: 3
+Vocal e: 2
+Vocal i: 1
+Vocal o: 1
+Vocal u: 2
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

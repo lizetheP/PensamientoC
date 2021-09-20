@@ -1,0 +1,37 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong> posicion_multiplos(matriz, n) </strong> que recibe una matriz de números enteros y un número entero n. La función despliega en pantalla el número del renglón y el número de columna donde se encuentran todos los elementos múltiplos de n contenidos en la matriz. 
+
+<strong>Ejemplo:</strong> Suponiendo que la matriz tiene asignados los siguientes valores:
+
+2  5  6
+3  4  10
+
+Al llamar <strong>posicion_multiplos(matriz, 5)</strong> la función imprimiría:
+ 
+El valor 5 esta en 0, 1
+El valor 10 esta en 1, 2
+
+En la función <strong> main() </strong>:
+1. Declara la siguiente matriz: 
+    matriz = [[3, 5, 8, 4], [7, 9, 1, 5], [12, 1, 2, 10], [2, 5, 7, 8]] 
+2. Pide un número entero.
+3. Llama a la función <strong>posicion_multiplos</strong> con la matriz creada y el número dado por el usuario. 
+
+Casos de prueba: 
+
+Input: Valor del número n.
+Output: El valor, renglón y columna donde se encuentran los números múltiplos de n.
+
+>>> 3
+El valor 3 esta en 0, 0 
+El valor 9 esta en 1, 1 
+El valor 12 esta en 2, 0
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

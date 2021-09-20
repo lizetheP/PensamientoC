@@ -1,0 +1,34 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo while  </h3>
+El archivo se debe llamar <strong>while.py</strong>
+
+Utilice un ciclo <strong>while</strong> para construir la función <strong>potencia(x, n)</strong>, que recibe dos números enteros positivos: x y n. La función deberá calcular utilizando solamente multiplicaciones la potencia de un número <strong>x</strong> a la <strong>n</strong> y regresar el resultado. 
+
+<strong>Ejemplos:</strong> 
+
+potencia (2, 5) = 32
+potencia (4, 0) = 1
+potencia (9, 3) = 729
+potencia (3, 1) = 3
+
+En la función <strong> main() </strong>:
+
+1. Pide el número a elevar (entero).
+2. Pide el número al que será elevado el número (entero).
+3. Llame a la función <strong>potencia</strong> con los dos números dados por el usuario. 
+4. Imprime el resultado de la función.
+
+Casos de prueba: 
+
+Input: Número a elevar.
+Input: Potencia a la que será elevado el número.
+Output: Número elevado a la potencia.
+
+>>> 2
+>>> 5
+32
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

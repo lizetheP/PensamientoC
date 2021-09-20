@@ -1,0 +1,39 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong>crea_matriz (renglones, columnas)</strong> que recibe el número de renglones (listas a crear) y el número de columnas (número de elementos) de cada lista o arreglo. La función deberá pedir los valores para llenar la matriz siguiendo el orden que se muestra en el ejemplo y al final devolver la matriz creada.
+
+<strong>Casos de prueba: </strong>Si la lista anidada es de 3 renglones x 2 columnas, entonces se pedirán 6 valores. 
+
+Input: 3
+Input: 2
+Input: 0
+Input: 1
+Input: 2
+Input: 3
+Input: 4
+Input: 5
+Output: [[0, 1], [2, 3], [4, 5]]
+
+La función <strong>suma_renglon</strong> que recibe una matriz y el <strong>renglon</strong> a sumar. La función deberá regresar la suma de todos los elementos del renglón de la matriz.
+
+<strong>Ejemplo:</strong> Suponiendo que la matriz tiene los siguientes valores, al llamar <strong>suma_renglon(matriz, 2)</strong> la función regresaría: <strong>6</strong>
+
+2  5  6
+3  4  8
+<strong>1  2  3</strong>
+
+En la función <strong> main() </strong>:
+
+1. Pide el número de <strong>renglones</strong>.
+2. Pide el número de <strong>columnas</strong>. 
+3. Llama a la función <strong>crea_matriz</strong> con  el número de <strong>renglones</strong> y <strong>columnas</strong> solicitados.
+4. Pide el <strong>renglon</strong> de la matriz a sumar.
+5. Llama a la función <strong>suma_renglon</strong> con la matriz creada en la función anterior y el número de <strong>renglón</strong>. 
+6. Imprime el resultado de la función <strong>suma_renglon</strong>.
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

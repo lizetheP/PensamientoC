@@ -1,0 +1,31 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong>promedio_multiplos(matriz, n)</strong> que recibe una matriz y un número n. La función deberá calcular el promedio de todos los valores múltiplos de n.
+
+<strong>Ejemplo:</strong> Suponiendo que la matriz tiene los siguientes valores:
+
+2  5  <strong>3</strong>  4
+<strong>9</strong>  4  5  <strong>6</strong>
+
+Al llamar <strong>promedio_multiplos(matriz, 3)</strong> la función regresaría: 6.0
+
+En la función <strong> main() </strong>:
+1. Declara la siguiente matriz: 
+    matriz = [[3, 5, 8, 4],[7, 9, 1, 5],[12, 1, 2, 10],[2, 6, 7, 8]] 
+2. Pide un número.
+4. Llama a la función <strong>promedio_multiplos</strong> con la matriz y el número.
+5. Imprime el resultado de la función <strong>(número con un decimal)</strong>.
+
+Casos de prueba: 
+Input: Valor del número n.
+Output: El promedio de los valores múltiplos de n.
+
+>>> 4
+8.0
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

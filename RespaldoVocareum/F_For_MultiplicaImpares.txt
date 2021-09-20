@@ -1,0 +1,30 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo for </h3>
+El archivo se debe llamar <strong>for.py</strong>
+
+Utilice un ciclo <strong>for</strong> para construir la función <strong>multiplica_impares(n)</strong>, que recibe un número entero <strong>n</strong> y regresa el resultado de la multiplicación de los primeros <strong>n</strong> números impares.
+
+<strong>Ejemplos:</strong> 
+
+multiplica_impares(1) = 1 = 1
+multiplica_impares(3) = 1 * 3 * 5 = 15
+multiplica_impares(4) = 1 * 3 * 5 * 7 = 105
+
+En la función <strong> main() </strong>:
+
+1. Pide un número entero positivo.
+2. Llame a la función <strong>multiplica_impares</strong> con el número dado por el usuario. 
+3. Imprime el resultado de la función.
+
+Casos de prueba: 
+
+Input: Valor del número n.
+Output: El cálculo de la multiplicación de los primeros n números impares.
+
+>>> 4
+105
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

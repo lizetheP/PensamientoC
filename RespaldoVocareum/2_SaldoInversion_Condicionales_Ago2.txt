@@ -1,0 +1,25 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Saldo en inversión  </h3>
+Despliegue el mensaje apropiado respecto al status del cliente con base al monto de inversión. El usuario introduce el monto de la inversión y el programa responde con un mensaje según la siguiente tabla:  
+
+<strong>Saldo en inversión:                     Estatus del cliente </strong>
+Más de $1000,000:                               Excelente_cliente 
+Más de $100,000 y hasta $1000,000:      	Buen_cliente
+Más de $2000 y hasta $100,000:             	Cliente_promedio
+De $0 y hasta $2000:                            Cliente_saldo_insuficiente
+Menos de $0:                                    Y_tu_dinero
+
+Entradas:
+El monto del saldo en inversión (entero).
+
+Salidas:
+El mensaje con el estatus del cliente.
+
+Ejemplo de ejecución del programa:
+>>>2000000
+Excelente_cliente
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>saldo.py</strong>
+</div>

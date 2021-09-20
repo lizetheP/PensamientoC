@@ -1,0 +1,35 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong>multiplica_columna(matriz, columna, num)</strong> que recibe una matriz y dos números: columna y num. La función deberá multiplicar toda la columna de la matriz por el valor de num.
+
+<strong>Ejemplo:</strong> Suponiendo que la matriz tiene los siguientes valores:
+2  5  3  4
+3  4  5  1
+
+Al llamar <strong>multiplica_columna(matriz, 2, 3)</strong> los nuevos valores en la matriz deberán ser:
+  2   5   <strong>9</strong>   4
+  3   4  <strong>15</strong>   1
+
+En la función <strong> main() </strong>:
+1. Declara la siguiente matriz: 
+    matriz = [[3, 5, 8, 4], [7, 9, 1, 5], [12, 1, 2, 10]] 
+2. Pide el número de columna.
+3. Pide el número por el que se van a multiplicar todos los valores de la columna.
+4. Llama a la función <strong>multiplica_columna</strong> con la matriz creada, el número de columna y el número. 
+5. Imprime la matriz modificada.
+
+Casos de prueba: 
+Input: Valor de la columna.
+Input: Valor del número.
+Output: La matriz modificada.
+
+>>> 1
+>>> 2
+[[3, <strong>10</strong>, 8, 4], [7, <strong>18</strong>, 1, 5], [12, <strong>2</strong>, 2, 10]]
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

@@ -1,0 +1,19 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Nombre del problema  </h3>
+Descripción del problema
+
+Entradas:
+Especificar los datos de entrada indicando el tipo de dato y el orden en el que se teclean.
+
+Salidas:
+Especificar el/los datos de salida y el orden en el que se teclean
+
+Ejemplo de ejecución del programa:
+>>>1
+>>>2
+3
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>nombre_programa.py</strong>
+</div>

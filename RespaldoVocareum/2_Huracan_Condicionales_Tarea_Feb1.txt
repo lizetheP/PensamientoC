@@ -1,0 +1,19 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> huracan.py </h3>
+Descripción del problema
+Utilice el estatuto de control if anidado, para que dada la velocidad del viento de un huracán, despliegue la categoría y el tipo de daños que el huracán provoca.
+
+Entradas:
+La velocidad expresada en mph (entero).
+
+Salidas:
+Un mensaje con la categoría y daños provocados.
+
+Ejemplo de ejecución del programa:
+>>>95
+Categoría 1 y daños mínimos
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>huracan.py</strong>
+</div>

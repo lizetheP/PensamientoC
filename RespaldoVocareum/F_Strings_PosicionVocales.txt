@@ -1,0 +1,25 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Strings o cadenas  </h3>
+El archivo se debe llamar <strong>cadena.py</strong>
+
+La función <strong>posicion_vocales(cadena) </strong> que recibe una cadena de texto. La función despliega las posiciones donde se encuentran las vocales en la cadena de texto. Debes mostrar la posición de las vocales sin importar que estén escritas en minúsculas o mayúsculas, por lo que se recomienda utilizar el método upper( ) o lower( ). Emplea el modificador <strong>end=" " </strong>en el print para evitar que cada print salte de línea.
+
+<strong>Ejemplo:</strong>
+Al llamar a <strong>posicion_vocales("Hola y ADIOS")</strong> la función imprimiría:
+1 3 7 9 10
+
+En la función <strong> main() </strong>:
+1. Pide una cadena de texto.
+2. Llama a la función <strong>posicion_vocales</strong> con la cadena de texto. 
+
+Casos de prueba: 
+Input: Cadena de texto
+Output: Las posiciones donde se encuentran las vocales en la cadena de texto.
+
+>>> Suerte en tu EXAMEN
+1  2  5  7  11  13  15  17
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

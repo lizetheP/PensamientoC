@@ -1,0 +1,30 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong>posicion_x(matriz, x)</strong> que recibe una matriz de números enteros y un número x. La función despliega en pantalla el número del renglón y el número de la columna donde se encuentra el número x. 
+
+Input: El valor del número x.
+Output: El valor, renglón y columna donde se encuentra el número x
+
+En la función <strong> main() </strong>:
+1. Declara la siguiente matriz: 
+    matriz = [[2, 5, 9], [7, 9, 2], [4, 3, 2]] 
+2. Pide un número.
+2. Llama a la función <strong> posicion_x </strong> con la matriz creada y el valor del número dado por el usuario. 
+
+Casos de prueba: 
+
+Input: El valor de un número.
+Output: El valor, renglón y columna donde se encuentra el número dado por el usuario.
+
+>>2
+El valor 2 esta en 0, 0
+El valor 2 esta en 1, 2
+El valor 2 esta en 2, 2
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

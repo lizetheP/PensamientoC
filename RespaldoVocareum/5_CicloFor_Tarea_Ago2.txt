@@ -1,0 +1,107 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo For  </h3>
+Implementa las siguientes funciones, recuerda que las funciones se definen antes de la codificación del script principal. 
+
+El archivo se debe llamar <strong>for.py</strong>
+
+La función <strong> f1(n) </strong> que recibe un valor entero mayor o igual a uno y utilizando un ciclo for regresa el resultado de la siguiente sumatoria:                    
+
+Casos de prueba: 
+Input: Número de opción (1. Sumatoria) 
+Input: Valor de n (número entero) 
+Output: Resultado de la sumatoria (número real con un decimal) 
+
+>>> 1
+>>> 2
+7.5 
+
+La función <strong> f2(n) </strong> que recibe un valor entero mayor o igual a uno y utilizando un ciclo for regresa el resultado de la siguiente multiplicatoria:    
+
+Casos de prueba: 
+Input: Número de opción (2. Multiplicatoria) 
+Input: Valor de n (número entero) 
+Output: Resultado de la multiplicatoria (número real con dos decimales) 
+
+>>> 2
+>>> 2
+.67 
+
+La función <strong> f3(n) </strong> que recibe un valor entero mayor o igual a uno y utilizando un ciclo for regresa el resultado de la siguiente serie:        
+          f3 ( n ) = 2 - 3 + 4 - 5 + 6 - ... n             
+
+Casos de prueba: 
+Input: Número de opción (3. Serie alterna) 
+Input: Valor de n (entero) 
+Output: Resultado de la sumatoria (entero) 
+
+>>> 3
+>>> 1
+2 
+
+La función <strong> incremento(LI, LS, INC) </strong> que recibe tres parámetros reales: el limite inferior de la serie LI, el límite superior de la serie LS y el incremento INC. Los tres parámetros deben ser positivos. Y utilizando un ciclo for, la función deberá desplegar en pantalla la secuencia de números desde LI hasta el LS en incrementos de INC.          . 
+
+Casos de prueba: 
+Input: Número de opción (4. Incremento) 
+Input: Valor del límite inferior (número entero) 
+Input: Valor del límite superior (número entero) 
+Input: Valor del incremento (número entero)  
+Output: Secuencia de números desde el límite inferior hasta el límite superior (números enteros) 
+
+>>> 4
+>>> 3
+>>> 15
+>>> 2
+3
+5
+7
+9
+11
+13
+15 
+
+La funcion <strong> impares(a, b) </strong> que recibe los valores a y b y muestre todos los números impares que van desde a hasta b incluyendo los límites. Suponer que siempre a < b. 
+
+Casos de prueba: 
+Input: Número de opción (5. Impares) 
+Input: Valor del límite inferior (número entero) 
+Input: Valor del límite superior (número entero) 
+Output: Secuencia de números impares desde el límite inferior hasta el límite superior (números enteros) 
+
+>>> 5
+>>> -3
+>>> 6
+-3
+-1
+ 1
+ 3
+ 5
+
+La función <strong> menu() </strong> que despliegue el siguiente menú en pantalla: 
+
+1. Sumatoria 
+2. Multiplicatoria
+3. Serie alterna 
+4. Incremento
+5. Impares
+6. Salir
+
+Casos de prueba:
+Input: Número de opción (6. Salir)
+Output: Mensaje "Adios" 
+
+>>> 6
+Adios
+
+Casos de prueba:
+Input: Número de opción (Opción inválida)
+Output: Mensaje "Opcion_invalida" 
+
+>>> -5
+Opcion_invalida
+
+La función <strong> main() </strong> que utilice la función menu para desplegar el menú correspondiente y de acuerdo a la opción seleccionada por el usuario le dé la oportunidad de ejecutar cualquiera de las funciones que han sido construidas. Utiliza el estatuto de control if anidado. Recuerda que la captura de datos debe ser realizada en la sección del main.  En el script principal manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+
+El archivo se debe llamar <strong> for.py </strong>
+</div>

@@ -1,0 +1,26 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Lado_triangulo </h3>
+Descripción del problema:
+Solicite al usuario el valor asignado de los lados A y C de un triángulo rectángulo y calcule el valor resultante del lado B. Para la solución de este problema se sugiere que utilices el teorema de Pitágoras. El cálculo de la raíz cuadrada se puede realizar utilizando la función math.sqrt() perteneciente a la libreria math (import math).
+
+Entradas:
+ladoA (un número real)
+ladoC (un número real)
+
+Salidas:
+ladoB (un número real)
+
+Ejemplo de ejecución del programa:
+>>>2
+>>>4
+3.46
+
+otro ejemplo:
+>>> 3.5
+>>> 6.2
+5.12
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>lado_triangulo.py</strong>
+</div>

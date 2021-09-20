@@ -1,0 +1,32 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo for </h3>
+El archivo se debe llamar <strong>for.py</strong>
+
+Utilice un ciclo <strong>for</strong> para construir la función<strong> tabla_de_multiplicar(x)</strong>, que recibe un número entero <strong>x</strong>. La función deberá mostrar la tabla de multiplicar del número <strong>x</strong> hasta el número 10.
+
+En la función <strong> main() </strong>:
+
+1. Pide un número entero.
+2. Llame a la función <strong>tabla_de_multiplicar</strong> con el número dado por el usuario. 
+
+Casos de prueba: 
+
+Input: Valor del número.
+Output: La tabla de multiplicar de número hasta el 10.
+
+>>> 5
+1 x 5 = 5
+2 x 5 = 10
+3 x 5 = 15
+4 x 5 = 20
+5 x 5 = 25
+6 x 5 = 30
+7 x 5 = 35
+8 x 5 = 40
+9 x 5 = 45
+10 x 5 = 50
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

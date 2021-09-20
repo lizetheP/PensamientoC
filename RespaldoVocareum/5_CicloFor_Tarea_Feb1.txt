@@ -1,0 +1,130 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo For  </h3>
+Implementa las siguientes funciones, recuerda que las funciones se definen antes de la codificación del script principal. 
+
+El archivo se debe llamar <strong>for.py</strong>
+
+La función <strong> f1(n) </strong> que recibe un valor entero mayor o igual a uno y utilizando un ciclo for regresa el resultado de la siguiente sumatoria:
+
+Ejemplos:
+f1 ( 2 ) =  20  +  21  +  22  = 7
+f1 ( 3 ) =  20  +  21  +  22  +  23  = 15   
+
+Casos de prueba:
+Input: Número de opción (1. Sumatoria)
+Input: Valor de n (número entero)
+Output: Resultado de la sumatoria (número entero)
+
+>>> 1
+>>> 2
+7
+
+La función <strong> f2 (n) </strong> que recibe un valor entero mayor o igual a uno y utilizando un ciclo for regresa el resultado de la siguiente multiplicatoria:
+
+Ejemplos:
+f2 ( 2 ) = ( 3(1) - 1 ) * ( 3(2) - 1 ) = 10
+f2 ( 4 ) = ( 3(1) - 1 ) * ( 3(2) - 1 ) * ( 3(3) - 1 ) * ( 3(4) - 1 ) = 880
+
+Casos de prueba:
+Input: Número de opción (2. Multiplicatoria)
+Input: Valor de n (número entero)
+Output: Resultado de la multiplicatoria (número entero)
+
+>>> 2
+>>> 2
+10
+
+La función <strong> f3 (n) </strong> que recibe un valor entero mayor o igual a uno y utilizando un ciclo for regresa el resultado de la siguiente serie:
+
+f3 ( n ) = 1 - 2 + 3 - 4 + 5 - ... n
+
+Ejemplos:
+f3 ( 1 ) = 1
+f3 ( 2 ) = 1 - 2 = -1
+f3 ( 3 ) = 1 - 2 + 3 = 2
+f3 ( 4 ) = 1 - 2 + 3 -4 = -2
+
+Casos de prueba:
+Input: Número de opción (3. Serie alterna)
+Input: Valor de n (entero)
+Output: Resultado de la sumatoria (entero)
+
+>>> 3
+>>> 1
+1
+
+La función <strong> decremento (ls, li, dec) </strong> que recibe tres parámetros reales: el limite superior de la serie ls, el límite inferior de la serie li y el decremento dec. Los tres parámetros deben ser positivos. Utilizando un ciclo for, la función deberá desplegar en pantalla la secuencia de números desde ls hasta el li en decrementos de dec.
+
+Ejemplos:
+decremento ( 15, 3, 2 ) mostrará los valores: 15  13  11  9  7  5   3
+decremento ( 26, 5, 4 ) mostrará los valores: 26  22  18  14  10  6 
+
+Casos de prueba:
+Input: Número de opción (4. Decremento)
+Input: Valor del límite superior (número entero)
+Input: Valor del límite inferior (número entero)
+Input: Valor del decremento (número entero)  
+Output: Secuencia de números desde el límite superior hasta el límite inferior (números enteros)
+
+>>> 4
+>>> 15
+>>> 3
+>>> 2
+15
+13
+11
+9
+7
+5
+3
+
+La funcion <strong> pares (a, b) </strong> que recibe los valores a y b y muestre todos los números pares que van desde a hasta b incluyendo los límites. Suponer que siempre a < b.
+
+Ejemplos:
+pares ( -3, 6 ) mostrará los valores: -2 0 2 4 6
+pares ( -2, 7 ) mostrará los valores: -2 0 2 4 6
+
+Casos de prueba:
+Input: Número de opción (5. Pares)
+Input: Valor del límite inferior (número entero)
+Input: Valor del límite superior (número entero)
+Output: Secuencia de números impares desde el límite inferior hasta el límite superior (números enteros)
+
+>>> 5
+>>> -3
+>>> 6
+-2
+0
+2
+4
+6
+
+La función <strong> menu () </strong> que despliegue el siguiente menú en pantalla: .
+
+            1. Sumatoria
+            2. Multiplicatoria
+            3. Serie alterna
+            4. Decremento
+            5. Pares
+            6. Salir
+
+Casos de prueba:
+Input: Número de opción (6. Salir)
+Output: Mensaje "Adios"
+
+>>> 6
+Adios
+
+Casos de prueba:
+Input: Número de opción (Opción inválida)
+Output: Mensaje "Opcion_invalida"
+
+Input: -5
+Output: Opcion_invalida
+	
+La función <strong> main() </strong> que utilice la función menu para desplegar el menú correspondiente y de acuerdo a la opción seleccionada por el usuario le dé la oportunidad de ejecutar cualquiera de las funciones que han sido construidas. Utiliza el estatuto de control if anidado. Recuerda que la captura de datos debe ser realizada en la sección del main.  En el script principal manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+
+El archivo se debe llamar <strong> for.py </strong>
+</div>

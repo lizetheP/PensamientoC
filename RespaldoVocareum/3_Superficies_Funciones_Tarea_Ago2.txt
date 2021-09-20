@@ -1,0 +1,72 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Superficies de figuras  </h3>
+
+El archivo se debe llamar <strong> superficies.py</strong>
+
+Construye las funciones para calcular la superficie de cada una de las siguientes figuras:
+
+La función <strong> sector(radio, angulo) </strong> que recibe el radio y el ángulo (reales o con punto decimal). 
+
+Casos de prueba:
+Input: Número de opción (1. Sector) (entero)
+Input: Valor del radio (real)
+Input: Valor del angulo (real)
+Output: Superficie de la figura (real con dos decimales) 
+>>> 1
+>>> 5.0
+>>> 45.0
+9.82 
+
+La función <strong> eclipse(a, b) </strong>que recibe los radios a y b (reales o con punto decimal).   
+
+Casos de prueba:
+Input: Número de opción (2. Eclipse) (entero)
+Input: Valor del radio a (real)
+Input: Valor del radio b (real)
+Output: Superficie de la figura (real con dos decimales) 
+
+>>> 2
+>>> 5
+>>> 2 
+31.42 
+
+La función <strong> paralelogramo(a, h) </strong>que recibe la longitud a y la altura h (reales o con punto decimal).   
+
+Casos de prueba:
+Input: Número de opción (3. Paralelogramo) (entero)
+Input: Valor del lado a (real)
+Input: Valor de la altura h (real)
+Output: Superficie de la figura (real con dos decimales)
+
+>>> 3
+>>> 7.2
+>>> 4.6 
+33.12 
+
+La función <strong> superficies() </strong> que despliegue el siguiente menú en pantalla:
+1. Sector 
+2. Eclipse 
+3. Paralelogramo
+4. Salir
+
+
+Casos de prueba:
+Input: Número de opción (4. Salir) (entero)
+Output: Mensaje "Adios" 
+
+>>> 4
+Adios
+
+Casos de prueba:
+Input: Número de opción (Opción inválida) (entero)
+Output: Mensaje "Opcion_invalida" 
+
+>>> -3
+Opcion_invalida
+
+La función <strong> main() </strong> que utilice la función superficies y de acuerdo a la opción seleccionada por el usuario mande llamar a la función correspondiente para calcular la superficie elegida. Utiliza el estatuto de control if. Recuerda que la captura de datos debe ser realizada en la sección del main. Valida opciones incorrectas. En el script principal manda llamar a la función main.
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong> superficies.py</strong>
+</div>

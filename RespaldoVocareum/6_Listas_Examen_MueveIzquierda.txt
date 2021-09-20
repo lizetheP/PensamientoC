@@ -1,0 +1,65 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Listas  </h3>
+
+El archivo se debe llamar <strong>lista.py</strong>
+
+La función <strong> crea_lista(tam) </strong> que recibe el tamaño de la lista a crear. La función deberá pedir un valor numérico al usuario para cada casilla de la lista y al final devolver la lista creada.  
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán 3 valores.
+
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: La lista creada con los valores dados por el usuario 
+
+>>> 3
+>>> 48
+>>> 4
+>>> 7
+[48, 4, 7]
+
+La función <strong> mueve_izquierda(lista) </strong> que recibe una lista o arreglo de números. La función deberá mover los valores de cada localidad de la lista a la siguiente localidad a la izquierda y el primer valor se debe pasar a la última localidad. Para mandar llamar esta función antes de debes de usar <strong>crea_lista</strong> para asegurarte que tienes valores en la lista. NOTA: No es posible utilizar funciones como insert, append o pop en la solución de este problema.
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán 3 valores.
+
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: La lista de valores recorridos a la izquierda
+
+>>> 4
+>>> 5
+>>> 6
+>>> 7
+>>> 11
+[6, 7, 11, 5]
+
+La función <strong> main() </strong> que:
+1. Pide el tamaño de la lista y llama a la función <strong> crea_lista</strong>. Imprime la lista creada.
+2. Llama a la función <strong> mueve_izquierda </strong> con la lista creada en la función anterior. Imprime la lista modificada. Suponer que el usuario introduce un tamaño de la lista mayor a cero. 
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán 3 valores.
+
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: La lista creada con los valores dados por el usuario
+Output: La lista de valores recorridos a la izquierda
+
+>>> 4
+>>> 5
+>>> 6
+>>> 7
+>>> 11
+[5, 6, 7, 11]
+[6, 7, 11, 5]
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong> 
+
+El archivo se debe llamar <strong> lista.py</strong>
+</div>

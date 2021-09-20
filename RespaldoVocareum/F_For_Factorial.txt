@@ -1,0 +1,30 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Ciclo for </h3>
+El archivo se debe llamar <strong>for.py</strong>
+
+Utilice un ciclo <strong>for</strong> para construir la función<strong> factorial(n)</strong>, que recibe un número entero <strong>n</strong> y regresa el factorial del número. 
+
+<strong>Ejemplos:</strong> 
+
+factorial ( 1 ) = 1 = 1
+factorial ( 4 ) = 1 * 2 * 3 * 4 = 24
+factorial ( 5 ) = 1 * 2 * 3 * 4 * 5 = 120
+
+En la función <strong> main() </strong>:
+
+1. Pide un número entero positivo.
+2. Llame a la función <strong>factorial</strong> con el número dado por el usuario. 
+3. Imprime el resultado de la función.
+
+Casos de prueba: 
+
+Input: Valor del número.
+Output: El factorial del número.
+
+>>> 5
+120
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

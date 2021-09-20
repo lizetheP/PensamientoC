@@ -1,0 +1,34 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Listas  </h3>
+El archivo se debe llamar <strong>lista.py</strong>
+
+La función <strong>crea_lista(tam)</strong> que recibe el tamaño de la lista a crear. La función deberá pedir un valor numérico para cada casilla de la lista y al final devolver la lista creada.  
+
+La función <strong>esta_ordenado(lista)</strong> que recibe una lista de números. La función deberá regresar <strong>True</strong> si la lista está ordenada de menor a mayor. Si no es así, devuelve <strong>False</strong>. 
+
+<strong>Ejemplos: </strong>
+* Si la lista es: [1, 2, 4, <strong>9</strong>, <strong>7</strong>, 13] la función regresará <strong>False</strong>.
+* Si la lista es: [1, 4, 5, 8] la función regresará <strong>True</strong>.
+
+En la función <strong> main() </strong>:
+1. Pide el tamaño de la lista y llama a la función <strong>crea_lista</strong>. 
+2. Llama a la función <strong>esta_ordenado</strong> con la lista creada. 
+3. Imprime el resultado de esta función. 
+
+Casos de prueba: Si la lista es de tamaño 3, se pedirían 3 valores.
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: <strong>True</strong> si la lista está ordenada de menor a mayor, <strong>False</strong> de lo contrario.
+
+>>> 3
+>>> 2
+>>> 7
+>>> 5
+False
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong> 
+</div>

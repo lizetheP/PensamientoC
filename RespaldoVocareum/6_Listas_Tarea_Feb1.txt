@@ -1,0 +1,123 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Listas  </h3>
+
+El archivo se debe llamar <strong>listas.py</strong>
+
+La función <strong> crea_lista(tam) </strong> que recibe el tamaño de la lista a crear.La función deberá pedir un valor numérico al usuario para cada casilla de la lista y al final devolver la lista creada.  
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán 3 valores.
+
+Input: Número de opción (1. crea_lista(tam)) 
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: La lista creada con los valores dados por el usuario 
+
+>>> 1
+>>> 3
+>>> 48
+>>> 4
+>>> 7
+[48, 4, 7]
+
+La función  <strong> inicializa_lista (lista, valor)  </strong> que recibe una lista o arreglo de números y un valor por default. La función cambia todos los valores de la lista por el valor default. Para mandar llamar esta función antes debes usar crea_lista para asegurarte que tienes valores que cambiar. 
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán tres valores.
+
+Input: Número de opción (2. inicializa_lista (lista, valor) ) 
+Input: Tamaño de la lista en crea_lista (tam) 
+Input: Valor 1 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor default 
+Output: La lista modificada con el valor default 
+
+[48, 4, 7, 13]
+>>> 2
+>>> 4
+>>> 48
+>>> 4
+>>> 7
+>>> 13
+>>> 2
+[2, 2, 2, 2]
+
+La función <strong> suma_impares (lista) </strong> que recibe un arreglo o lista de números enteros. La función regresa la suma de todos los elementos impares de la lista. Para mandar llamar esta función antes debes de usar crea_lista para asegurarte que la lista tiene valores. 
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán tres valores.  
+
+Input: Número de opción (3. suma_impares (lista) ) 
+Input: Tamaño a usar en creaLista(tam) 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: La suma de todos los elementos impares en la lista (número entero)
+
+[48, 4, 7]
+>>> 3
+>>> 3
+>>> 48
+>>> 4
+>>> 7
+7
+
+La función <strong> modifica_lista (lista, x) </strong> que recibe una lista o arreglo de números y un valor entero x. La función debe de multiplicar cada localidad de la lista por x y el resultado de la multiplicación asignarla a su respectiva casilla. Para mandar llamar esta función antes debes usar crea_lista para asegurarte que tienes valores en la lista.
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán tres valores. 
+ 
+Input: Número de opción (4. modifica_lista (lista) ) 
+Input: Tamaño a usar en creaLista(tam) 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Input: Valor de x 
+Output: La lista con los valores modificados.
+
+[-3, 8, 4, -7]
+>>> 4
+>>> 4
+>>> -3
+>>> 8
+>>> 4
+>>> -7
+>>> 2
+[-6, 16, 8, -14]
+
+La función <strong> cuenta_multiplos (lista, x) </strong> que recibe una lista o arreglo de números y un entero x. La función deberá regresar el resultado de contar todos los elementos múltiplos de x contenidos en la lista. NOTA: Los valores negativos no son contemplados. Para mandar llamar esta función antes debes usar crea_lista para asegurarte que tienes valores en la lista. 
+
+Casos de prueba: Si la lista a crear es de tamaño 3, entonces se pedirán tres valores.  
+
+Input: Número de opción (5. cuenta_multiplos (lista, x)) 
+Input: Tamaño a usar en creaLista(tam) 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Input: Valor de x 
+Output: El número de elementos múltiplos de x contenidos en la lista. 
+
+ [48, 4, -6]
+>>> 5
+>>> 3
+>>> 48
+>>> 4
+>>> -6
+>>> 2
+2
+
+La función <strong> menu </strong> que imprima el siguiente menú en pantalla:                         
+1. Crea lista
+2. Inicializa lista 
+3. Suma impares 
+4. Modifica lista
+5. Cuenta múltiplos 
+6. Salir
+
+La función <strong> main() </strong> que utilice la función menu para desplegar el menú y de acuerdo a la opción seleccionada por el usuario le dé la oportunidad de ejecutar cualquiera de las funciones que han sido construidas. Utiliza el estatuto de control if anidado. Recuerda que la captura de datos debe ser realizada en la sección del main. 
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong> listas.py</strong>
+</div>

@@ -1,0 +1,180 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong> crea_matriz(renglones, columnas) </strong> que recibe el número de renglones (listas a crear) y el número de columnas (número de elementos) de cada lista o arreglo. La función deberá pedir los valores para llenar la matriz siguiendo el orden que se muestra en el ejemplo y al final devolver la matriz creada. 
+
+Casos de prueba: Si la matriz es de 3 renglones x 2 columnas, entonces se pedirán 6 valores.  
+
+Input: Número de opción (1. crea_matriz(renglones, columnas))
+Input: Número de renglones o listas a crear
+Input: Número de columnas o número de elementos de cada lista
+Input: Valor en [0, 0] es 0
+Input: Valor en [0, 1] es 1
+Input: Valor en [1, 0] es 2
+Input: Valor en [1, 1] es 3
+Input: Valor en [2, 0] es 4
+Input: Valor en [2, 1] es 5
+Output: La lista anidada creada con los valores 
+
+>>> 1
+>>> 3
+>>> 2
+>>> 0
+>>> 1
+>>> 2
+>>> 3
+>>> 4
+>>> 5
+[[0, 1], [2, 3], [4, 5]] 
+
+La función <strong> imprime_matriz(matriz) </strong> que recibe una matriz de números enteros. La función despliega en pantalla el contenido de la matriz. Para mandar llamar esta función antes de debes de usar <strong> crea_matriz </strong> para asegurarte que la matriz tiene valores. NOTA: Les sugiero imprimir la matriz de enteros utilizando el siguiente formato: <strong> print("%2i" % m[i][j], end= ' ')</strong>, ya que esto les permitirá tener 2 espacios a la derecha para desplegar alineados los números enteros. 
+
+Casos de prueba: Si la matriz es de 2 renglones x 2 columnas, entonces se pedirán 4 valores.
+
+Input: Número de opción (2. imprime_matriz(matriz))
+Input: Número de renglones o listas a crear
+Input: Número de columnas o número de elementos de cada lista
+Input: Valor en [0, 0] es 10
+Input: Valor en [0, 1] es 11
+Input: Valor en [1, 0] es 2
+Input: Valor en [1, 1] es 3
+Output: 
+10  11
+  2   3
+
+>>> 2
+>>> 2
+>>> 2
+>>> 10
+>>> 11
+>>> 2
+>>> 3
+10  11
+  2   3
+
+La función <strong> promedio_matriz(matriz) </strong> que recibe una matriz de números enteros. La función regresará el promedio de todos los elementos de la matriz. Para mandar llamar esta función antes de debes de usar <strong> crea_matriz </strong> para asegurarte que la matriz tiene valores. 
+
+Casos de prueba: Si la matriz es de 2 renglones x 2 columnas, entonces se pedirán 4 valores.
+
+Input: Número de opción (3. promedio_matriz(matriz))
+Input: Número de renglones o listas a crear
+Input: Número de columnas o número de elementos de cada lista
+Input: Valor en [0, 0] es 10
+Input: Valor en [0, 1] es 11
+Input: Valor en [1, 0] es 2
+Input: Valor en [1, 1] es 3
+Output: El promedio de los valores de la matriz (número real con un decimal)
+
+>>> 3
+>>> 2
+>>> 2
+>>> 10
+>>> 11
+>>> 2
+>>> 3
+6.5 
+
+La función <strong> mayor_matriz(matriz) </strong> que recibe una matriz de números enteros. La función regresará el mayor elemento contenido en la matriz. Para mandar llamar esta función antes de debes de usar <strong> crea_matriz </strong> para asegurarte que la matriz tiene valores. 
+
+Casos de prueba: Si la matriz es de 2 renglones x 2 columnas, entonces se pedirán 4 valores.
+
+Input: Número de opción (4. mayor_matriz(matriz))
+Input: Número de renglones o listas a crear
+Input: Número de columnas o número de elementos de cada lista
+Input: Valor en [0, 0] es 10
+Input: Valor en [0, 1] es 11
+Input: Valor en [1, 0] es 2
+Input: Valor en [1, 1] es 3
+Output: El número mayor de la matriz
+
+>>> 4
+>>> 2
+>>> 2
+>>> 10
+>>> 11
+>>> 2
+>>> 3
+11 
+
+La función <strong> posicion_pares(matriz) </strong> que recibe una matriz de números enteros. La función despliega en pantalla el número del renglón y el número de la columna donde se encuentran los elementos pares de la matriz. Para mandar llamar esta función antes de debes de usar <strong> crea_matriz </strong> para asegurarte que la matriz tiene valores. 
+
+Casos de prueba: Si la matriz es de 2 renglones x 2 columnas, entonces se pedirán 4 valores. 
+
+Input: Número de opción (5. posicion_pares(matriz))
+Input: Número de renglones o listas a crear
+Input: Número de columnas o número de elementos de cada lista
+Input: Valor en [0, 0] es 10
+Input: Valor en [0, 1] es 11
+Input: Valor en [1, 0] es 2
+Input: Valor en [1, 1] es 8
+Output: El valor, renglón y columna donde se encuentran los elementos pares en la matriz
+
+>>> 5
+>>> 2
+>>> 2
+>>> 10
+>>> 11
+>>> 2
+>>> 8
+El valor 10 esta en 0, 0 
+El valor 2 esta en 1, 0 
+El valor 8 esta en 1, 1 
+
+La función <strong> suma_diagonal(matriz) </strong> que recibe una matriz de números enteros y regresa la suma todos los elementos en la diagonal que empieza en 0, columnas-1 y termina renglones-1,0. Para mandar llamar esta función antes de debes de usar <strong> crea_matriz </strong> para asegurarte que la matriz tiene valores.                   
+
+Casos de prueba: Si la matriz es de 2 renglones x 2 columnas, entonces se pedirán 4 valores.
+
+Input: Número de opción (6. suma_diagonal(matriz))
+Input: Número de renglones o listas a crear
+Input: Número de columnas o número de elementos de cada lista
+Input: Valor en [0, 0] es 10
+Input: Valor en [0, 1] es 11
+Input: Valor en [1, 0] es 2
+Input: Valor en [1, 1] es 3
+Output: La suma de  todos los valores en la diagonal 
+
+>>> 6
+>>> 2
+>>> 2
+>>> 10
+>>> 11
+>>> 2
+>>> 3
+13 
+
+La función <strong> menu() </strong> que imprima el siguiente menú en pantalla: 
+
+1. Crea matriz  
+2. Imprime matriz 
+3. Promedio matriz  
+4. Mayor matriz
+5. Posición pares 
+6. Suma diagonal 
+7. Salir
+
+Casos de prueba:
+
+Input: Número de opción (7. Salir)
+Output: Mensaje "Adios" 
+
+>>> 7
+Adios
+
+Casos de prueba:
+
+Input: Número de opción (Opción inválida)
+Output: Mensaje "Opcion_invalida" 
+
+>>> -5
+Opcion_invalida
+
+La función <strong> main() </strong> que utilice la función <strong> menu </strong> para desplegar el menú y de acuerdo a la opción seleccionada por el usuario le dé la oportunidad de ejecutar cualquiera de las funciones que han sido construidas. Utiliza el estatuto de control if anidado. Recuerda que la captura de datos debe ser realizada en la sección del main. 
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+
+El archivo se debe llamar <strong> matriz.py</strong>
+</div>

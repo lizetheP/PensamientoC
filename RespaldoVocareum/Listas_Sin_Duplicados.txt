@@ -1,0 +1,27 @@
+<div style="font-family:verdana; font-size:10px">
+<h3>Sin duplicados</h3>
+Escribe un programa que reciba del usuario una lista y devuelva otra con los elementos de la lista original, pero sin elementos duplicados. 
+
+Entradas
+Se recibe un número entero positivo correspondiente al número de elementos que el usuario ingresará.
+Se reciben uno a uno y por renglón, los elementos de la lista (strings y de acuerdo al número recibido anteriormente).
+
+Salidas
+Si el valor correspondiente al número de elementos que tendrá la lista es 0 o negativo se deberá mandar el mensaje “Error”. Si el valor recibido es mayor a 0, se despliega la lista original (después de haber recibido los datos). Posteriormente se despliega la lista pero sin duplicados.
+
+Ejemplos de ejecución del programa
+>>> 4
+>>> Pedro
+>>> Gerardo
+>>> Hugo
+>>> Pedro
+['Pedro', 'Gerardo', 'Hugo', 'Pedro']
+['Pedro', 'Gerardo', 'Hugo']
+
+>>> 0
+"Error"
+
+NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los datos y la salida debe coincidir exactamente con el formato y/o tipo de dato que se te pide como salida.
+
+El programa deberá llamarse <b>sin_duplicados.py</b>
+</div>

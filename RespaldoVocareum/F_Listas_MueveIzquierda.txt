@@ -1,0 +1,34 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Listas  </h3>
+El archivo se debe llamar <strong>lista.py</strong>
+
+La función <strong>crea_lista(tam)</strong> que recibe el tamaño de la lista a crear. La función deberá pedir un valor numérico para cada casilla de la lista y al final devolver la lista creada.  
+
+La función <strong>mueve_izquierda(lista)</strong> que recibe una lista de números. La función deberá mover los valores de cada localidad de la lista a la siguiente localidad a la izquierda y el primer valor se debe pasar a la última localidad. <strong> NOTA: </strong> No es posible utilizar los métodos <strong>insert</strong>, <strong>append</strong>, <strong>remove</strong> o <strong>pop</strong> en esta función.
+
+Ejemplo: Si la función <strong>mueve_izquierda</strong> recibe la lista: <strong>[5, 6, 7, 11]</strong>, la lista se modificaría así: <strong>[6, 7, 11, 5]</strong>
+
+En la función <strong> main() </strong>:
+1. Pide el tamaño de la lista y llama a la función <strong>crea_lista</strong>. 
+2. Imprime la lista que devuelve la función <strong>crea_lista</strong>.
+3. Llama a la función <strong> mueve_izquierda </strong> con la lista creada. 
+4. Imprime la lista modificada. 
+
+Casos de prueba: Si la lista es de tamaño 3, se pedirían 3 valores.
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Output: La lista creada con los valores dados por el usuario
+Output: La lista de valores recorridos a la izquierda
+>>> 3
+>>> 7
+>>> 3
+>>> 5
+[7, 3, 5]
+[3, 5, 7]
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong> 
+</div>

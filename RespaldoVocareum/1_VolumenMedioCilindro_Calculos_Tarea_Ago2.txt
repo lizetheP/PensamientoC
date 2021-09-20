@@ -1,0 +1,22 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Volúmen medio cilindro </h3>
+Descripción del problema:
+Determinar el volumen de un medio cilindro. El radio (r) y la altura (h) son solicitadas al usuario. Utiliza la constante math.pi de la librería math. Guarda tu archivo como:
+
+Entradas:
+radio (un número real)
+altura (un número real)
+
+Salidas:
+volumen (un número real)
+
+Ejemplo de ejecución del programa:
+>>>5
+>>>9
+353.429
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>volumen_medio.py</strong>
+</div>
+

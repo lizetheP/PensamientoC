@@ -1,0 +1,33 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong> suma_n(matriz, n) </strong> que recibe una matriz y un número entero n. La función devuelve la suma de todos los elementos en la matriz que sean igual a n. 
+
+Ejemplo: Suponiendo que la matriz tiene asignados los siguientes valores:
+
+<strong>2</strong>  5  6
+3  <strong>2</strong>  5
+
+Al llamar <strong>suma_n(matriz, 2)</strong> la función regresaría: 4.
+
+En la función <strong> main() </strong>:
+1. Declara la siguiente matriz: 
+    matriz = [[2, 5, 9], [7, 9, 2], [4, 3, 2]] 
+2. Pide un número.
+3. Llama a la función <strong> suma_n </strong> con la matriz creada y el número solicitado al usuario.
+4. Despliega el resultado de la función suma_n.
+
+Casos de prueba:
+
+Input: Valor de un número
+Output: La suma de todos los valores en la matriz que sean igual a n. 
+
+>>> 9
+18
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong>NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong> 
+</div>

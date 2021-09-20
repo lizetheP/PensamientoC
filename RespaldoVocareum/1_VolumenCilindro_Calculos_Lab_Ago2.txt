@@ -1,0 +1,23 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Volúmen de un cilíndro recto de sección oblicua  </h3>
+Descripción del problema
+Calcule el volúmen (v) de un cilíndro recto de sección oblicua. Los valores dados por el usuario son el radio (r) y las alturas (h1 y h2) del cilíndro. El resultado obtenido (volumen) debe ser desplegado en la pantalla. Utiliza la constante math.pi de la librería math. 
+
+Entradas:
+El radio (r) de tipo real.
+La altura 1 (h1) de tipo real.
+La altura 2 (h2) de tipo real.
+
+Salidas:
+El volumen del cilindro
+
+Ejemplo de ejecución del programa:
+>>>5
+>>>2
+>>>3
+196.35
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>volumen_cilindro.py</strong>
+</div>

@@ -1,0 +1,29 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong> modifica_diagonal(matriz, n) </strong> que recibe una matriz de números enteros y un número n. La función deberá modificar la diagonal de la matriz con el valor del número n. 
+
+Input: El valor de un número.
+Output: La matriz modificada en la diagonal con el valor del número.
+
+En la función <strong> main() </strong>:
+1. Declara la siguiente matriz: 
+    matriz = [[3, 5, 8], [7, 9, 1], [4, 3, 2]] 
+2. Pide el número con el que se va a sustituir la diagonal.
+3. Llama a la función <strong> modifica_diagonal </strong> con la matriz creada y el valor del número dado por el usuario. 
+4. Imprime la matriz modificada. 
+
+Casos de prueba:
+
+Input: El valor de un número.
+Output: La matriz modificada en la diagonal con el valor dado por el usuario.
+
+>>6
+[[<strong>6</strong>, 5, 8], [7, <strong>6</strong>, 1], [4, 3, <strong>6</strong>]] 
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

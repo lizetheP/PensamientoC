@@ -1,0 +1,27 @@
+<div style="font-family:verdana; font-size:10px">
+<h3>Contar pares o impares en una lista simple</h3>
+Desarrolla el programa que determine el total de valores pares e impares de una lista de números enteros que recibirá en su entrada. Los valores los captura el usuario uno por uno, se van almacenando en una lista y posteriormente se analizará la lista para determinar cuantos valores pares e impares posee. Consideramos al 0 como par.
+
+Entrada
+Cero o más valores enteros, uno en cada renglón. Finaliza la captura con un *
+
+Salida
+Se despliega el número de pares e impares que tiene la lista con el siguiente formato: PARES=3 ó IMPARES=2, cada uno en un renglón. Es decir, la palabra PARES seguido de un = y luego un número que representa el número de pares en la lista, posteriormente la palabra IMPARES, seguido de un = y luego el número que representa el número de impares que hay en la lista. Cada mensaje en un renglón y en ese orden.
+
+Ejemplo de ejecución del programa
+>>> 6
+>>> 0
+>>> 1
+>>> 2
+>>> *
+PARES=3
+IMPARES=1
+
+>>> *
+PARES=0
+IMPARES=0
+
+NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los datos y la salida debe coincidir exactamente con el formato y/o tipo de dato que se te pide como salida.
+
+El nombre del programa de ser <b>pares_impares.py</b>
+</div>

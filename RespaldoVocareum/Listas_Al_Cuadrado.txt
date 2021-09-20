@@ -1,0 +1,30 @@
+<div style="font-family:verdana; font-size:10px">
+<h3>Lista al cuadrado</h3>
+Escribe un programa que reciba del usuario un número entero que representa la cantidad de números que va a ingresar. El programa deberá recibir esa cantidad de números enteros, los colocará en una lista y la desplegará a pantalla. Posteriormente deberá construir una nueva lista, con el cuadrado de cada uno de los elementos de la lista del usuario. 
+
+Entradas
+Un número entero que representa la cantidad de números enteros que quiere ingresar.
+Números enteros, uno en cada línea y de acuerdo a la cantidad anterior.
+
+Salida
+Se imprime la lista con los números ingresados por el usuario.
+Se imprime la lista creada con los números del usuario al cuadrado
+
+Ejemplos de ejecución del programa
+>>> 5
+>>> 2
+>>> 4
+>>> 5
+>>> 8
+>>> 10
+[2, 4, 5, 8, 10]
+[4, 16, 25, 64, 100]
+
+>>> 0  ---- o algún negativo
+[ ]
+[ ]
+
+NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los datos y la salida debe coincidir exactamente con el formato y/o tipo de dato que se te pide como salida.
+
+El programa deberá llamarse <b>lista_cuadrados.py </b>
+</div>

@@ -1,0 +1,20 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Tiempo  </h3>
+Convierta un tiempo expresado en segundos al formato de horas, minutos y segundos. Considera que el valor del tiempo en segundos es proporcionado por el usuario. Solicite un tiempo en segundos y calcule la cantidad de horas, minutos y segundos. Despliegue los resultados en pantalla. Variables utilizadas: tiempo, horas, minutos, segundos y residuo. 
+
+Entradas:
+El tiempo expresado en segundos.
+
+Salidas:
+La cantidad expresada en horas, minutos y segundos.
+
+Ejemplo de ejecución del programa:
+>>>8243
+2
+17
+23
+
+NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. 
+
+El archivo se debe llamar <strong>tiempo.py</strong>
+</div>

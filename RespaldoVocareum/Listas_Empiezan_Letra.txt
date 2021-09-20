@@ -1,0 +1,22 @@
+<div style="font-family:verdana; font-size:10px">
+<h3>Cuántas empiezan con...</h3>
+Escribe un programa determine cuantas palabras de una lista empiezan con una determinada letra.
+
+Entrada
+5 palabras y una letra, en ese orden y cada una en un renglón.
+
+Salida
+Un número entero que represente la cantidad de palabras que empiezan con la letra ingresada. Debe contabilizar sin importar si la palabra está en mayúsculas o minúsculas.
+
+Ejemplo de ejecución del programa
+>>> Hola
+>>> Mundo
+>>> hermoso
+>>> Estamos
+>>> listos
+>>> h
+2
+
+NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los datos y la salida debe coincidir exactamente con el formato y/o tipo de dato que se te pide como salida.
+
+El archivo se deberá llamar: <b>empiezan_con.py</b>

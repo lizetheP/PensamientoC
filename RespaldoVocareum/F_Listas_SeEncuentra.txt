@@ -1,0 +1,41 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Listas  </h3>
+El archivo se debe llamar <strong>lista.py</strong>
+
+La función <strong>crea_lista(tam)</strong> que recibe el tamaño de la lista a crear. La función deberá pedir un valor numérico para cada casilla de la lista y al final devolver la lista creada.  
+
+La función <strong>se_encuentra(lista, x)</strong> que recibe una lista de números y un número entero <strong>x</strong>. La función deberá regresar <strong>True</strong> si el número existe en la lista o <strong>False</strong> en caso de que no exista ese número en la lista. 
+<strong>NOTAS:</strong>: 
+* El método <strong>find</strong> no funciona con listas. 
+* No se puede hacer uso del método <strong>count</strong>.
+* No se puede hacer uso de la palabra clave <strong> in </strong>, a menos que sea usada en el for para recorrer la lista.
+
+<strong>Ejemplos: </strong>
+* Si la lista es: [1, 2, 4, 9, 7, 13] y x = 6, la función regresará <strong>False</strong>.
+* Si la lista es: [1, 4, 5, 8] y x = 4, la función regresará <strong>True</strong>.
+
+En la función <strong> main() </strong>:
+1. Pide el tamaño de la lista y llama a la función <strong>crea_lista</strong>.
+2. Pide un número entero. 
+2. Llama a la función <strong>se_encuentra</strong> con la lista creada y el número. 
+3. Imprime el resultado de esta función. 
+
+<strong>Casos de prueba:</strong> Si la lista es de tamaño 3, se pedirían 3 valores.
+Input: Tamaño de la lista 
+Input: Valor 1 
+Input: Valor 2 
+Input: Valor 3 
+Input: Número entero a buscar en la lista.
+Output: <strong>True</strong> si el número se encuentra o <strong>False</strong> de lo contrario.
+
+>>> 3
+>>> 2
+>>> 7
+>>> 5
+>>> 4
+False
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong> 
+</div>

@@ -1,0 +1,37 @@
+<div style="font-family:verdana; font-size:10px">
+<h3>Sublistas de pares e impares</h3>
+Desarrolla un programa que permitirá obtener a partir de una lista que recibirá del usuario, crear y desplegar una sublista con valores pares y otra sublista con valores impares. 
+
+Entrada
+Cero o más valores enteros, uno en cada renglón. Finaliza la captura con un *
+
+Salida
+Se muestra la salida que deberá mostrar tu programa, tal como se ilustra a continuación:
+PARES
+[2, 4, 8]
+IMPARES
+[1, 5]
+(Es decir, la palabra PARES en mayúscula en un renglón y posteriormente el despliegue la lista de pares y de manera similar los impares, tal como se muestra en el ejemplo) Respeta el orden.
+
+Ejemplos de ejecución del programa
+>>> 2
+>>> 4
+>>> 1
+>>> 8
+>>> 5
+>>> *
+PARES
+[2, 4, 8]
+IMPARES
+[1, 5]
+
+>>> *
+PARES
+[]
+IMPARES
+[]
+
+NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los datos y la salida debe coincidir exactamente con el formato y/o tipo de dato que se te pide como salida.
+
+El nombre del programa de ser <b>sublistas.py</b>
+</div>

@@ -1,0 +1,36 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Strings o cadenas  </h3>
+
+El archivo se debe llamar <strong>cadena.py</strong>
+
+La función <strong>posicion_caracter(cadena, letra) </strong> que recibe una cadena de texto y una letra. La función despliega las posiciones donde se encuentra la letra en la cadena de texto. Debes mostrar la posición de la letra sin importar que esté escrita en minúscula o mayúscula, por lo que se recomienda utilizar el método upper( ) o lower( ). 
+
+<strong>Ejemplo:</strong>
+
+Al llamar a <strong>posicion_caracter("Hola y ADIOS", 'o')</strong> la función imprimiría:
+1
+10
+
+En la función <strong> main() </strong>:
+1. Pide una cadena de texto.
+2. Pide una letra.
+3. Llama a la función <strong>posicion_caracter</strong> con la cadena y la letra solicitados al usuario. 
+
+Casos de prueba: 
+
+Input: Cadena de texto
+Input: Letra
+Output: Las posiciones donde se encuentra la letra en la cadena de texto.
+
+>>> Suerte en tu EXAMEN
+>>> e
+2
+5
+7
+13
+17
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>

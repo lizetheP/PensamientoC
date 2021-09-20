@@ -1,0 +1,105 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Strings o cadenas de texto  </h3>
+
+El archivo se debe llamar <strong>cadenas.py</strong>
+
+La función <strong>cuenta_ocurrencias(cadena, letra)</strong>  que recibe dos cadenas: la primera contiene una palabra y la segunda contiene el caracter a buscar. La función <strong>regresa</strong> el número de veces que el caracter es encontrado en la cadena. Como te puedes dar cuenta, debes de contar el caracter sin importar que esté escrito en minúscula o mayúscula, por lo que se recomienda utilizar los métodos upper( ) o lower( ).  
+
+Casos de prueba: 
+
+Input: Número de opción (1. cuenta_ocurrencias(cadena, caracter)) 
+Input: Cadena de texto para buscar caracter. 
+Input: Caracter a buscar en la cadena. 
+Output: Número de veces que se encuentra el caracter en la cadena. 
+
+>>> 1
+>>> Hola! /* Mundo%@
+>>> o
+2 
+
+La función <strong>reemplaza_letra (cadena, letra1, letra2)</strong> que recibe tres cadenas: la primera contiene una cadena, la segunda es la letra1 a buscar y la tercera es la letra2 que va a reemplazar a la letra1. La función <strong>regresa</strong> la cadena modificada.  
+
+Casos de prueba:
+
+Input: Número de opción (2. reemplaza_letra (cadena, letra1, letra2) )
+Input: Cadena de texto.
+Input: Caracter a buscar en la cadena (letra1).
+Input: Caracter (letra2) que va a reemplazar a la letra1.
+Output: La cadena modificada.
+
+>>> 2
+>>> Hola Mundo
+>>> o
+>>> x
+Hxla Mundx
+	
+La función <strong>imprime_pos_guiones (cadena)</strong> que recibe una cadena de texto. La función despliega las posiciones donde se encuentran los guiones en la cadena. Emplea el modificador end=" " en el print para evitar que cada print salte de línea.
+
+Casos de prueba:
+
+Input: Número de opción (3. imprime_pos_guiones (cadena) )
+Input: Cadena de texto
+Output: Las posiciones donde se encuentran los guiones en la cadena.
+
+Input: 3
+Input: Teórico-práctico y lógico-matemático
+Output: 7  25
+
+La función <strong>obten_nombre_completo (nombres, paterno, materno)</strong> que recibe tres cadenas de texto: nombres, paterno y materno. La función <strong>regresa</strong> el nombre completo de una persona en una cadena de caracteres (separados por espacios).
+
+Casos de prueba:
+
+Input: Número de opción (4. obten_nombre_completo (nombres, paterno, materno) )
+Input: Cadena de texto con el nombre o nombres (nombres)
+Input: Cadena de texto con el apellido paterno (paterno)
+Input: Cadena de texto con el apellido materno (materno)
+Output: La cadena con el nombre completo de una persona separados por espacios.
+
+Input: 4
+Input: Katia Alicia
+Input: Godoy
+Input: Mendez
+Output: Katia Alicia Godoy Mendez
+	
+La función <strong>cuenta_consonantes (cadena)</strong> que recibe una cadena y <strong>regresa</strong> el número de consonantes que hay en la cadena. Como te puedes dar cuenta, debes de contar las consonantes sin importar que estén escritas en minúsculas o mayúsculas, por lo que se recomienda utilizar los métodos cadena.upper( ) o cadena.lower( ).   
+
+Casos de prueba:
+
+Input: Número de opción (5. cuenta_consonantes (cadena) )
+Input: Cadena de texto.
+Output: Número de consonantes que se encuentran en la cadena.
+
+Input: 5
+Input: Hola MUNDO
+Output: 5
+
+La función <strong>deletrea_cadena (cadena)</strong> que recibe una cadena e imprime cada letra seguida de un guion bajo, con excepción de los espacios en blanco y la ultima letra. Emplea el modificador end="" en el print para evitar que cada print salte de línea, a excepción de la última letra.
+
+Casos de prueba: 
+
+Input: Número de opción (6. deletrea_cadena (cadena) )
+Input: Cadena a deletrear
+Output: Cadena con separación de un guion bajo entre cada letra, con excepción de los espacios en blanco y la última letra. 
+
+Input: 6
+Input: Hola a todos
+Output: H_o_l_a_  a_  t_o_d_o_s
+
+La función <strong>menu()</strong> que despliegue el siguiente menú en pantalla: 
+
+1. Cuenta ocurrencias
+2. Reemplaza letra
+3. Imprime posición guiones
+4. Obten nombre completo  
+5. Cuenta consonantes
+6. Deletrea cadena
+7. Salir
+
+La función <strong>main()</strong> que utilice la función menu para desplegar el menú correspondiente y de acuerdo a la opción seleccionada por el usuario le dé la oportunidad de ejecutar cualquiera de las funciones que han sido construidas. Utiliza el estatuto de control if anidado. Recuerda que la captura de datos debe ser realizada en la sección del main. En el script principal manda llamar a la función main.
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+
+El archivo se debe llamar <strong> cadenas.py</strong>
+</div>

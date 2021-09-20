@@ -1,0 +1,39 @@
+<div style="font-family:verdana; font-size:10px">
+<h3> Matrices  </h3>
+El archivo se debe llamar <strong>matriz.py</strong>
+
+La función <strong>crea_matriz (renglones, columnas)</strong> que recibe el número de renglones (listas a crear) y el número de columnas (número de elementos) de cada lista o arreglo. La función deberá pedir los valores para llenar la matriz siguiendo el orden que se muestra en el ejemplo y al final devolver la matriz creada.
+
+<strong>Casos de prueba: </strong>Si la lista anidada es de 3 renglones x 2 columnas, entonces se pedirán 6 valores. 
+
+Input: 0
+Input: 1
+Input: 2
+Input: 3
+Input: 4
+Input: 5
+Output: [[0, 1], [2, 3], [4, 5]]
+
+La función <strong>multiplica_renglon(matriz, renglon, num)</strong> que recibe una matriz y dos números: renglon y num. La función deberá multiplicar todo el renglón de la matriz por el valor de num.
+
+<strong>Ejemplo:</strong> Suponiendo que la matriz tiene los siguientes valores:
+2  5  
+3  4 
+1  2
+
+Al llamar <strong>multiplica_renglon(matriz, 2, 3)</strong> los nuevos valores en la matriz deberán ser:
+  2   5 
+  3   4
+<strong>3  6</strong>
+
+En la función <strong> main() </strong>:
+1. Llama a la función <strong>crea_matriz(3, 2)</strong> con <strong>3</strong> renglones y <strong>2</strong> columnas.
+4. Pide el <strong>renglon</strong> a modificar.
+5. Pide el <strong>numero</strong> por el que va a multiplicar el renglón.
+4. Llama a la función <strong>multiplica_renglon</strong> con la matriz creada en la función anterior, el número de <strong>renglón</strong> y el <strong>número</strong> solicitados. 
+5. Imprime la matriz modificada. Por ejemplo:  [[2, 5], [3, 4], [3, 6]]
+
+En el <strong> script principal </strong> manda llamar a la función main.
+
+<strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
+</div>
