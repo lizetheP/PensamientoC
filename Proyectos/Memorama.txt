@@ -1,0 +1,28 @@
+Función destapa cartas del usuario
+1. Pide coordenada en x
+2. Pido coordenada en y
+3. Destapo la carta que esté en esas coordenadas
+1. Pide coordenada en x2
+2. Pido coordenada en y2
+3. Destapo la segunda carta que esté en esas coordenadas
+
+Función compara cartas
+Regresa 1 si ambas cartas son iguales
+Regresa 0 si son distintas
+
+Función imprima matriz del usuario
+1. Imprimir matriz del usuario
+
+M1 = [[1, 2],[2,1]]
+M2 = [[0, 2],[2,0]]
+
+num = random.randint(1, 2)
+if num == 1:
+   M = M1
+elif num == 2:
+   M = M2
+
+
+
+1 2
+2 1
