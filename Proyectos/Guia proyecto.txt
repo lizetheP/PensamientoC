@@ -1,0 +1,39 @@
+""" Proyecto: Ahorcado
+El juego del ahorcado hace estos
+funciona de esta forma
+y gano cuando le atino a la palabra"""
+
+# Esta función crea una matriz
+def crea_matriz():
+    pass
+
+# Esta funcion llena la matriz con _ guiones
+def llene_matriz():
+    pass
+
+# Esta funcion llena la matriz con barcos
+def llena_matriz_barcos():
+    pass
+
+def menu():
+   1: Instrucciones
+   2. Ahorcado
+   3. Salir
+
+def main():
+    ...
+
+
+""""
+  caso de prueba
+  opcion 1
+         Escribir instrucciones
+
+          ---------
+  opcion 2
+         Pedir letra
+         
+  opcion 3
+         Adios
+         Salir    
+"""

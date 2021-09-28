@@ -1,0 +1,15 @@
+lista = ['c', 'l', 'a', 'v', 'e', 'l']
+listaU = ['-','-', '-', '-', 'e', '-']
+
+
+Algoritmo:
+
+Generar una palabra
+Crear una lista con el número de caracteres de tu palabra
+Pedirle letra al usuario
+Busque la letra en la lista
+
+'e'
+for
+   if (lista[i] == letra)
+        listaU[i] = letra

@@ -1,0 +1,29 @@
+
+1. Generar matriz con barcos de la compu
+      
+   x = random.randint(0, 3)
+   y = random.randint(0, 3)
+   M[x][y] = '*'
+
+   0 1 2 3
+0  _ *
+1
+2
+3  - - *
+
+
+* -
+- *
+
+M2 = [[*, 2],[2,0]]
+
+num = random.randint(1, 2)
+if num == 1:
+   M = M1
+elif num == 2:
+   M = M2
+
+
+
+1 2
+2 1
