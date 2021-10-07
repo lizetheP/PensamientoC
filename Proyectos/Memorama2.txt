@@ -1,0 +1,32 @@
+ matriz1 = [["Mexico", "Colombia"], ["Colombia", "Mexico"]]
+ matriz2 = [["Peru", "Brasil"], ["Peru", "Brasil"]]
+ num = random.randint(1,2)
+
+def llene_matriz(matriz_Usuario)
+for
+  for
+
+Peru     Mexico  Colombia
+Brasil   Peru    Mexico
+Colombia bRASIL  Peru
+
+Peru - -
+- - Mexico
+- - -
+
+if num == 1:
+    matriz = matriz1
+elif num == 2:
+    matriz = matriz2
+
+
+Dame la coordenada1
+Pedir x
+Pedir y
+Dame la coordenada2
+Pedir x2
+Pedir y2
+destapaFichas(matriz_Usuario, x, y, x2, y2)
+if matriz_Usuario[x][y] != matriz_Usuario[x2][y2]:
+   volver a tapar
+
