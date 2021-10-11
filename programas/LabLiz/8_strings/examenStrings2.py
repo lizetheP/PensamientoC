@@ -9,6 +9,6 @@ def main():
     cadena = str(input("Introduce una cadena: "))
     letra = str(input("Introduce la letra : "))
     res = cuenta_caracter_espacios(cadena, letra)
-    print(res)
+    print("El resultado es ", res)
     
 main()
