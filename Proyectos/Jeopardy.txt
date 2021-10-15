@@ -1,0 +1,32 @@
+puntajeEq1 = 0
+puntajeEq2 = 0
+
+
+def pregunta100(turno):
+    resp_correcta = 50
+    print("Pregunta para el equipo %i" % turno)
+    resp = int(input("Cual es la edad en que murió Maximiliano?")) 
+    if resp == resp_correcta and turno == 1:
+	puntajeEq1 = puntajeEq1 + 100
+    elif resp == resp_correcta and turno == 2:
+	puntajeEq2 = puntajeEq2 + 100
+    if resp != resp_correcta and turno == 1:
+	print("Pregunta para el equipo 2")
+	resp = int(input("Cual es la edad en que murió Maximiliano?")) 
+        if resp == resp_correcta:
+             puntajeEq2 = puntajeEq2 + 100
+    elif resp != resp_correcta and turno == 2:
+    	print("Pregunta para el equipo 1")
+	resp = int(input("Cual es la edad en que murió Maximiliano?")) 
+        if resp == resp_correcta:
+             puntajeEq1 = puntajeEq1 + 100
+
+def pregunta50(turno):
+    resp_correcta = 50
+    print("Pregunta para el equipo %i" % turno)
+    resp = int(input("Cual es la edad en que murió Maximiliano?")) 
+    if resp == resp_correcta and turno == 1:
+	puntajeEq1 = puntajeEq1 + 50
+    if if resp == resp_correcta and turno == 2:
+	puntajeEq2 = puntajeEq2 + 50
+ 
