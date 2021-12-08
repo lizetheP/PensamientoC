@@ -30,3 +30,15 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+def tabla_de_multiplicar(x):
+    total = 0
+    for i in range(1, 11):
+        total = i * x
+        print("%i x %i = %i" % (i, x, total))
+
+def main():
+    num = int(input())
+    tabla_de_multiplicar(num)
+    
+main()

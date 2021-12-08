@@ -37,3 +37,19 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+                
+def multiplica_columna(m, col, num):
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if j == col:
+                m[i][j] = m[i][j]* num
+   
+def main():
+    m = [[3, 5, 8, 4], [7, 9, 1, 5], [12, 1, 2, 10]] 
+    c = int(input())
+    n = int(input())
+    multiplica_columna(m, c, n)
+    print(m)
+    
+main()

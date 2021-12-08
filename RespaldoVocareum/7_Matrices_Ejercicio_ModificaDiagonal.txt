@@ -27,3 +27,25 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def posicion_multiplosn(m, n):
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if m[i][j]%x==0:
+                print("El valor %i esta en %i, %i"%(m[i][j], i, j))
+                
+def modifica_diagonal(m, num):
+    suma = 0
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if i == j:
+                m[i][j] = num
+   
+def main():
+    m = [[3, 5, 8], [7, 9, 1], [4, 3, 2]]
+    n = int(input())
+    modifica_diagonal(m, n)
+    print(m)
+    
+main()

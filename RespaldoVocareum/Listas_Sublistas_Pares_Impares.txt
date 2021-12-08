@@ -35,3 +35,27 @@ NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los dato
 
 El nombre del programa de ser <b>sublistas.py</b>
 </div>
+
+fin=False
+lista=[]
+
+while not fin:
+    numero=input()
+
+    if numero == "*":
+        break
+    lista.append(int(numero))
+
+lp=[]
+li=[]
+
+for e in lista:
+   if int(e) % 2 == 0:
+       lp.append(int(e))
+   else:
+       li.append(int(e))
+
+print("PARES")
+print(lp)
+print("IMPARES")
+print(li)

@@ -31,3 +31,20 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong>NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong> 
 </div>
+
+
+def suma_n(matriz, n):
+    suma = 0
+    for i in range(len(matriz)):
+        for j in range (len(matriz[i])):
+            if matriz[i][j] == n:
+                suma = suma + matriz[i][j]
+    return suma
+
+def main():
+    m = [[2, 5, 9], [7, 9, 2], [4, 3, 2]] 
+    n = int(input())
+    res = suma_n(m, n)
+    print("%i" % res)
+    
+main()

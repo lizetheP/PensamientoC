@@ -63,3 +63,26 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 El archivo se debe llamar <strong> lista.py</strong>
 </div>
+
+def crea_lista(tam):
+    lista = []
+    for i in range(0, tam):
+        valor = int(input())
+        lista.insert(i, valor)
+    return lista
+
+def mueve_izquierda(lista):
+    temp = lista[0]
+    ultimo = len(lista)-1
+    for i in range(ultimo):
+        lista[i] = lista[i+1]
+    lista[ultimo] = temp
+         
+def main():    
+    t = int(input())
+    lista = crea_lista(t)
+    print(lista)
+    mueve_izquierda(lista)
+    print(lista)
+    
+main()

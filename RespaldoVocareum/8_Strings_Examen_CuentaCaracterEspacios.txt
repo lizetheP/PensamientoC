@@ -28,3 +28,18 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+def cuenta_caracter_espacios(cadena, letra):
+    cont  = 0
+    for i in range(len(cadena)):
+        if cadena[i].lower() == letra.lower() or cadena[i] == ' ':
+            cont = cont + 1
+    return cont
+
+def main():
+    cadena = str(input())
+    letra = str(input())
+    res = cuenta_caracter_espacios(cadena, letra)
+    print(res)
+    
+main()

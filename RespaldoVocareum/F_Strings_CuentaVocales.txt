@@ -30,3 +30,33 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def cuenta_vocales(cadena):
+    ca  = 0
+    ce  = 0
+    ci  = 0
+    co  = 0
+    cu  = 0
+    for i in range(len(cadena)):
+        if cadena[i].lower() == 'a':
+            ca = ca + 1
+        elif cadena[i].lower() == 'e':
+            ce = ce + 1
+        elif cadena[i].lower() == 'i':
+            ci = ci + 1
+        elif cadena[i].lower() == 'o':
+            co = co + 1
+        elif cadena[i].lower() == 'u':
+            cu = cu + 1
+    print("Vocal a: %i" % ca)
+    print("Vocal e: %i" % ce)
+    print("Vocal i: %i" % ci)
+    print("Vocal o: %i" % co)
+    print("Vocal u: %i" % cu)
+            
+def main():
+    cadena = str(input())
+    cuenta_vocales(cadena)
+    
+main()

@@ -26,3 +26,20 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def imprime(cadena, letra):
+    for i in range(len(cadena)):
+        if cadena[i].lower() == letra.lower():
+            print("%c" % cadena[i], end="")
+        elif cadena[i] == ' ':
+            print(' ', end="")
+        else:
+            print("x", end="")
+
+def main():
+    cadena = str(input())
+    letra = str(input())
+    imprime(cadena, letra)
+    
+main()

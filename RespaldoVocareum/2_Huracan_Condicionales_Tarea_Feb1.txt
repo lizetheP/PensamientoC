@@ -17,3 +17,18 @@ NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los dato
 
 El archivo se debe llamar <strong>huracan.py</strong>
 </div>
+
+
+v = int(input())
+if v >= 74 and v <= 95:
+    print("Categoría 1 y daños mínimos")
+elif v >= 96 and v <= 110:
+    print("Categoría 2 y daños moderados")
+elif v >= 111 and v <= 130:
+    print("Categoría 3 y daños extensos")
+elif v >= 131 and v <= 155:
+    print("Categoría 4 y daños extremos")
+elif v > 155:
+    print("Categoría 5 y daños catastróficos")    
+else:
+    print("No es huracán")

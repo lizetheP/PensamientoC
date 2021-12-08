@@ -25,3 +25,19 @@ NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los dato
 
 El programa deberá llamarse <b>sin_duplicados.py</b>
 </div>
+
+
+# Problema de listas --- propuesto por Rocío Villagómez
+tam=int(input())
+lista=[]
+sin_duplicados=[]
+if tam>0:
+    for n in range(tam):
+        lista.append(input())
+    for elemento in lista:
+        if elemento not in sin_duplicados:
+            sin_duplicados.append(elemento)
+    print(lista)
+    print(sin_duplicados)
+else:
+    print("Error")

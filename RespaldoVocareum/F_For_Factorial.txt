@@ -28,3 +28,17 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def factorial(n):
+    acum = 1
+    for i in range(1, n+1):
+        acum = acum * i
+    return acum
+
+def main():
+    num = int(input())
+    res = factorial(num)
+    print(res)
+    
+main()

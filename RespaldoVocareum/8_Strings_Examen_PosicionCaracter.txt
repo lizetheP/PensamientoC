@@ -34,3 +34,16 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def posicion_caracter(cadena, letra):
+    for i in range(len(cadena)):
+        if cadena[i].lower() == letra.lower():
+            print("%i" % i)
+
+def main():
+    cadena = str(input())
+    letra = str(input())
+    posicion_caracter(cadena, letra)
+    
+main()

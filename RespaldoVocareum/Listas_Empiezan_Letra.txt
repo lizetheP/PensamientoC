@@ -17,6 +17,18 @@ Ejemplo de ejecución del programa
 >>> h
 2
 
+# Listas -cuantas palabras que empiezan con - Rocio Villagomez Estrada
+lista=[]
+cont=0
+for num in range(1,6):
+    lista.append(input(""))
+letra=input("")
+for palabra in lista:
+    if palabra[0].lower()==letra.lower():
+            cont+=1
+print(cont)
+
+
 NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los datos y la salida debe coincidir exactamente con el formato y/o tipo de dato que se te pide como salida.
 
 El archivo se deberá llamar: <b>empiezan_con.py</b>

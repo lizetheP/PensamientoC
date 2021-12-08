@@ -25,3 +25,21 @@ NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los dato
 
 El nombre del programa de ser <b>suma_listas.py</b>
 </div>
+
+
+lista2 = []
+lista1 = []
+resultado= []
+
+read = int(input())
+if read > 0:
+    for i in range(read):
+        lista1.append(int(input()))
+    for i in range(read):
+        lista2.append(int(input()))
+
+    for i in range(read):
+        resultado.append(lista1[i] + lista2[i])
+    print(resultado)
+else:
+    print("Error")

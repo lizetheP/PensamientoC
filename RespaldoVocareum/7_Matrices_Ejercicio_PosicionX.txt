@@ -28,3 +28,16 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+def posicion_n(m, n):
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if m[i][j] == n:
+                print("El valor %i esta en %i, %i"%(m[i][j], i, j))
+                  
+def main():
+    matriz = [[2, 5, 9], [7, 9, 2], [4, 3, 2]] 
+    n = int(input())
+    posicion_n(matriz, n)
+    
+main()

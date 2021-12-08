@@ -18,3 +18,13 @@ NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los dato
 
 El archivo se debe llamar <strong>tiempo.py</strong>
 </div>
+
+
+tiempo = int(input())
+horas = tiempo // 3600
+print(horas)
+residuo = tiempo % 3600
+minutos = residuo // 60
+print(minutos)
+segundos = residuo % 60
+print(segundos)

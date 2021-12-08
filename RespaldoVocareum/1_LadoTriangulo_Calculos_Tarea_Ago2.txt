@@ -24,3 +24,11 @@ NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los dato
 
 El archivo se debe llamar <strong>lado_triangulo.py</strong>
 </div>
+
+
+import math
+
+A = float(input())
+C = float(input())
+B = math.sqrt(math.pow(C,2) - math.pow(A,2))
+print("%.2f" % B)

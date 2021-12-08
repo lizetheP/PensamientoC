@@ -28,3 +28,19 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def multiplica_impares(n):
+    acum = 1
+    num = 1
+    for i in range(1, n+1):
+        acum = acum * num
+        num = num + 2
+    return acum
+
+def main():
+    num = int(input())
+    res = multiplica_impares(num)
+    print(res)
+    
+main()

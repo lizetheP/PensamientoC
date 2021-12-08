@@ -20,3 +20,11 @@ NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los dato
 El archivo se debe llamar <strong>volumen_medio.py</strong>
 </div>
 
+
+import math
+
+r = float(input())
+h = float(input())
+v = (math.pi * math.pow(r,2)*h)/2 
+print("%.3f" % v)
+

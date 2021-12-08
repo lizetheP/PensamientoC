@@ -29,3 +29,22 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def promedio_multiplos(m, n):
+    acum = 0
+    cont = 0
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if m[i][j]%n==0:
+                acum = acum + m[i][j]
+                cont = cont + 1
+    return acum / cont
+                
+def main():
+    m = [[3, 5, 8, 4], [7, 9, 1, 5], [12, 1, 2, 10], [2, 6, 7, 8]] 
+    n = int(input())
+    res = promedio_multiplos(m, n)
+    print("%.1f" % res)
+    
+main()

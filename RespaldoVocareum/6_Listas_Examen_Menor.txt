@@ -54,3 +54,25 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 El archivo se debe llamar <strong> lista.py</strong>
 </div>
+
+def crea_lista(tam):
+    lista = []
+    for i in range(0, tam):
+        valor = int(input())
+        lista.insert(i, valor)
+    return lista
+
+def menor(lista):
+    m = lista[0]
+    for i in range(len(lista)):
+        if lista[i] < m:
+            m=lista[i]
+    return m
+       
+def main():    
+    t = int(input())
+    lista = crea_lista(t)
+    res = menor(lista)
+    print(res)
+    
+main()

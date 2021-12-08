@@ -31,3 +31,17 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def posicion_multiplos(m, n):
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if m[i][j]%n==0:
+                print("El valor %i esta en %i, %i" %(m[i][j], i, j))
+                 
+def main():
+    matriz = [[3, 5, 8, 4], [7, 9, 1, 5], [12, 1, 2, 10], [2, 5, 7, 8]] 
+    n = int(input())
+    posicion_multiplos(matriz, n)
+    
+main()

@@ -161,6 +161,104 @@ Output: Mensaje "Adios"
 >>> 7
 Adios
 
+
+def crea_matriz(renglones, columnas):
+    matriz = []
+    for i in range(renglones):
+        matriz.insert(i, [] )
+        for j in range(columnas):
+            valor = int(input())
+            matriz[i].insert(j, valor)
+    return matriz
+
+def imprime_matriz(m):
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            print("%2i" % m[i][j], end= ' ')
+        print()
+
+def promedio_matriz(m):
+    sum = 0
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            sum = sum + m[i][j]
+    return sum/(len(m)*len(m[i]))
+
+def menor_matriz(m):
+    men = m[0][0]
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            if m[i][j] < men:
+                men = m[i][j]
+    return men
+ 
+def posicion_impares(m):
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if m[i][j]%2 != 0:
+                print("El valor %i esta en %i, %i"%(m[i][j], i, j))
+                
+def suma_diagonal(m):
+    suma = 0
+    for i in range(0, len(m)):
+        for j in range(0, len(m[i])):
+            if i == j:
+                suma = suma + m[i][j]
+    return suma
+
+def menu():
+    print()
+    print("1. Crea matriz")
+    print("2. Imprime matriz")
+    print("3. Promedio matriz")
+    print("4. Menor matriz")
+    print("5. Posición impares")
+    print("6. Suma diagonal")
+    print("7. Salir")
+    
+def main():
+    #menu() 
+    opcion = int(input()) 
+    if opcion == 1:
+        ren = int(input())
+        col = int(input())
+        m = crea_matriz(ren, col)
+        print(m)
+    elif opcion == 2:
+        ren = int(input())
+        col = int(input())
+        m = crea_matriz(ren, col)
+        imprime_matriz(m)
+    elif opcion == 3:
+        ren = int(input())
+        col = int(input())
+        m = crea_matriz(ren, col)
+        res = promedio_matriz(m)
+        print("%.1f" % res)
+    elif opcion == 4:
+        ren = int(input())
+        col = int(input())
+        m = crea_matriz(ren, col)
+        res = menor_matriz(m)
+        print("%i" % res)
+    elif opcion == 5:
+        ren = int(input())
+        col = int(input())
+        m = crea_matriz(ren, col)
+        posicion_impares(m)
+    elif opcion == 6:
+        ren = int(input())
+        col = int(input())
+        m = crea_matriz(ren, col)
+        res = suma_diagonal(m)
+        print("%i" % res)
+    elif opcion == 7:
+        print("Adios")
+    else: 
+        print("Opcion_invalida") 
+
+main()
+
 Casos de prueba:
 
 Input: Número de opción (Opción inválida)

@@ -28,3 +28,14 @@ NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los dato
 
 El programa deberá llamarse <b>lista_cuadrados.py </b>
 </div>
+
+#Listas al cuadrado - Rocio Villagomez
+cuantos=int(input())
+lista=[]
+cuadrados=[]
+for num in range(cuantos):
+    lista.append(int(input()))
+print(lista)
+for num in lista:
+    cuadrados.append(num**2)
+print(cuadrados)

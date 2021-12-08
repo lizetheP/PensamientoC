@@ -32,3 +32,20 @@ En el <strong> script principal </strong> manda llamar a la función main.
 
 <strong> NOTA IMPORTANTE: Tu programa no debe incluir ningún mensaje para pedir los datos y no debe incluir ningún mensaje diferente de lo que se te pide como salida. </strong>
 </div>
+
+
+def potencia(x, n):
+    i = 1
+    acum = 1
+    while i <= n:
+        acum = acum * x
+        i = i+1
+    return acum
+
+def main():
+    x = int(input())
+    n = int(input())
+    res = potencia(x, n)
+    print(res)
+    
+main()

@@ -25,3 +25,12 @@ pos 3, valor 4
 El programa se debe llamar <b>pares_y_posicion.py</b>
 </div>
 
+cuantos=int(input())
+lista=[]
+
+for num in range(cuantos):
+    lista.append(int(input()))
+
+for cont in range(len(lista)):
+    if lista[cont] % 2 == 0:
+        print("pos", cont, ", valor", lista[cont])

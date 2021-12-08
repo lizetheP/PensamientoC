@@ -25,3 +25,28 @@ NOTA IMPORTANTE: Tu programa NO debe incluir ningún mensaje para pedir los dato
 
 El nombre del programa de ser <b>pares_impares.py</b>
 </div>
+
+# Contando pares e impares -----------------------------
+# Autor: ricardo.quintero@tec.mx
+
+fin=False
+lista=[]
+
+while not fin:
+    numero=input()
+
+    if numero == "*":
+        break
+    lista.append(int(numero))
+
+cp=0
+ci=0
+
+for e in lista:
+   if e % 2 == 0:
+       cp=cp+1
+   else:
+       ci=ci+1
+
+print("PARES="+str(cp))
+print("IMPARES="+str(ci))
