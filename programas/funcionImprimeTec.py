@@ -1,5 +1,5 @@
 def imprime_datos(num_lab):
-    print("Pensamiento computacional")
+    print("Tecnologías de información emergentes")
     print("Laboratorio", num_lab)
 
 def main():
