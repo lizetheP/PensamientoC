@@ -1,5 +1,5 @@
 def func1 (a, b):       
-    print(str(a) + " " + str(b)) 
+    print(a + " " + b) 
 
 def func2 (x, y):       
     x = 10       

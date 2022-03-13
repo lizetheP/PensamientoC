@@ -1,5 +1,6 @@
 def menu():
-    print("\nMENU")
+    print()
+    print("MENU")
     print("1. Imprime mensaje")
     print("2. Salir")
     
