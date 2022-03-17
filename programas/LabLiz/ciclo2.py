@@ -6,7 +6,7 @@ def ciclo2():
         d = d + 1
         r = r - 2
         s = s - 2
-    print(d + " " + r + " " + s)
+    print(str(d) + " " + str(r) + " " + str(s))
 
 def main():
     ciclo2()
