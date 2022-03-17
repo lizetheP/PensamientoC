@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+   
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+   
+  <meta name="ProgId" content="FrontPage.Editor.Document">
+  <title>WebQuest: Criptografía</title>
+      
+  <script language="JavaScript" fptype="dynamicanimation">
+
+  </script> 
+  
+  <script language="JavaScript1.2" fptype="dynamicanimation"
+ src="animate.js">
+  </script>   
+  <script language="javascript">
+
+function pop1(){  
+     var  
+     w=window.open("","resultado","toolbar=no,width=200,height=70,status=no,scrollbars=no,resize=no,menubar=no");  
+     w.moveTo(0,0);  
+     w.document.write("<html><body><br>");  
+     w.document.write("<h4>");  
+     w.document.write("<strong>Mensaje:</strong> Obtendré cien.");   
+     w.document.write("</h4>");  
+     w.document.write("</body><html>");  
+     }  
+
+
+
+function pop2(){  
+     var w =window.open("","resultado","toolbar=no,width=200,height=70,status=no,scrollbars=no,resize=no,menubar=no");  
+     w.moveTo(0,0);  
+     w.document.write("<html><body><br>");  
+     w.document.write("<h4>");  
+     w.document.write("<strong>Mensaje cifrado:</strong> 'wgepqekñfñr_hfffsa'");   
+     w.document.write("</h4>");  
+     w.document.write("</body><html>");  
+     } 
+
+
+  </script> 
+  
+  <meta name="Microsoft Border" content="tlb, default">
+</head>
+  <body bgproperties="fixed" background="backg.gif" ="" leftmargin="0"
+ marginwidth="0" topmargin="0" marginheight="0">
+ <!--msnavigation--> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tbody>
+     <tr>
+       <td>       
+      <p><img border="0" src="gildedage.gif" width="600" height="93">
+      </p>
+       </td>
+     </tr>
+ <!--msnavigation-->   
+  </tbody> 
+</table>
+ <!--msnavigation--> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tbody>
+     <tr>
+       <td valign="top" width="1%">       
+      <table border="0" cellpadding="0" cellspacing="5" width="110">
+         <tbody>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td><br>
+            </td>
+           </tr>
+           <tr>
+             <td> </td>
+           </tr>
+           <tr>
+             <td> </td>
+           </tr>
+         
+        </tbody>       
+      </table>
+       </td>
+       <td valign="top" width="24"><br>
+       </td>
+ <!--msnavigation--><td valign="top">       
+      <div align="left"> <br>
+       
+      <table border="0" cellpadding="0" cellspacing="5" width="100%"
+ height="100%" align="left">
+         <tbody>
+           <tr>
+             <td valign="top" width="100%" height="100%">             
+            <p><img src="titlega.jpg" naturalsizeflag="3" height="276"
+ width="300" align="left" alt="Recursion">
+            </p>
+                          
+            <p><font size="2" face="Arial, Helvetica, sans-serif">El juego
+del submarino consiste básicamente en hundir los barcos del enemigo, estimando
+la posición donde se encuentran posicionados los barcos. Los barcos enemigos
+obviamente no son visibles y no se les conoce su posición. </font></p>
+             
+            <p><font size="2" face="Arial, Helvetica, sans-serif">El jugador
+puede ubicar sus barcos en la posición deseada. Si un disparo es acertado,
+se debe indicar.</font></p>
+                         
+            <p><font size="2" face="Arial, Helvetica, sans-serif">Un ejemplo
+de la colocación de los barcos del enemigo podría ser:</font></p>
+             
+            <p> </p>
+             
+            <p align="center"><font size="2"
+ face="Arial, Helvetica, sans-serif"><img src="juego.JPG" width="322"
+ height="321">
+ </font></p>
+            
+            <p>             </p>
+             
+            <p><font size="2" face="Arial, Helvetica, sans-serif">Para efectos
+de nuestro programa, un jugador podrá jugar a la vez con dos posibles opciones:
+ya sea que la computadora coloque aleatoariamente los barcos en posiciones
+aleatorias, o bien, que un jugador contrario introduzca la posición de los
+barcos en un archivo.</font></p>
+             
+            <p><font size="2" face="Arial, Helvetica, sans-serif">El número
+de barcos que se utilizarán son 8:</font></p>
+             
+            <ul>
+               <li><font size="2" face="Arial, Helvetica, sans-serif">1 con
+cuatro casillas a ocupar </font></li>
+               <li><font size="2" face="Arial, Helvetica, sans-serif">2 de
+3 casillas </font></li>
+               <li><font size="2" face="Arial, Helvetica, sans-serif">3 de
+2 casillas</font></li>
+               <li><font size="2" face="Arial, Helvetica, sans-serif">2 de
+1 casilla</font></li>
+               
+            </ul>
+                         
+            <p><font size="2" face="Arial, Helvetica, sans-serif">La matriz
+para llevar a cabo el juego será de 16x16. Un barco no puede estar junto
+a otro, es decir, los barcos deben estar separados por agua. </font></p>
+                        
+            <p><font size="2" face="Arial, Helvetica, sans-serif">Debido
+a que no contamos con una interfaz gráfica, el jugador introducirá las coordenadas
+donde supondrá que estará el barco, el juego deberá desplegar en pantalla
+el historial de dichas tiradas para no repetir el tiro y además indicará
+si se encontró un barco ahí o no, asimismo se llevará la cuenta del número
+de tiros que realizó el jugador hasta ganar, de esta forma, el jugador que
+encuentre todos los barcos en el meno número de tiros será el ganador. En
+un archivo, se guardará el historial de todos los jugadores y sus records,
+de tal forma que en el menu se encuentre una opción para ver quién es el
+jugador con el mejor record.</font></p>
+             
+            <p><font size="2" face="Arial, Helvetica, sans-serif">Así pues,
+tu proyecto deberá contar con un menú en el cuál el usuario pueda seleccionar
+la opción que desee: ya sea iniciar un juego con la computadora o iniciar
+un juego a partir de un archivo creado por el enemigo y consultar al lider
+del juego. </font></p>
+             
+            <p><font size="2" face="Arial, Helvetica, sans-serif"> En caso
+de que estes jugando con otro usuario, deberás de poner el nombre y la ruta
+del archivo creado por el enemigo. Usa tu creatividad para el formato en
+que se dará este archivo por el usuario, así como cómo es que la computadora
+los tendrá aleatoriamente cada vez que juegues con ella. </font></p>
+                          
+            <p><font size="2" face="Arial, Helvetica, sans-serif"> Para ambos
+archivos, del que leerás y al que escribirás lo records, deberás hacer  
+  validaciones de la ruta.</font><font
+ face="Times New Roman, Times, serif"><br>
+             </font></p>
+            </td>
+           </tr>
+           <tr>
+             <td valign="top" height="100%"> </td>
+           </tr>
+         
+        </tbody>       
+      </table>
+       </div>
+  <!--msnavigation--></td>
+     </tr>
+ <!--msnavigation-->   
+  </tbody> 
+</table>
+ <!--msnavigation--> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+   <tbody>
+     <tr>
+            </tr>
+ <!--msnavigation-->   
+  </tbody> 
+</table>
+ 
+</body>
+</html>

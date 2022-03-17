@@ -1,0 +1,4458 @@
+﻿<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+ <head>
+<meta content="es-mx" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Calendario</title>
+                                                                         
+ 
+  <style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style1 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style4 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	color: #FFFFFF;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Estilo13 {font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style6 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style8 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	margin-left: 40px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style12 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-left-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-left-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-right-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-top-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-top-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-bottom-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style13 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style15 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style16 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style19 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial, Helvetica;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style21 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style22 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial, Helvetica;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style23 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style24 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style27 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style29 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style30 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	color: #FFFFFF;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style31 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style32 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style33 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: normal;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style34 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+  <body>
+           &nbsp;           
+<center>          
+<table border="1" width="90%">
+           <tbody>
+              <tr>
+           <td>                                                         
+             
+      <center><font size="-2">.</font></center>
+                                                                        
+         
+      <table border="0" cols="2" width="100%">
+           <tbody>
+                    <tr>
+           <td width="50%">                                             
+                                                                         
+           
+            <div align="right"><b><font face="Arial,Helvetica"><font
+ color="#330033"><font size="+1">Método de Gauss</font></font></font></b></div>
+           </td>
+            <td><img src="imageQQF.JPG" height="117" width="115">
+                      </td>
+           </tr>
+                                                                        
+                            
+        </tbody>                                                        
+             
+      </table>
+                                                                        
+         
+      <center><font size="-2">.</font></center>
+           </td>
+           </tr>
+                                         
+  </tbody>          
+</table>
+          </center>
+                      
+<center>          
+<table border="1" cols="1" width="90%">
+           <tbody>
+              <tr bgcolor="#330033">
+           <td><b><font face="Arial,Helvetica"><font color="#330033"><font
+ size="-2">.</font></font></font></b></td>
+           </tr>
+            <tr>
+           <td>       
+      <div align="left">                                                 
+                                                                        
+                           </div>
+       
+      <blockquote>         
+        <div align="left">                                               
+                        </div>
+           <font color="#330033"><b><font face="Arial,Helvetica">&nbsp;</font></b></font><font
+ size="-1" face="Helvetica, Arial, sans-serif"><font color="#3333ff"><big><u><b>Introducción:</b></u> 
+        </big></font><br>
+                 </font>                                                
+                                                                        
+                                             
+        <blockquote><font size="-1" face="Helvetica, Arial, sans-serif">El 
+			método de Gauss es utilizado en álbegra lineal para múltiples usos. 
+			Lleva el nombre de su inventor.&nbsp;</font><br>
+                   <font size="-1" face="Helvetica, Arial, sans-serif">
+			Actualmente una de las aplicaciones para las que más frecuentemente 
+			es usado es para la resolución de sistemas de ecuaciones.</font><br>
+                   <font size="-1" face="Helvetica, Arial, sans-serif">La 
+			metodología de cómo aplicarlo se describe a continuación. 
+          </font><br>
+                   <font size="-1" face="Helvetica, Arial, sans-serif">Cabe 
+			mencionar que el <b>Método de Gauss</b> puede resolver sistemas con <b>
+			N</b>    número de ecuaciones. Sin embargo, para este ejercicio 
+			vamos a recibir como máximo 3 ecuaciones.</font>              
+               <br>
+                   <font size="-1" face="Helvetica, Arial, sans-serif">Para 
+			explicar mejor cómo funciona el método se van a ilustrar los pasos 
+			con un ejemplo.&nbsp;</font><br>
+                   <font size="-1" face="Helvetica, Arial, sans-serif">Tomemos 
+			como ejemplo las ecuaciones: </font><br>
+                                                                        
+                                  
+          <ul>
+                                                                        
+                                                    
+            <ul>
+                       <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">4X + 9Y + 12Z = 0</font></b></li>
+                       <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">3X + Y + 5Z = 2</font></b></li>
+                       <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">6X + 9Y + 2Z = 1</font></b></li>
+                                                                        
+                                                    
+            </ul>
+                                                                        
+                                  
+          </ul>
+          <font size="-1" face="Helvetica, Arial, sans-serif">El formato en que 
+			deberás recibir estas ecuaciones es el siguiente:</font><br>
+                 </blockquote>
+                                                                        
+                                                           
+        <blockquote><font size="-1" face="Helvetica, Arial, sans-serif"
+ color="#ff0000"><strong><i>figura 1</i></strong><i>.</i></font><font
+ size="-1" face="Helvetica, Arial, sans-serif"><img src="ejemplo.jpg"
+ width="206" height="89" alt="">
+            </font><br>
+                 </blockquote>
+                                                                        
+                     
+        <blockquote>                                                    
+                                              
+          <p align="left"><font size="-1"
+ face="Helvetica, Arial, sans-serif">Nota que para trabajar con este método sólo 
+		  necesitas los coeficientes de las ecuaciones, y por esto es importante 
+		  el orden de estos, ya que su posición indica si se trata de un 
+		  coeficiente de <b>X</b>, <b>Y</b> o <b>Z</b>.&nbsp; </font></p>
+                                                                        
+                                  
+          <p align="left"><font size="-1"
+ face="Helvetica, Arial, sans-serif"><b>Casos especiales: <br>
+            </b></font></p>
+                                                                        
+                                  
+          <ul>
+                     <li><font size="-1"
+ face="Helvetica, Arial, sans-serif">Si por ejemplo, la primer ecuación hubiera 
+					 sido 4X + 9Y = 0 entonces en la posición (0,2) de la matriz 
+					 de la figura 1, en lugar de introducir un 12, se hubiera 
+					 introducido un 0, esta es la forma de representar cuando 
+					 una de las variables no fue incluída en la ecuación.</font></li>
+                     <li><font size="-1"
+ face="Helvetica, Arial, sans-serif">  De igual manera, si la ecuación hubiera 
+					 sido 4X - 9Y + 12Z = 0, entonces en la posición (0,1) de la 
+					 matriz de la figura 1, en lugar de haber un 9, sería un -9.</font></li>
+                                                                        
+                                  
+          </ul>
+                   <font size="-1" face="Helvetica, Arial, sans-serif">Ten 
+			siempre presente que estas ecuaciones son sólo un ejemplo con el 
+			único propósito de mostrarte el formato. En la práctica recibirás 
+			ecuaciones con diferentes valores en los coeficientes.
+           </font>                                                      
+                                           
+          <p align="left"><font size="-1"
+ face="Helvetica, Arial, sans-serif">Esta matriz de coeficientes es la base que 
+		  utilizaremos para trabajar con el método de Gauss.</font></p>
+                 </blockquote>
+                                                                        
+                <br>
+                 <font size="-1" face="Helvetica, Arial, sans-serif"
+ color="#3333ff"><big><u><b>Operaciones básicas:</b></u> </big></font><font
+ face="Arial,Helvetica"><font size="-1"><br>
+                 <br>
+     	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</font></font>                   
+                                                                <font
+ size="-1" face="Helvetica, Arial, sans-serif">Gauss tiene tres operaciones 
+		  básicas:</font>                                                 
+                      <font size="-1"
+ face="Helvetica, Arial, sans-serif">               </font>              
+                              
+        <blockquote>                                                    
+                                                 
+          <ul>
+                                     <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">Multiplicación de un escalar por un renglón 
+									 de la matriz.</font></b></li>
+                     <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">Intercambiar renglones de la matriz.</font></b></li>
+                     <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">Sumar a un renglón el múltiplo de otro.</font></b></li>
+                                                                        
+                                  
+          </ul>
+                                                           
+          <blockquote><font size="-1"
+ face="Helvetica, Arial, sans-serif">Estas operaciones son muy simples y en 
+			  conjunto te permiten resolver el sistema.</font><br>
+                 <font size="-1" face="Helvetica, Arial, sans-serif">
+			  Comenzaremos por ver cada una de estas operaciones de forma 
+			  individual para después ver como combinarlas.</font></blockquote>
+                 </blockquote>
+                                                                        
+                
+        <blockquote>                                                    
+  
+          <p><font face="Arial,Helvetica"><font size="-1">Construye un programa 
+		  completo en C libre de warnings y errores, que incluya las siguientes 
+		  funciones o procedimientos:</font></font></p>
+             </blockquote>
+                                                 
+        <blockquote>                                                    
+  
+          <p><font face="Arial,Helvetica"><font size="-1">Utilizando la 
+		  estructura 
+                <b><font color="#ff6666">#define</font></b>, define las 
+		  constantes
+                <b>REN </b>de <b>3</b> y <b>COL</b> de <b>4</b>, que serán el 
+		  número renglones y columnas respectivamente que tendrá&nbsp; la matriz 
+		  en el programa.<br>
+                 </font></font></p>
+                                                           
+          <p><font size="-1" face="Helvetica, Arial, sans-serif"
+ color="#3333ff"><em><strong>a) &nbsp;Capturar la matriz</strong></em></font><br>
+          </p>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <p><font face="Arial,Helvetica"><font size="-1">Crea el 
+			procedimiento 
+              <b><font color="#3366ff">capturaMatriz</font></b>  que recibe como 
+			parámetros una matriz de flotantes de <b>REN</b> por      
+     <b>COL</b>. El procedimiento pedirá al usuario un valor flotante y lo 
+			almacenará en la localidad correspondiente en la matriz. (hasta que 
+			se llene la matriz se repite el mismo proceso).&nbsp;<br>
+                   </font></font></p>
+                                                                        
+                                            
+            <p><font size="-1" face="Helvetica, Arial, sans-serif">Tomemos como 
+			ejemplo las siguientes ecuaciones: </font><br>
+            </p>
+                                                                        
+                                            
+            <ul>
+                                                                        
+                                                              
+              <ul>
+                       <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">4X + 9Y + 12Z = 0</font></b></li>
+                       <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">3X + &nbsp;Y&nbsp; +&nbsp; 5Z = 2</font></b></li>
+                       <li><b><font size="-1"
+ face="Helvetica, Arial, sans-serif">6X + 9Y +&nbsp; 2Z = 1</font></b></li>
+                                                                        
+                                                              
+              </ul>
+                                                                        
+                                            
+            </ul>
+             <font size="-1" face="Helvetica, Arial, sans-serif">El formato en 
+			  que deberá llenar la matriz sería el siguiente:</font><br>
+                                                                        
+                                                                        
+                  
+            <blockquote><font size="-1"
+ face="Helvetica, Arial, sans-serif" color="#ff0000"><strong></strong></font><font
+ size="-1" face="Helvetica, Arial, sans-serif"><img src="ejemplo.jpg"
+ width="206" height="89" alt="">
+            </font></blockquote>
+                 </blockquote>
+                                                           
+          <p><font size="-1" face="Helvetica, Arial, sans-serif"
+ color="#3333ff"><em><strong>b) &nbsp;Imprimir la matriz</strong></em></font><br>
+           </p>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <p><font face="Arial,Helvetica"><font size="-1">Crea el 
+			procedimiento 
+              <b><font color="#3366ff">imprimeMatriz</font></b>, que recibe como 
+			parámetros una matriz de flotantes de <b>REN </b>por      
+               <b>COL</b>. El procedimiento desplegará en pantalla el contenido 
+			de la matriz.</font></font>           </p>
+                 </blockquote>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <blockquote><font size="-1"
+ face="Helvetica, Arial, sans-serif"><img src="ejemplo.jpg" width="206"
+ height="89" alt="">
+            </font></blockquote>
+                 </blockquote>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <ul>
+                                                                        
+                                                              
+              <blockquote>                                               
+                                                                        
+                                          
+                <blockquote>                                             
+                                                                        
+                                                                 
+                  <blockquote>                       </blockquote>
+                       </blockquote>
+                     </blockquote>
+                                                                        
+                                            
+            </ul>
+                 </blockquote>
+               <font size="-1" face="Helvetica, Arial, sans-serif"
+ color="#3333ff"><em><strong>c) &nbsp;Multiplicación de un escalar por un renglón</strong></em></font>                           
+                           
+          <blockquote>                                                   
+                                                                      
+            <p align="left"><font size="-1"
+ face="Helvetica, Arial, sans-serif">El nombre de esta operación lo dice todo. 
+			De lo que se trata es que dado un valor <strong>X</strong> 
+			(entero o fraccional), y un número <strong>Y</strong> que sea un 
+			renglón de la matriz; se va a multiplicar el valor <strong>X</strong> 
+			por cada elemento del renglón <strong>Y</strong> de la matriz.<br>
+          <br>
+            Un ejemplo, si se multiplica el <b>primer renglón</b> de la matriz 
+			de la <b>figura 1</b>, por <b>3</b>. El resultado de esto sería:</font></p>
+                                                                        
+                                                          
+            <p align="center"><font color="#ff0000"><i><font size="-1"
+ face="Helvetica, Arial, sans-serif"><b>figura 1</b></font></i></font><font
+ size="-1" face="Helvetica, Arial, sans-serif"><img src="ejemplo.jpg"
+ width="206" height="89" alt="">
+            -------&gt; <img src="mulren.jpg" width="172" height="62"
+ alt="">
+                   </font>             </p>
+                                                                        
+                                                          
+            <p align="left"><font size="-1"
+ face="Helvetica, Arial, sans-serif">Nota como el proceso fue el de simplemente 
+			multiplicar cada número del renglón seleccionado por el número 3. <br>
+                   </font>             <b><font color="#ff0000"
+ size="-1" face="Helvetica, Arial, sans-serif"><br>
+            Nota importante:</font></b><font size="-1"
+ face="Helvetica, Arial, sans-serif"> Para esta operación, está prohibido la 
+			multiplicación por "0"<em><strong>.</strong></em></font></p>
+                                                                        
+                                            
+            <p><font face="Arial,Helvetica"><font size="-1">Crea el 
+			procedimiento
+               <b><font color="#3366ff">renglonMatriz</font></b>, que recibe 
+			como parámetros una matriz de flotantes de <b>REN</b> por <b>COL</b>, 
+			un entero           <b>renglon</b> y un flotante <b>num.</b> El 
+			procedimiento multiplicará el <b>renglon</b> de la matriz por el 
+			valor de <b>num</b>.</font></font> 
+              </p>
+                    <font face="Arial,Helvetica"><font size="-1"><b>Ejemplo:<br>
+                   </b></font></font>                                   
+                                                                        
+            <ul>
+                     <li><font face="Arial,Helvetica"><font size="-1">Si la 
+					 matriz tiene los siguientes valores:</font></font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                                           
+            <blockquote>                                                 
+                                                                        
+    
+              <blockquote>                                               
+                                                                        
+                        
+                <p><font face="Arial,Helvetica"><font size="-1">2&nbsp;&nbsp; 5&nbsp;&nbsp; 
+				6&nbsp;&nbsp; 4</font></font> <br>
+                      <font face="Arial,Helvetica"><font size="-1">3&nbsp;&nbsp; 
+				4&nbsp;&nbsp; 5&nbsp;&nbsp; 1</font></font> <br>
+                      <font face="Arial,Helvetica"><font size="-1">7&nbsp;&nbsp; 
+				8&nbsp;&nbsp; 5&nbsp;&nbsp; 6</font></font> <br>
+                      <font face="Arial,Helvetica"><font size="-1">9&nbsp;&nbsp; 
+				7&nbsp;&nbsp; 1&nbsp;&nbsp; 5</font></font><font
+ face="Arial,Helvetica"><font size="-1"><br>
+                       </font></font></p>
+                     </blockquote>
+                   </blockquote>
+                                                                        
+                                            
+            <ul>
+                     <li><font face="Arial,Helvetica"><font size="-1">Después de 
+					 llamar al procedimiento <b>renglonMatriz</b> con el valor 
+					 de renglon de<b>  1</b> y el de num de <b>4.0</b>, los 
+					 nuevos valores en la matriz deberán ser:</font></font><font face="Arial,Helvetica"><font
+ size="-1"><br>
+                       </font></font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                            
+            <blockquote>                                                 
+                                                                        
+    
+              <blockquote>                                               
+                                                                        
+                        
+                <p><font face="Arial,Helvetica"><font size="-1">&nbsp; 2&nbsp;&nbsp;&nbsp; 
+				5&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp; 4</font></font><br>
+                       <b><font face="Arial,Helvetica"><font size="-1">12&nbsp;&nbsp; 
+				16&nbsp; 20&nbsp;&nbsp; 4</font></font></b> <br>
+                      <font face="Arial,Helvetica"><font size="-1">&nbsp; 7&nbsp;&nbsp;&nbsp; 
+				8&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp; 6</font></font> 
+                <br>
+                      <font face="Arial,Helvetica"><font size="-1">&nbsp; 9&nbsp;&nbsp;&nbsp; 
+				7&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp; 5</font></font></p>
+                     </blockquote>
+                   </blockquote>
+                                              </blockquote>
+                                                           
+          <p align="left"><font color="#3333ff"><em><strong>d) &nbsp;Intercambiar 
+		  renglones de la matriz</strong></em></font><br>
+                 </p>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <p align="left"><font size="-1"
+ face="Helvetica, Arial, sans-serif">La segunda función es la más sencilla ya 
+			que sólo consiste en intercambiar dos renglones dados de la matriz. <br>
+                   </font></p>
+                 </blockquote>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <p><font size="-1" face="Helvetica, Arial, sans-serif"> Como entrada 
+			recibes la matriz y dos números que representan los renglones de la 
+			matriz que se van a intercambiar. <br>
+                   </font></p>
+                 </blockquote>
+                                                           
+          <ul>
+                   <li><font size="-1"
+ face="Helvetica, Arial, sans-serif">En la matriz de ejemplo (<i><b>figura 1</b></i>)</font></li>
+                                                                        
+                          
+          </ul>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <p><font size="-1" face="Helvetica, Arial, sans-serif"><img
+ src="ejemplo.jpg" width="206" height="89" alt="">
+          </font>&nbsp;            <font color="#ff0000"><i><b>figura1</b></i></font> 
+              </p>
+                 </blockquote>
+                                                           
+          <ul>
+                   <li><font size="-1"
+ face="Helvetica, Arial, sans-serif">Intercambiar los renglones 1 y 2 se 
+				   reflejaría así:</font></li>
+                                                                        
+                          
+          </ul>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <blockquote>                                                 
+                                                                        
+    
+              <p><font size="-1" face="Helvetica, Arial, sans-serif"><img
+ src="exchange.jpg" width="181" height="63" align="middle" alt="">
+                     </font> </p>
+                   </blockquote>
+                                                                        
+                                                                        
+        
+            <p>   </p>
+                                                                        
+                                            
+            <p><font face="Arial,Helvetica"><font size="-1">Crea el 
+			procedimiento 
+              <b><font color="#3366ff">intercambiaRenglones</font></b>, que 
+			recibe como parámetros una matriz de flotantes de <b>REN</b> por 
+             <b>COL</b>, un entero <b>renglon1</b> y un entero <b>renglon2.</b> 
+  		  El procedimiento intercambiará los valores del <b>renglon1 </b>por los 
+			valores del<b> renglon2</b> de la matriz.</font></font> </p>
+                        <font face="Arial,Helvetica"><font size="-1"><b>Ejemplo:</b> 
+              <br>
+                   </font></font>                                       
+                                                                     
+            <ul>
+                     <li><font size="-1"
+ face="Helvetica, Arial, sans-serif">S</font><font
+ face="Arial,Helvetica"><font size="-1">i la matriz tiene los siguientes 
+					 valores:</font></font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                                           
+            <blockquote>                                                 
+                                                                        
+    
+              <blockquote>                                               
+                                                                        
+                        
+                <p><font face="Arial,Helvetica"><font size="-1">2&nbsp;&nbsp; 5&nbsp;&nbsp; 
+				6&nbsp;&nbsp; 4</font></font> <br>
+                      <b><font face="Arial,Helvetica"><font size="-1">3&nbsp;&nbsp; 
+				4&nbsp;&nbsp; 5&nbsp;&nbsp; 1</font></font> <br>
+                       <font face="Arial,Helvetica"><font size="-1">7&nbsp;&nbsp; 
+				8&nbsp;&nbsp; 5&nbsp;&nbsp; 6</font></font></b> <font
+ face="Arial,Helvetica"><font size="-1"><br>
+                       </font></font></p>
+                     </blockquote>
+                   </blockquote>
+                                                                        
+                                            
+            <ul>
+                     <li><font face="Arial,Helvetica"><font size="-1">Después de 
+					 llamar al procedimiento <b>intercambiaRenglones</b> con el 
+					 valor del                  <b>renglon1               </b>= <b>
+					 1</b> y el de <b>renglon2</b>
+    				 = <b>2</b>, los nuevos valores en la matriz deberán ser:</font></font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                            
+            <blockquote>                                                 
+                                                                        
+    
+              <blockquote><font face="Arial,Helvetica"><font size="-1">2&nbsp;&nbsp; 5&nbsp;&nbsp; 
+				  6&nbsp;&nbsp; 4</font></font><br>
+                       <b><font face="Arial,Helvetica"><font size="-1">7&nbsp;&nbsp; 8&nbsp;&nbsp; 
+				  5&nbsp;&nbsp; 6</font></font></b><br>
+                       <b><font face="Arial,Helvetica"><font size="-1">3&nbsp;&nbsp; 4&nbsp;&nbsp; 
+				  5&nbsp;&nbsp; 1</font></font></b><br>
+                     </blockquote>
+                   </blockquote>
+                                                                        
+                                                                       
+            <p>   </p>
+                                                                        
+                                            
+            <blockquote>                                                 
+                 </blockquote>
+          </blockquote>
+                                                           
+          <p><font color="#3333ff"><em><strong>e) &nbsp;Sumar a un renglón el 
+		  múltiplo de otro</strong></em></font><br>
+                 </p>
+                                                           
+          <blockquote>                                                  
+                                                          
+            <p><font face="Helvetica, Arial, sans-serif" size="-1">Esta 
+			operación se visualiza mejor si comenzamos a estudiarla sólo con dos 
+			números y posteriormente regresamos a la matriz.<br>
+                   </font></p>
+                 </blockquote>
+                                                           
+          <blockquote>                                                   
+                                                                      
+            <p><font face="Helvetica, Arial, sans-serif" size="-1"> Por ejemplo, 
+			para esta operación se te podría pedir que le sumaras a un número           <strong>
+			A</strong> la mitad de un valor <strong>B</strong>. Ahora, dados los 
+			valores <b>A=3</b> y<b> B=4</b>. El resultado de la operación sería <b>
+			5</b>. Ya que <b>A+1/2(B) =&gt; 3 </b>+
+            <b>1/2(4)</b>             <b>= 5</b>.</font><font
+ face="Helvetica, Arial, sans-serif" size="-1"><br>
+                   </font></p>
+                                                                        
+                                            
+            <p><font face="Helvetica, Arial, sans-serif" size="-1">En este 
+			ejemplo en particular se especificó que a <strong>A</strong> se le 
+			sumara la mitad de <strong>B</strong>, sin embargo para el <b>método 
+			de Gauss</b> la proporción es variable, es decir, podrás necesitar a 
+			veces sumar a <strong>A</strong> dos veces el valor de <strong>B</strong> 
+   		 o sumar a <strong>A</strong> una tercera parte el valor de <strong>B</strong>, 
+			etc.</font></p>
+                                                                        
+                                            
+            <p><font face="Helvetica, Arial, sans-serif" size="-1">En otras 
+			palabras lo que vas a hacer es: <strong>A=A+num*B</strong>.</font></p>
+                                                                        
+                                            
+            <p><font face="Helvetica, Arial, sans-serif" size="-1"> Donde 
+              <strong>A</strong>,<strong>B</strong>   son números enteros y <strong>
+			num</strong> ses un número flotante.             <b>"num"</b>
+  		  es el valor que está indicando si se desea sumar la mitad (1/2), el 
+			doble(2), la tercera parte(1/3) o qué relación.       
+     </font></p>
+                                                                        
+                                                          
+            <p><font face="Helvetica, Arial, sans-serif" size="-1">Ahora, 
+			aplicando esto a la operación del <b>método de Gauss</b>, el 
+			procedimiento es el mismo, sólo que aplicado a dos renglones de la 
+			matriz. Es decir, a cada número contenido en un renglón A se le va a 
+			sumar un múltiplo del número contenido en la misma posición del 
+			renglón B. </font></p>
+                                                                        
+                                                          
+            <p align="center"><font face="Helvetica, Arial, sans-serif"
+ size="-1"> <b>RenglonA(posiciónX) = RenglonA(posiciónX) + Num * 
+			RenglonB(posiciónX)</b></font> </p>
+                                                                        
+                                            
+            <p><font face="Helvetica, Arial, sans-serif" size="-1"><b>Ejemplo:</b> 
+              <br>
+                   </font></p>
+                                                                        
+                                            
+            <ul>
+                     <li><font face="Helvetica, Arial, sans-serif"
+ size="-1">Para la matriz de la <b>figura 1</b>.&nbsp;</font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                            
+            <blockquote>                                                 
+                                                                        
+       
+              <p><font size="-1" face="Helvetica, Arial, sans-serif"><img
+ src="ejemplo.jpg" width="206" height="89" alt="">
+            </font>&nbsp;            <i><b>figura1</b></i> </p>
+          </blockquote>
+                                                                        
+                                              
+            <div align="center">                                         
+                                                                    
+            <ul>
+                     <li>                                               
+                                                                        
+                        
+                <div align="left"><font
+ face="Helvetica, Arial, sans-serif" size="-1">Si se necesitara realizar la suma 
+					de la mitad del primer renglón al segundo renglón, el 
+					resultado final sería el siguiente:</font></div>
+                     </li>
+                                                                        
+                                            
+            </ul>
+             </div>
+                                                                        
+                                                          
+            <blockquote>                                                 
+                                                                        
+    
+              <p align="left"><font face="Helvetica, Arial, sans-serif"
+ size="-1"><img src="sumaren.jpg" width="318" height="61" alt="">
+                     </font><font face="Helvetica, Arial, sans-serif"
+ size="-1"><br>
+                     </font></p>
+                   </blockquote>
+                                                                        
+                                            
+            <ul>
+                     <li><font face="Helvetica, Arial, sans-serif"
+ size="-1">Para el primer elemento del segundo renglón se siguió la operación 
+					 que se describía en el inicio de esta sección, es decir:</font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                            
+            <blockquote>                                                 
+                                                                        
+    
+              <ul>
+                       <li><b><font face="Helvetica, Arial, sans-serif"
+ size="-1">3+1/2(4)=5</font></b></li>
+                       <li><b><font face="Helvetica, Arial, sans-serif"
+ size="-1">1+1/2(9)=5.5</font></b></li>
+                       <li><font face="Helvetica, Arial, sans-serif"
+ size="-1">Y así sucesivamente hasta terminar con todos los elementos.</font></li>
+                                                                        
+                                                              
+              </ul>
+                   </blockquote>
+                                                                        
+                                                                        
+                                                                
+            <p><font face="Arial,Helvetica"><font size="-1">Crea el 
+			procedimiento 
+              <b><font color="#3366ff">sumaMultiplo</font></b>, que recibe como 
+			parámetros una matriz de enteros de <b>REN</b> por <b>COL</b>, un 
+			entero           <b>renglonA</b>, un entero <b>renglonB. y </b>un 
+			valor flotante<b>  num.</b> El procedimiento realizará lo siguiente:</font></font><font
+ face="Helvetica, Arial, sans-serif" size="-1"> "A cada número contenido en un <b>
+			renglonA</b> se le va a sumar un múltiplo del número contenido en la 
+			misma posición del     <b>renglonB</b></font><font
+ face="Arial,Helvetica"><font size="-1">" </font></font></p>
+                                                                        
+                                            
+            <p align="center"><font face="Helvetica, Arial, sans-serif"
+ size="-1"> <b>RenglonA(posiciónX) = RenglonA(posiciónX) + Num * 
+			RenglonB(posiciónX)</b></font> </p>
+                                                                        
+                                            
+            <p><font face="Helvetica, Arial, sans-serif" size="-1"><b>Ejemplo:</b><br>
+                   </font></p>
+                                                                        
+                                            
+            <ul>
+                     <li><font face="Helvetica, Arial, sans-serif"
+ size="-1">Para la siguiente matriz:&nbsp;</font></li>
+                                                                        
+                                            
+            </ul>
+                                                                        
+                                            
+            <blockquote><b><font face="Helvetica, Arial, sans-serif"
+ size="-1">4.0 &nbsp; &nbsp;9.0&nbsp;&nbsp; 12.0 &nbsp; &nbsp; &nbsp;0<br>
+         	   3.0 &nbsp; &nbsp;1.0 &nbsp; &nbsp; 5.0 &nbsp; 2.0<br>
+                     </font></b><font
+ face="Helvetica, Arial, sans-serif" size="-1">6.0 &nbsp; &nbsp;9.0 &nbsp; &nbsp; 2.0 &nbsp; 1.0</font></blockquote>
+                                                                        
+                                            
+            <ul>
+                     <li>                                               
+                                                                        
+                             
+                <div align="left">                                       
+                                                                         
+                               
+                <p><font face="Arial,Helvetica"><font size="-1">Después de 
+				llamar al procedimiento <b>sumaMultiplo</b> con el valor del <b>
+				renglonA = 1</b>, el <b>renglonB</b> <b>= 0</b> y <b>num = 1/2,</b></font></font><font
+ face="Helvetica, Arial, sans-serif" size="-1"> es decir, si se necesitara 
+				realizar la suma de la mitad del <b>renglonB</b> al <b>renglonA</b></font><font
+ face="Arial,Helvetica"><font size="-1"><b>,</b>&nbsp; los nuevos valores en la 
+				matriz deberán ser:</font></font>              </p>
+                       </div>
+                     </li>
+                                                                        
+                                            
+            </ul>
+                   <font face="Arial,Helvetica"><font size="-1"> </font></font> 
+                                                                         
+                                     
+            <p>   </p>
+                                                                        
+                                            
+            <blockquote><b><font face="Helvetica, Arial, sans-serif"
+ size="-1">4.0 &nbsp; &nbsp;9.0&nbsp;&nbsp; &nbsp;12.0 &nbsp; &nbsp; &nbsp;0</font></b><br>
+                     <font color="#ff0000"><b><font
+ face="Helvetica, Arial, sans-serif" size="-1">5.0 &nbsp; &nbsp;5.5 &nbsp; &nbsp;11.0 &nbsp; 2.0</font></b></font><br>
+                     <font face="Helvetica, Arial, sans-serif" size="-1"> 
+				6.0 &nbsp; &nbsp;9.0 &nbsp; &nbsp;&nbsp; 2.0 &nbsp; 1.0</font></blockquote>
+                 </blockquote>
+                                                           
+          <p><font color="#3333ff"><em><strong>f) &nbsp;Sumar diagonal</strong></em></font> 
+              <br>
+                 </p>
+                                                             
+          <blockquote>                                                  
+                                                          
+            <p><font face="Arial,Helvetica"><font size="-1">Crea la función</font></font><font
+ face="Arial,Helvetica"><font size="-1"><b> <font color="#3333ff">sumaDiagonal 
+              </font></b></font></font><font face="Arial,Helvetica"><font
+ size="-1">que recibe como parámetros una matriz de flotantes de 
+              <b>REN</b> por <b>COL </b></font></font><font
+ face="Arial,Helvetica"><font size="-1">y regresa como resultado la suma de 
+			todos los elementos que se encuentran en la<b>            </b>
+			diagonal de la matriz.</font></font>                                  </p>
+                                                                     
+            <blockquote><font face="Arial,Helvetica"><font size="-1"></font></font></blockquote>
+               </blockquote>
+                                                           
+          <blockquote><font face="Helvetica, Arial, sans-serif"
+ size="-1"><b>Ejemplo:</b><br>
+                   </font>                                              
+                                                                 
+            <ul>
+                   <li><font face="Helvetica, Arial, sans-serif"
+ size="-1">Para la siguiente matriz:&nbsp;</font></li>
+                                                                     
+            </ul>
+                                                                        
+                                            
+            <blockquote><font face="Helvetica, Arial, sans-serif"
+ size="-1" color="#000000"><font color="#ff0000"><b>4.0 </b></font>&nbsp; &nbsp;9.0&nbsp;&nbsp; 
+				&nbsp;12.0 &nbsp; &nbsp; &nbsp;0</font><font
+ color="#000000"><br>
+                   </font><font color="#000000"><font
+ face="Helvetica, Arial, sans-serif" size="-1">5.0 &nbsp; <font
+ color="#ff0000"><b>&nbsp;5.5</b></font> &nbsp; &nbsp;11.0 &nbsp; 2.0</font><br>
+                   </font><font face="Helvetica, Arial, sans-serif"
+ size="-1" color="#000000"> 6.0 &nbsp; &nbsp;9.0 &nbsp; &nbsp; <font
+ color="#ff0000"><b>&nbsp;2.0</b></font> &nbsp; 1.0</font>               
+                </blockquote>
+                                                                     
+            <blockquote>            </blockquote>
+                                                                        
+                                            
+            <ul>
+                   <li>                                                 
+                                                                        
+                           
+                <div align="left">                                       
+                                                                         
+                               
+                <p><font face="Arial,Helvetica"><font size="-1"><b>sumaDiagonal
+                </b>debe regresar como resultado: <b>11.5</b></font></font></p>
+                     </div>
+                   </li>
+                                                                     
+            </ul>
+               </blockquote>
+               <font color="#3333ff"><em><strong></strong></em></font>  
+        
+          <ul>
+                                                                        
+                                  
+          </ul>
+             </blockquote>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        </blockquote>
+                                                                       
+      <blockquote>                                                       
+                            
+        <blockquote>                                                     
+                                                                        
+                                                                        
+              
+          <blockquote>  </blockquote>
+           </blockquote>
+            <font color="#3333ff"><u><font size="-1"
+ face="Helvetica, Arial, sans-serif"><big><b>¿Cómo utilizo esto para resolver un 
+		  sistema de ecuaciones?</b></big></font></u><br>
+           </font>            </blockquote>
+                                                                        
+           
+      <blockquote>                                                       
+                         
+        <blockquote>                                                     
+                                                            
+          <p><font face="Helvetica, Arial, sans-serif" size="-1"><br>
+     	 Lo que nosotros queremos al resolver un sistema de ecuaciones es 
+		  encontrar el valor de las variables, despejar <strong>X</strong>,              
+          <strong>Y</strong>   y           <strong>Z</strong> de la ecuación. 
+		  Recuerda que cada columna tiene los coeficientes que representan cada 
+		  variable, es decir la primera a X, la segunda a Y, y la tercera a Z. 
+		  La última columna es la de las constantes.           </font></p>
+                                                                        
+                                                  
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">El método de 
+		  Gauss lo que propone es hacer uso de sus operaciones básicas, 
+		  aplicarlas a una matriz como la de la figura 1. Para llegar a una 
+		  matriz como la siguiente:</font></p>
+                                                                        
+                                                  
+          <p><font face="Helvetica, Arial, sans-serif" size="-1"><strong>Figura 
+		  2</strong>.</font></p>
+                                                                        
+                                                  
+          <p align="left"><font face="Helvetica, Arial, sans-serif"
+ size="-1"><img src="resEx.jpg" width="169" height="55" alt="">
+                   </font> </p>
+                                                                        
+                                                  
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">Si recuerdas 
+		  todas las indicaciones que ya se han explicado a lo largo de este 
+		  documento, sabrás que la interpretación de esa matriz es:</font></p>
+                                                                        
+                                                  
+          <p align="left"><b><font face="Helvetica, Arial, sans-serif"
+ size="-1">X = 8<br>
+          Y = 5<br>
+          Z = 2</font></b></p>
+                                                                        
+                                                                 
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">Con lo cual ya 
+		  estaría resuelto el sistema de ecuaciones. Esto es importante porque 
+		  deberás mantener en mente cuál es el estado final al que deberá de 
+		  llegar tu matriz.<br>
+          Por supuesto que los valores de 8, 5 y 2 dados son sólo un ejemplo. El 
+		  verdadero valor que deberías de obtener al realizar el método de Gauss 
+		  sobre la matriz de la figura 1, es el siguiente.</font><br>
+               <font face="Helvetica, Arial, sans-serif" size="-1"><img
+ src="solucion1Ejemplo.jpg" width="398" height="81" alt="">
+               </font><font face="Helvetica, Arial, sans-serif"
+ size="-1"><br>
+               </font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">Como puedes 
+		  ver, los valores de la diagonal deben quedar en uno y el resto en 0, 
+		  sin incluir a la columna de constantes, es decir, las operaciones que 
+		  realizes serán desde la primer columna hasta la<b> última - 1.</b></font></p>
+             </blockquote>
+                                                 
+        <ul>
+               <li><font size="-1" face="Helvetica, Arial, sans-serif"
+ color="#3333ff"><font color="#000000">Comenzarás el proceso de conversión desde 
+			   el primer elemento de la primer columna. Para un valor de 1, 
+			   deberas multiplicar el reglón en el que te encuentres por el 
+			   inverso del elemento a convertir en 1. Usa la operación:</font>             <em><strong>
+			   "Multiplicación de un escalar por un renglón"</strong></em></font></li>
+                                                 
+        </ul>
+                                                 
+        <blockquote>                                                    
+  
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">     Por 
+		  ejemplo, para que el cuatro sea 1, deberás multiplicar todo el renglón 
+		  por 1/4. De este modo al multiplicar 4 por 1/4, obtendrás el 1.<br>
+               </font></p>
+                                                           
+          <blockquote>                                                   
+             
+            <p><font color="#0000ff" size="-1"
+ face="Helvetica, Arial, sans-serif"><img src="proceso-1.jpg"
+ width="207" height="84" alt="">
+                 </font><font size="-1"
+ face="Helvetica, Arial, sans-serif">&nbsp;         </font>            <br>
+                 </p>
+               </blockquote>
+                                                           
+          <p><font size="-1" face="Helvetica, Arial, sans-serif"><b>Resultado:</b></font><br>
+               </p>
+                                                           
+          <blockquote>                                                   
+             
+            <p><font size="-1" face="Helvetica, Arial, sans-serif"><img
+ src="proc1.jpg" alt="" width="334" height="78">
+                 </font><br>
+                 </p>
+               </blockquote>
+             </blockquote>
+                                                 
+        <ul>
+               <li><font face="Helvetica, Arial, sans-serif" size="-1">Para 
+			   lograr convertir en cero un elemento usarás la operación: 
+             <i><font color="#3333ff"><b>"Sumar a un renglón el múltiplo de 
+			   otro"</b></font></i>.              </font></li>
+                                                 
+        </ul>
+                                                 
+        <blockquote>                                                    
+  
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">        
+     	 El valor múltiplo que usarás deberá ser el mismo que el número que 
+		  quieres convertir en 0, pero con el signo invertido.Y el renglón del 
+		  cuál sacarás su múltiplo será aquel del que ya hayas convertido a un 
+		  número 1 en la misma columna.</font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">Por ejemplo, el 
+		  primer elemento del segundo renglón, el 3.</font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">"Tomas como 
+		  múltiplo el mismo valor pero con signo invertido":<b> -3</b>.</font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">"Y tomas como 
+		  renglón aquel en el que haya un 1 en la misma columna del elemento a 
+		  convertir en cero": El 3 está en la primer columna.Y ya sabes que en 
+		  esa columna, en el primer renglón había un 4 que fue convertido a 1, 
+		  así que voy a sumar al renglón 2 el múltiplo -3 del primer renglón que 
+		  es donde está el 1.</font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">De esta forma 
+		  tendrás la siguiente operación: 3 + (-3)*(1)=0.</font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">Y así generamos 
+		  el 0.<br>
+               </font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1"><b>Ejemplo:</b><br>
+               </font></p>
+                                                           
+          <p>   </p>
+                                                           
+          <blockquote>                                                   
+                  
+            <p><font size="-1" face="Helvetica, Arial, sans-serif"><img
+ src="proc1.jpg" alt="" width="334" height="78">
+                 </font></p>
+               </blockquote>
+                                                           
+          <p><font color="#000000" face="Helvetica, Arial, sans-serif"
+ size="-1"><b>Resultado:</b></font><br>
+               </p>
+                                                           
+          <blockquote><font color="#3333ff" size="-1"
+ face="Helvetica, Arial, sans-serif"><b>3+(-3*1), &nbsp; 1+(-3*2.25), &nbsp; 5+(-3 * 3) = 
+			  2+(-3*0)</b></font></blockquote>
+                                                                
+          <p>   </p>
+                                                           
+          <blockquote>                                                   
+             
+            <p><font size="-1" face="Helvetica, Arial, sans-serif"><img
+ src="proc2.jpg" alt="" width="334" height="79">
+                 </font><br>
+                 </p>
+               </blockquote>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1">Esta misma 
+		  operación la realizas para los renglones que sigan hacia abajo y hacia 
+		  arriba (si es que los tiene), del 1 que hayas convertido. El resultado 
+		  será que en un recorrido de la matriz, convertirás primero en 1 el 
+		  valor que está sobre la diagonal y después en 0's el resto de los 
+		  valores de esa misma columna.</font></p>
+                                                           
+          <p><font face="Helvetica, Arial, sans-serif" size="-1"><b>NOTAS:</b><br>
+               </font></p>
+                                                           
+          <ul>
+                 <li><font face="Helvetica, Arial, sans-serif" size="-1">
+				 Recuerda que no puedes multiplicar por 0.</font></li>
+                                                           
+          </ul>
+                                                           
+          <ul>
+                 <li><font face="Helvetica, Arial, sans-serif" size="-1"> 
+             	Debes verificar la siguiente condición antes de intentar 
+				 convertir en 1: Si el valor que está en la diagonal es 0 
+				 entonces deberás intercambiar ese renglón por otro en el que en 
+				 esa posición haya un valor diferente de 0. Puede ser el de la 
+				 columna superior o inferior, no existe una regla para esto. Y 
+				 será necesario comenzar el proceso de nuevo desde el principio.</font></li>
+                                                           
+          </ul>
+                                                           
+          <ul>
+                 <li><font face="Helvetica, Arial, sans-serif" size="-1">Ten 
+				 presente que vas a detenerte en la última columna menos uno. Ya 
+				 que en la última columna se "guardan" de forma implícita los 
+				 valores finales de X, Y, Z. Como lo viste en un principio.</font></li>
+                                                           
+          </ul>
+                                                           
+          <ul>
+                 <li><font face="Helvetica, Arial, sans-serif" size="-1">
+				 Recuerda que siempre estarás recibiendo una matriz de 3 X 4. Y 
+				 no olvides que debe funcionar para cualquier valor en los 
+				 coeficientes. La matriz introducida como ejemplo dio como 
+				 resultado valores fraccionales, así que la matriz que manejarás 
+				 será de valores flotantes.</font></li>
+                 <li><font face="Helvetica, Arial, sans-serif" size="-1">Si 
+				 deseas información más detallada sobre el <a
+ href="../index.htm"><b>Método de Gauss</b></a>, da clic en la liga donde 
+				 encontrarás una serie de imágenes del proceso de resolución de 
+				 la matriz de la <b>figura 1</b>, paso a paso.</font></li>
+           
+          </ul>
+         </blockquote>
+       </blockquote>
+       
+      <ul>
+         
+        <ul>
+                                                                        
+                            
+        </ul>
+                                                                        
+       
+      </ul>
+           <font face="Arial,Helvetica"><font color="#ffffff"><font
+ size="-1">.</font></font></font></td>
+           </tr>
+                                         
+  </tbody>          
+</table>
+          </center>
+                      
+<p><font color="#ffffff">.</font> </p>
+          <br>
+          <br>
+         <br>
+        <br>
+       <br>
+      <br>
+     <br>
+    <br>
+   <br>
+  <br>
+ <br>
+</body>
+</html>
