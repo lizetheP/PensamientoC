@@ -15,6 +15,22 @@ def esconde_en_archivo():
         else:
             file.write(frase[i])
     file.close()
+
+def esconde_en_archivo2(frase):
+    file = open("secreto.txt", "w")
+    for i in range(len(frase)):
+        if frase[i].isalpha() == True:
+            if frase[i] == 'z':
+                file.write('a')
+            elif frase[i] == 'Z':
+                file.write('A')
+            else:
+                num = ord(frase[i]) + 1
+                letra = chr(num)
+                file.write(letra)
+        else:
+            file.write(frase[i])
+    file.close()
     
 def cuenta_consonantes(nombre):
     file = open(nombre, "r")
@@ -33,6 +49,21 @@ def cuenta_consonantes(nombre):
     file.close()
     return cont
 
+def cuenta_consonantes2(nombre):
+    vocales = "aeiou"
+    file = open(nombre, "r")
+    cont = 0
+    continua = True
+    while continua == True:
+        letra = file.read(1)
+        if not letra:
+            continua = False
+        else:
+            letra = letra.lower()
+            if letra.isalpha() == True and letra not in vocales:
+                cont = cont + 1
+    file.close()
+    return cont
 
 
 def cuenta_digitos2(nombre):
@@ -90,6 +121,19 @@ def busca_apellido(apellido):
             print("%s" % linea, end='')
         linea = file.readline()
     file.close()
+
+def busca_apellido2(apellido):
+    file = open ("alumnos.txt", "r")
+    file.seek(0)
+    linea = file.readline()
+    continua = True
+    while continua == True:
+        if linea == '':
+            continua = False
+        elif apellido in linea:
+            print("%s" % linea, end='')
+        linea = file.readline()
+    file.close()
     
 def menu():
     print("1. Esconde en archivo")
@@ -105,10 +149,11 @@ def main():
         menu()
         opcion = int(input("Introduce una opcion: "))
         if opcion == 1:
-            esconde_en_archivo()
+            frase = str(input("Dame una frase: "))
+            esconde_en_archivo2(frase)
         elif opcion == 2:
             name = str(input("Introduce el nombre del archivo: "))
-            res = cuenta_consonantes(name)
+            res = cuenta_consonantes2(name)
             print("Hay %i caracteres en el archivo" % res)
         elif opcion == 3:
             nameO = str(input("Introduce el nombre del archivo origen: "))
@@ -119,7 +164,7 @@ def main():
             captura_alumnos(n)
         elif opcion == 5:
             apellido = str(input("Introduce el apellido a buscar: "))
-            busca_apellido(apellido)
+            busca_apellido2(apellido)
         elif opcion == 6:
             print("Adios")
             continua = False
