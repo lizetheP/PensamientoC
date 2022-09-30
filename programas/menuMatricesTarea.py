@@ -23,7 +23,7 @@ def main():
             print("Adiós")
             continua = False
         else:
-            print("ERROR OPCION INVALIDA")
+            print("Error opción inválida")
         
 main()
 
