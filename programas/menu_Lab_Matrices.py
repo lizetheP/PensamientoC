@@ -38,19 +38,18 @@ def main():
     r = int(input("Introduce el número de renglones: "))
     c = int(input("Introduce el número de columnas: "))
     m = crea_matriz(r, c)
-    while continua:
-        print()
+    while continua == True:
         menu()
         opcion = int(input("Introduce una opcion: "))
         if opcion == 1:
            
         elif opcion == 2:
            
-        elif opcion == 9:
-            print("Adios")
+        elif opcion == 8:
+            print("Adiós")
             continua = False
         else:
-            print("Opcion_invalida")
+            print("Error opción inválida")
             
 main()
 

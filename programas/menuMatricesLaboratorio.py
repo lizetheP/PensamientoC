@@ -1,8 +1,8 @@
 def main():
+    continua = True
     r = int(input("Introduce el número de renglones: "))
     c = int(input("Introduce el número de columnas: ")) 
     m = creaMatriz(r, c)
-    continua = True
     while continua == True:
         menu()
         opcion = int(input("Introduce una opcion: "))
