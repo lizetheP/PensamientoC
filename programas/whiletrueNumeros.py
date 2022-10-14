@@ -2,7 +2,16 @@ def menu():
     print()
     print("1. Imprime Mensaje")
     print("2. Salir")
-    
+
+def estadistica_descriptiva(tablero):
+    pass
+
+def grafica1(tablero):
+    pass
+
+def grafica2(tablero):
+    pass
+
 def comprueba_clave(password):
     pass
 
