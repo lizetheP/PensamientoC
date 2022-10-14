@@ -1,11 +1,16 @@
 def menu():
+    print()
     print("1. Imprime Mensaje")
     print("2. Salir")
     
+def comprueba_clave(password):
+    pass
+
 def main():    
     continua = True
+    password = "12345"
+    comprueba_clave(password)
     while continua == True:
-        print("\n")
         menu()
         opcion = int (input("Introduce una opcion: "))
         if opcion == 1:
