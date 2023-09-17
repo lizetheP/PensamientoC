@@ -1,0 +1,56 @@
+Rapido 414 y 406
+i = 0
+res = 18
+for i in range (6, 0, -1):
+	if res < 24:
+	        res = res + i
+	else:
+        	res = res - i
+print(res)
+
+Parcial 414 y 406
+Al finalizar la siguiente sección de código, ¿Qué contendrá la variable res?
+
+res = 10
+for i in range (7, 13):
+    if i % 2 == 0:
+       res = res + 3
+    else:
+       res = res - 1
+print(res)
+
+Rapido 415
+Al finalizar la siguiente sección de código, ¿Qué contendrá la variable res?
+
+i = 9
+res = 25
+for i in range(4, 0, -1):
+    res = res + i
+print(res)
+
+Parcial 2 415
+Al finalizar la siguiente sección de código, ¿Qué contendrá la variable res?
+
+res = 5
+for i in range (7, 1, -1):
+    if res < 15:
+        res = res + i
+    else:
+        res = res - i
+print(res)
+
+Parcial 2 410
+Al finalizar la siguiente sección de código, ¿Qué contendrá la variable res?
+
+res = 5
+for i in range (5, 0, -1):
+    if res < 15:
+        res = res + i
+    else:
+        res = res - i
+print(res)
+
+res = 12
+for i in range (7, 1, -1):
+    res = res + i
+print(res)
