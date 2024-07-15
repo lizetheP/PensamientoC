@@ -40,7 +40,7 @@ def main():
     m = crea_matriz(r, c)
     while continua == True:
         menu()
-        opcion = int(input("Introduce una opcion: "))
+        opcion = int(input("Introduce una opción: "))
         if opcion == 1:
            
         elif opcion == 2:
@@ -49,7 +49,7 @@ def main():
             print("Adiós")
             continua = False
         else:
-            print("Error opción inválida")
+            print("Opción inválida")
             
 main()
 
