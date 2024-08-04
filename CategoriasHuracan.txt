@@ -1,0 +1,6 @@
+Categorías de huracán, según la escala Saffir-Simpson
+Categoría 1: 119 - 152 km/h
+Categoría 2: 152 - 177 km/h
+Categoría 3: 178 - 208 km/h
+Categoría 4: 209 - 251 km/h
+Categoría 5: 252 km/h o más
