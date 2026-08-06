@@ -1,0 +1,244 @@
+/* Hide feedback-launcher roots (#lw-feedback-*) from print/PDF output — browsers
+   otherwise render these fixed/absolute overlays on top of the printed page. Keep
+   this list in sync with any new top-level element the launchers inject. */
+@media print {
+    #lw-feedback-dialog,
+    #lw-feedback-marker,
+    #lw-feedback-iframe {
+        display: none !important;
+    }
+}
+
+#lw-feedback-iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 8px);
+    height: 100%;
+    z-index: -1000;
+    border: none;
+    background-color: white;
+    opacity: 0;
+    /* WCAG — a closed panel must not be focusable: opacity/pointer-events alone leave the iframe's
+       content in the tab order, so hide it with visibility too. The fade-out is preserved by deferring
+       the visibility flip until the opacity transition finishes (visibility 0s linear .15s); opening
+       flips it back immediately (see .active). */
+    visibility: hidden;
+    transition: opacity .15s ease-out, visibility 0s linear .15s;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#lw-feedback-iframe.in-aside {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#lw-feedback-iframe.active {
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    /* Open immediately (no visibility delay) so the panel and its focusable content appear at once. */
+    transition: opacity .15s ease-out, visibility 0s;
+    pointer-events: all;
+}
+
+/* ── Notification card (dialog) ── */
+#lw-feedback-dialog {
+    background-color: #fff;
+    position: fixed;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #D5D7DA;
+    box-shadow: 0 12px 16px -4px rgba(10, 13, 18, 0.08),
+                0 4px 6px -2px rgba(10, 13, 18, 0.03),
+                0 2px 2px -1px rgba(10, 13, 18, 0.04);
+    font-family: 'Satoshi', sans-serif;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    bottom: 90px;
+    left: 80px;
+    z-index: 999;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    animation-name: show;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* Icon container */
+#lw-feedback-icon {
+    flex-shrink: 0;
+    line-height: 0;
+}
+
+/* Right column: text + actions */
+#lw-feedback-dialog-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Title + description group */
+#lw-feedback-dialog-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-right: 32px;
+}
+
+#lw-feedback-dialog-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #181D27;
+    line-height: 1.5;
+}
+
+#lw-feedback-dialog-content {
+    color: #181D27;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Actions row */
+#lw-feedback-dialog-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* ── FAB marker ── */
+#lw-feedback-marker {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 1;
+    background-color: #07155F;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* WCAG 2.4.7 — Focus Visible: 2px offset, consistent with all other focus-visible rules */
+#lw-feedback-marker:focus-visible {
+    outline: 2px solid #1849a9;
+    outline-offset: 2px;
+}
+
+#lw-feedback-marker::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #fff;
+
+}
+
+/* ── Launch button ── */
+#lw-feedback-button {
+    display: inline-block;
+    background-color: #06114C;
+    color: white;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.3s;
+    line-height: 1.5;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05),
+                inset 0 -2px 0 rgba(10, 13, 18, 0.05),
+                inset 0 0 0 1px rgba(10, 13, 18, 0.18);
+}
+
+#lw-feedback-button:hover {
+    background-color: #0a1d7a;
+}
+
+/* WCAG 2.4.7 — Focus Visible: #1849a9 on white/light LMS bg = 7.52:1 ✓ */
+
+#lw-feedback-button:focus-visible {
+    outline: 2px solid #1849a9;
+    outline-offset: 2px;
+}
+
+/* ── Close button ── */
+#dialog-close-btn {
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    position: absolute;
+    border: none;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2s;
+    border-radius: 8px;
+}
+
+#dialog-close-btn:hover {
+    opacity: 0.6;
+}
+
+/* WCAG 2.4.7 — Focus Visible */
+
+#dialog-close-btn:focus-visible {
+    outline: 2px solid #1849a9;
+    outline-offset: 2px;
+    opacity: 1;
+}
+
+#dialog-close-btn::after,
+#dialog-close-btn::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1.5px;
+    background-color: #A4A7AE;
+}
+
+#dialog-close-btn::after {
+    transform: rotate(45deg);
+}
+
+#dialog-close-btn::before {
+    transform: rotate(-45deg);
+}

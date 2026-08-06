@@ -1,0 +1,16 @@
+Que harían para generar más utilidades
+Generar paquetes de promociones.
+Para traer más clientes.
+Que harías tú para mejorar tus ventas, tus servicios
+
+5 Menu
+2 Lectura del archivo en Excel
+15 Estadísitca descriptiva de columnas (individual)
+10 Codígo con al menos dos funciones.
+10 Estructura condicional. Geración y validar un password
+20 Gráfica por pregunta detonadora (individual)
+3 Documentación del programa
+15 Conclusión escrito. Estrategia de negocio (individual)
+5 Acciones código de ética
+  Video
+

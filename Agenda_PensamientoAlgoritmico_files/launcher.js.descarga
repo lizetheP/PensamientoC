@@ -1,0 +1,740 @@
+;(function () {
+  let $iframe = null
+  // Prevent script from running multiple times
+  if (window.__learnWiseFeedbackLoaded) {
+    console.log('LearnWise Feedback script already loaded, skipping...')
+    return
+  }
+  window.__learnWiseFeedbackLoaded = true
+
+  let $deprecatedPanel = null
+  let $asidePanel = null
+  let $prevBtn = null
+  let $nextBtn = null
+  let $dialog = null
+  let $marker = null
+
+  const FEEDBACK_IFRAME_ID = 'lw-feedback-iframe'
+  const FEEDBACK_BUTTON_ID = 'lw-feedback-button'
+  const FEEDBACK_DIALOG_ID = 'lw-feedback-dialog'
+  const FEEDBACK_MARKER_ID = 'lw-feedback-marker'
+  const FEEDBACK_DIALOG_TITLE_ID = 'lw-feedback-dialog-title'
+  const FEEDBACK_DIALOG_CONTENT_ID = 'lw-feedback-dialog-content'
+  const FEEDBACK_DIALOG_ACTIONS_ID = 'lw-feedback-dialog-actions'
+
+  let eventSource = null // used to identify where event source is coming from. Only listen to that one
+
+  let iframeDisplayState = false // show or hide iframe
+  let markerEnabled = false // tracks whether enableMarker was received successfully
+
+  const WAIT_TIME = 500 // wait for student id to be redirected and available
+  const REFRESH_PAGE_WAIT_TIME = 1000
+  const DIALOG_HIDE_TIME = 10000
+  const AVAILABILITY_CHECK_RETRY_DELAY = 5000
+  const MAX_AVAILABILITY_RETRIES = 3
+  const URL_PARAMS_POLL_INTERVAL = 300
+  const URL_PARAMS_MAX_RETRIES = 30 // ~9 seconds total
+
+  // List of assistant IDs that should always use US region
+  const US_REGION_ASSISTANT_IDS = [
+    'LqP32K-wgy93',
+    'RqiaHENJQgTk',
+    '570E97Dvtjl0',
+    '2NeEgrpL9dFE',
+    'E78pf2Y7cQUU',
+    'HIxWwKtovmQo',
+  ]
+
+  // Function that gets the user metadata for Canvas.
+  // Cookie header is automatically sent by the browser for same-origin requests
+  async function getUserMetadataInstructure() {
+    try {
+      const response = await fetch('/api/v1/users/self')
+      if (!response.ok) {
+        throw new Error(`Failed to fetch user info: ${response.status}`)
+      }
+      const userInfo = await response.json()
+      return {
+        name: userInfo.name || null,
+        email: userInfo.email || userInfo.primary_email || null,
+        lmsUserId: userInfo.id || null,
+        roles: null,
+      }
+    } catch (error) {
+      console.error('Error fetching user metadata:', error)
+      return null
+    }
+  }
+
+  // Function to extract query parameters from URL
+  function getQueryParams(url) {
+    const params = new URLSearchParams(new URL(url).search)
+    const anonymousId = params.get('anonymous_id')
+    const result = {
+      course_id: url.split('/')[4] || params.get('course_id'),
+      assignment_id: params.get('assignment_id'),
+      // For Canvas anonymous grading, fall back to anonymous_id so downstream
+      // consumers can detect it (non-numeric) and resolve via backend.
+      student_id: params.get('student_id') || anonymousId,
+      anonymous_id: anonymousId,
+    }
+
+    return result
+  }
+
+  async function changeStartup() {
+    const params = getQueryParams(window.top.location.href)
+    let userMetadata = null
+    try {
+      userMetadata = await getUserMetadataInstructure()
+    } catch {
+      console.error('Error fetching user metadata:')
+      userMetadata = {}
+    }
+
+    // Override region to US for specific assistant IDs
+    const region = US_REGION_ASSISTANT_IDS.includes(window.learnWiseFeedbacksetup.assistantId)
+      ? 'US'
+      : (window.learnWiseFeedbacksetup.region ?? null)
+
+    return {
+      messageId: 'shouldLoad',
+      origin: window.top.location.origin,
+      assistant_id: window.learnWiseFeedbacksetup.assistantId,
+      lms_type: window.learnWiseFeedbacksetup.lmsType ?? 'canvas',
+      region: region,
+      user_data: {
+        name: window.learnWiseFeedbacksetup.name ?? userMetadata?.name ?? null,
+        email: window.learnWiseFeedbacksetup.email ?? userMetadata?.email ?? null,
+        lmsUserId: window.learnWiseFeedbacksetup.lmsUserId ?? userMetadata?.lmsUserId ?? null,
+        roles: window.learnWiseFeedbacksetup.roles ?? userMetadata?.roles ?? null,
+      },
+      ...params,
+    }
+  }
+
+  function triggerSync() {
+    if (!eventSource) {
+      console.warn('Event source not initialized. Cannot trigger sync.')
+      return
+    }
+    eventSource.postMessage({ messageId: 'shouldSync' }, '*')
+  }
+
+  async function sendStartupInfo() {
+    if (!eventSource) {
+      console.warn('Event source not initialized. Cannot send startup info.')
+      return
+    }
+    await new Promise((resolve) => setTimeout(resolve, 300))
+    const startupInfo = await changeStartup()
+    if (!startupInfo) return
+    eventSource.postMessage(startupInfo, '*')
+  }
+
+  function toggleFeedbackIframeState() {
+    if (iframeDisplayState) {
+      closeFeedbackIframe()
+    } else {
+      openFeedbackIframe()
+    }
+  }
+
+  function createFeedbackButton() {
+    const feedbackButton = document.createElement('button')
+    feedbackButton.id = FEEDBACK_BUTTON_ID
+    feedbackButton.textContent = 'Launch'
+    return feedbackButton
+  }
+
+  // Keep the marker button's aria-expanded in sync with the dialog it toggles. Resolved by id so it
+  // works regardless of where $marker is in scope.
+  function setMarkerExpanded(expanded) {
+    const $m = document.getElementById(FEEDBACK_MARKER_ID)
+    if ($m) $m.setAttribute('aria-expanded', expanded ? 'true' : 'false')
+  }
+
+  // Turn the icon <div> into a keyboard-operable button: focusable (role + tabindex; the focus ring
+  // lives in feedback.css), named for screen readers, and activatable with Enter/Space (WCAG 2.1.1 /
+  // 4.1.2). aria-haspopup/controls/expanded describe the dialog it opens.
+  function applyMarkerAccessibility($el) {
+    $el.setAttribute('role', 'button')
+    $el.setAttribute('tabindex', '0')
+    $el.setAttribute('aria-label', 'Open AI feedback')
+    $el.setAttribute('aria-haspopup', 'dialog')
+    $el.setAttribute('aria-controls', FEEDBACK_DIALOG_ID)
+    $el.setAttribute('aria-expanded', 'false')
+    $el.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+        event.preventDefault() // stop Space from scrolling the page
+        toggleDialog()
+      }
+    })
+  }
+
+  // ----- Dialog focus trap (user-initiated open only) -----
+  let dialogTrapActive = false
+  let dialogTrapPreviousFocus = null
+
+  function getDialogFocusables() {
+    const $d = document.getElementById(FEEDBACK_DIALOG_ID)
+    if (!$d) return []
+    const selector =
+      'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    return Array.from($d.querySelectorAll(selector)).filter((el) => el.offsetParent !== null)
+  }
+
+  function onDialogTrapKeydown(event) {
+    const $d = document.getElementById(FEEDBACK_DIALOG_ID)
+    if (!$d) return
+    if (event.key === 'Escape') {
+      event.preventDefault()
+      hideDialog()
+      return
+    }
+    if (event.key !== 'Tab') return
+    const focusables = getDialogFocusables()
+    if (focusables.length === 0) return
+    const first = focusables[0]
+    const last = focusables[focusables.length - 1]
+    const active = document.activeElement
+    if (event.shiftKey) {
+      if (active === first || !$d.contains(active)) {
+        event.preventDefault()
+        last.focus()
+      }
+    } else if (active === last || !$d.contains(active)) {
+      event.preventDefault()
+      first.focus()
+    }
+  }
+
+  // Trap keyboard focus between the Launch and Close buttons while the dialog is open, close on
+  // Escape, and return focus to the trigger (marker) on close. Installed only by showDialog
+  // (user-initiated open); the passive auto-show toast stays non-modal and never steals focus.
+  function activateDialogFocusTrap() {
+    if (dialogTrapActive) return
+    const $d = document.getElementById(FEEDBACK_DIALOG_ID)
+    if (!$d) return
+    dialogTrapActive = true
+    dialogTrapPreviousFocus = document.activeElement
+    $d.setAttribute('aria-modal', 'true')
+    document.addEventListener('keydown', onDialogTrapKeydown, true)
+    const focusables = getDialogFocusables()
+    if (focusables.length > 0) focusables[0].focus()
+  }
+
+  function deactivateDialogFocusTrap() {
+    if (!dialogTrapActive) return
+    dialogTrapActive = false
+    document.removeEventListener('keydown', onDialogTrapKeydown, true)
+    const $d = document.getElementById(FEEDBACK_DIALOG_ID)
+    if ($d) $d.setAttribute('aria-modal', 'false')
+    const toRestore = dialogTrapPreviousFocus
+    dialogTrapPreviousFocus = null
+    if (toRestore && typeof toRestore.focus === 'function') toRestore.focus()
+  }
+
+  function hideDialog() {
+    if (!$dialog) {
+      console.warn('Dialog not found. Not hiding dialog.')
+      return
+    }
+    $dialog.style.animation = 'none'
+    $dialog.style.display = 'none'
+    setMarkerExpanded(false)
+    deactivateDialogFocusTrap()
+  }
+
+  function showDialog() {
+    if (!$dialog) {
+      console.warn('Dialog not found. Not showing dialog.')
+      return
+    }
+    $dialog.style.display = 'flex'
+    $dialog.style.opacity = '1'
+    setMarkerExpanded(true)
+    activateDialogFocusTrap()
+  }
+
+  function isDialogShown() {
+    if (!$dialog) {
+      console.warn('Dialog not found. Not checking dialog visibility.')
+      return false
+    }
+    return $dialog.style.display !== 'none'
+  }
+
+  function toggleDialog() {
+    if (isDialogShown()) {
+      hideDialog()
+      return
+    }
+    showDialog()
+  }
+
+  function createDialogWindow() {
+    $dialog = document.createElement('div')
+    $dialog.id = FEEDBACK_DIALOG_ID
+    $dialog.setAttribute('role', 'dialog')
+    // Accessible name for the dialog: reference the title element rendered below
+    $dialog.setAttribute('aria-labelledby', FEEDBACK_DIALOG_TITLE_ID)
+    $dialog.setAttribute('aria-modal', 'false')
+
+    // Icon
+    const $icon = document.createElement('div')
+    $icon.id = 'lw-feedback-icon'
+    const $iconImg = document.createElement('img')
+    $iconImg.src = `${window.learnWiseFeedbacksetup.host}/launcher/feedback-featured-icon.svg`
+    $iconImg.width = 40
+    $iconImg.height = 40
+    $iconImg.alt = ''
+    $icon.appendChild($iconImg)
+    $dialog.appendChild($icon)
+
+    // Content wrapper (right column)
+    const $contentWrapper = document.createElement('div')
+    $contentWrapper.id = 'lw-feedback-dialog-content-wrapper'
+
+    // Text group (title + description)
+    const $textGroup = document.createElement('div')
+    $textGroup.id = 'lw-feedback-dialog-text-group'
+
+    const $title = document.createElement('div')
+    $title.id = FEEDBACK_DIALOG_TITLE_ID
+    $title.textContent = 'AI Feedback & Grading'
+    $textGroup.appendChild($title)
+
+    const $description = document.createElement('div')
+    $description.id = FEEDBACK_DIALOG_CONTENT_ID
+    $description.textContent = 'Would you like to use AI to help you create in depth feedback on this assignment?'
+    $textGroup.appendChild($description)
+
+    $contentWrapper.appendChild($textGroup)
+
+    // Actions row
+    const $actions = document.createElement('div')
+    $actions.id = FEEDBACK_DIALOG_ACTIONS_ID
+    $contentWrapper.appendChild($actions)
+
+    $dialog.appendChild($contentWrapper)
+
+    // Close button (absolute positioned)
+    const $closeBtn = document.createElement('button')
+    $closeBtn.id = 'dialog-close-btn'
+    $closeBtn.type = 'button'
+    $closeBtn.setAttribute('aria-label', 'Close')
+    $closeBtn.addEventListener('click', hideDialog)
+    $dialog.appendChild($closeBtn)
+
+    document.body.appendChild($dialog)
+  }
+
+  function createFeedbackMarker() {
+    createDialogWindow()
+
+    $marker = document.createElement('div')
+    $marker.style.display = 'none'
+    $marker.id = FEEDBACK_MARKER_ID
+    applyMarkerAccessibility($marker)
+    $marker.addEventListener('click', toggleDialog)
+    document.body.appendChild($marker)
+
+    if (!$dialog) return
+    $dialog.style.display = 'none'
+    const $actions = document.getElementById(FEEDBACK_DIALOG_ACTIONS_ID)
+    $actions.appendChild(createFeedbackButton())
+  }
+
+  function enableFeedbackMarker() {
+    if (!$marker || !$dialog) {
+      console.warn('Marker or dialog not found. Not enabling marker.')
+      return
+    }
+    $marker.style.display = 'block'
+    $dialog.style.display = 'flex'
+    // hide the dialog after DIALOG_HIDE_TIME seconds
+    setTimeout(() => {
+      hideDialog()
+    }, DIALOG_HIDE_TIME)
+  }
+
+  function setupIframeResizeProtection() {
+    const $divider = document.getElementById('width_resizer_ew')
+    if (!$divider) {
+      console.log('No divider found. Not setting up iframe resize protection.')
+      return
+    }
+    console.log('Setting up iframe resize protection.')
+
+    $divider.addEventListener('pointerdown', () => {
+      if (!$iframe) {
+        return
+      }
+
+      $iframe.style.pointerEvents = 'none'
+
+      const handlePointerUp = () => {
+        if (!$iframe) {
+          return
+        }
+
+        $iframe.style.pointerEvents = ''
+        window.removeEventListener('pointerup', handlePointerUp)
+      }
+
+      window.addEventListener('pointerup', handlePointerUp)
+    })
+  }
+
+  function createFeedbackIframe() {
+    // Create iframe (either panel was found or max attempts reached)
+    $iframe = document.createElement('iframe')
+    $iframe.id = FEEDBACK_IFRAME_ID
+    $iframe.name = 'LearnWise Feedback'
+    $iframe.title = 'LearnWise Feedback'
+    $iframe.src = window.learnWiseFeedbacksetup.feedbackSrc
+
+    if ($deprecatedPanel) {
+      $deprecatedPanel.appendChild($iframe)
+      setupIframeResizeProtection()
+    } else if ($asidePanel) {
+      // Add class for aside-specific styling
+      $iframe.classList.add('in-aside')
+      // Ensure panel is positioned for absolute positioning to work
+      if (getComputedStyle($asidePanel).position === 'static') {
+        $asidePanel.style.position = 'relative'
+      }
+
+      $asidePanel.appendChild($iframe)
+    }
+  }
+
+  function openFeedbackIframe() {
+    if ($iframe) {
+      $iframe.classList.add('active')
+    }
+
+    // Only hide aside children if iframe is inside an aside
+    if ($iframe && $iframe.classList.contains('in-aside')) {
+      if ($asidePanel) {
+        Array.from($asidePanel.children).forEach((child) => {
+          if (child !== $iframe) {
+            child.style.display = 'none'
+          }
+        })
+      }
+    }
+
+    iframeDisplayState = true
+    // start syncing process when the feedback frame is open
+    triggerSync()
+  }
+
+  function closeFeedbackIframe() {
+    if ($iframe) {
+      $iframe.classList.remove('active')
+    }
+
+    // Only restore aside children if iframe is inside an aside
+    if ($iframe && $iframe.classList.contains('in-aside')) {
+      if ($asidePanel) {
+        Array.from($asidePanel.children).forEach((child) => {
+          if (child !== $iframe) {
+            child.style.display = ''
+          }
+        })
+      }
+    }
+
+    iframeDisplayState = false
+  }
+
+  function interceptHistoryNavigation() {
+    const originalPushState = history.pushState.bind(history)
+    const getNavigationId = (url) => {
+      const params = getQueryParams(url)
+      return params.student_id || params.anonymous_id
+    }
+    let lastNavigationId = getNavigationId(window.top.location.href)
+
+    history.pushState = function (...args) {
+      originalPushState(...args)
+      const newNavigationId = getNavigationId(window.top.location.href)
+      if (iframeDisplayState && newNavigationId !== lastNavigationId) {
+        sendStartupInfo().catch((err) => console.error('Error sending startup info on navigation:', err))
+      }
+      lastNavigationId = newNavigationId
+    }
+    console.log('History navigation interceptor initialized')
+  }
+
+  function loadFeedbackExtension() {
+    const feedbackButton = document.getElementById(FEEDBACK_BUTTON_ID)
+    if (!feedbackButton) {
+      console.log('no feedback button')
+      return
+    }
+
+    // Find the first element with the class "button_container"
+    // within the rubric element
+    const actionsContainer = document.getElementById(FEEDBACK_DIALOG_ACTIONS_ID)
+
+    if (actionsContainer) {
+      interceptHistoryNavigation()
+
+      feedbackButton.addEventListener('click', () => {
+        sendStartupInfo().then(() => {
+          toggleFeedbackIframeState()
+          hideDialog()
+          // Move focus into the feedback app once it opens. Runs after hideDialog so it overrides
+          // the focus trap's "restore focus to marker" on close.
+          if (iframeDisplayState && $iframe) {
+            $iframe.focus()
+          }
+        })
+      }) // event for button styling
+      actionsContainer.appendChild(feedbackButton)
+    }
+  }
+
+  function sendAvailabilityCheck(retriesLeft = MAX_AVAILABILITY_RETRIES) {
+    if (!eventSource) return
+
+    const feedbackParams = getFeedbackParamsFromUrl()
+    if (!feedbackParams) {
+      console.warn('No feedback params available for availability check')
+      return
+    }
+
+    const { courseId, feedbackSetup } = feedbackParams
+    const region = US_REGION_ASSISTANT_IDS.includes(feedbackSetup.assistantId) ? 'US' : (feedbackSetup.region ?? null)
+
+    // Check if the chat injector for THIS specific assistant is present on the page.
+    // When only the feedback script is injected (no chat), or when a different
+    // assistant's chat is running, we need to show the standalone marker.
+    const chatInjectorPresent =
+      !!document.getElementById('lw-chat-wrapper') &&
+      window.learnWiseSetup?.assistantId === window.learnWiseFeedbacksetup?.assistantId
+
+    console.log(
+      `Sending feedback tool availability check (retries left: ${retriesLeft}, chatInjectorPresent: ${chatInjectorPresent})...`,
+    )
+    eventSource.postMessage(
+      {
+        messageId: 'checkFeedbackToolAvailability',
+        course_id: courseId,
+        assistant_id: feedbackSetup.assistantId,
+        region: region,
+        chat_injector_present: chatInjectorPresent,
+      },
+      '*',
+    )
+
+    if (retriesLeft > 0) {
+      setTimeout(() => {
+        if (!markerEnabled) {
+          sendAvailabilityCheck(retriesLeft - 1)
+        }
+      }, AVAILABILITY_CHECK_RETRY_DELAY)
+    }
+  }
+
+  function onFeedbackIframeMessage(event) {
+    if (!window.learnWiseFeedbacksetup?.feedbackSrc) return
+
+    let allowedOrigin
+    try {
+      allowedOrigin = new URL(window.learnWiseFeedbacksetup.feedbackSrc).origin
+    } catch (e) {
+      console.error('Invalid feedbackSrc URL:', e)
+      return
+    }
+
+    if (event.origin !== allowedOrigin) return
+
+    switch (event.data.messageId) {
+      case 'toggleFeedbackIframe':
+        toggleFeedbackIframeState()
+        break
+      case 'loadStartupInfo':
+        eventSource = event.source
+        console.log('Iframe ready. Sending startup info...')
+
+        setTimeout(async () => {
+          try {
+            await sendStartupInfo()
+          } catch {
+            console.error('Error sending startup info:')
+          }
+
+          sendAvailabilityCheck()
+          if (window.learnWiseFeedbacksetup?.chatMode) {
+            openFeedbackIframe()
+          }
+        }, WAIT_TIME)
+        break
+      case 'enableMarker':
+        console.log('Feedback tool is available. Enabling marker.')
+        markerEnabled = true
+        enableFeedbackMarker()
+        break
+      case 'refreshPage':
+        setTimeout(() => {
+          window.location.reload()
+        }, REFRESH_PAGE_WAIT_TIME)
+        break
+      case 'nextSubmission':
+        if ($nextBtn) {
+          $nextBtn.click()
+        }
+        break
+      case 'setLocale':
+        applyTranslations(event.data.strings)
+        break
+    }
+  }
+
+  function applyTranslations(strings) {
+    if (!strings) return
+    const $title = document.getElementById(FEEDBACK_DIALOG_TITLE_ID)
+    const $desc = document.getElementById(FEEDBACK_DIALOG_CONTENT_ID)
+    const $btn = document.getElementById(FEEDBACK_BUTTON_ID)
+    if ($title) $title.textContent = strings.title
+    if ($desc) $desc.textContent = strings.description
+    if ($btn) $btn.textContent = strings.button
+  }
+
+  function loadCss(callback) {
+    let fileref = document.createElement('link')
+    fileref.setAttribute('type', 'text/css')
+    fileref.setAttribute('href', `${window.learnWiseFeedbacksetup.host}/launcher/feedback.css`)
+    fileref.setAttribute('rel', 'stylesheet')
+    fileref.onload = callback
+    document.getElementsByTagName('head')[0].appendChild(fileref)
+  }
+
+  function getFeedbackParamsFromUrl() {
+    const params = getQueryParams(window.top.location.href)
+    const courseId = params.course_id
+    const assignmentId = params.assignment_id
+    const studentId = params.student_id || params.anonymous_id
+    const feedbackSetup = window.learnWiseFeedbacksetup
+
+    const missing = []
+    if (!courseId || courseId === 'null') missing.push('course_id')
+    if (!assignmentId || assignmentId === 'null') missing.push('assignment_id')
+    if (!studentId || studentId === 'null') missing.push('student_id')
+    if (!feedbackSetup) missing.push('feedbackSetup')
+    if (missing.length > 0) {
+      console.log(`Missing params or setup. Not loading feedback tool. (missing: ${missing.join(', ')})`)
+      return null
+    }
+
+    console.log('All params found. Checking feedback tool availability...')
+    return {
+      courseId,
+      assignmentId,
+      studentId,
+      feedbackSetup,
+    }
+  }
+
+  loadCss(() => {
+    console.log('starting')
+    const windowUrl = window.top.location.href
+
+    // not in speed grader, exit
+    if (!windowUrl.includes('/localhost') && !windowUrl.includes('/speed_grader')) {
+      console.log('Not in speed grader.')
+      return
+    }
+
+    /**
+     * Canvas renders the button inside iframes. This ensures it only loads in top window
+     * into those iframes, check that we are on the top level:
+     */
+    const isInIframe = window !== top
+    if (isInIframe) {
+      console.log('Script is in iframe. Exiting.')
+      return
+    }
+
+    if ($iframe !== null) {
+      console.warn('CSS skipped!. UI already injected.')
+      return
+    }
+
+    function initializeFeedbackUI() {
+      console.log('Creating iframe and marker. Waiting for iframe to initialize...')
+      createFeedbackIframe()
+      if (!window.learnWiseFeedbacksetup?.chatMode) {
+        createFeedbackMarker()
+      }
+      loadFeedbackExtension()
+    }
+
+    function waitForFeedbackParams() {
+      let retries = 0
+      console.log('Waiting for URL params to become available...')
+      const interval = setInterval(() => {
+        retries++
+        const feedbackParams = getFeedbackParamsFromUrl()
+        if (feedbackParams) {
+          clearInterval(interval)
+          initializeFeedbackUI()
+        } else if (retries >= URL_PARAMS_MAX_RETRIES) {
+          clearInterval(interval)
+          console.warn('URL params did not become available after maximum retries.')
+        }
+      }, URL_PARAMS_POLL_INTERVAL)
+    }
+
+    function observerCallback(_, observer) {
+      $deprecatedPanel = document.getElementById('right_side')
+      $asidePanel = document.querySelector('aside')
+      $prevBtn = document.getElementById('prev-student-button')
+      $nextBtn = document.getElementById('next-student-button')
+
+      if (($deprecatedPanel || $asidePanel) && $prevBtn && $nextBtn) {
+        observer.disconnect()
+        console.log('All dom elements found. App starting...')
+
+        const feedbackParams = getFeedbackParamsFromUrl()
+
+        if (!feedbackParams) {
+          waitForFeedbackParams()
+          return
+        }
+
+        initializeFeedbackUI()
+      }
+    }
+
+    const observer = new MutationObserver(observerCallback)
+
+    observer.observe(document.body, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    })
+    // Run once immediately in case required DOM elements are already present when the script runs
+    observerCallback([], observer)
+    // handle messages from the feedback iframe
+    window.addEventListener('message', onFeedbackIframeMessage)
+
+    // Listen for the chat injector requesting to open feedback in this standalone panel
+    window.addEventListener('lw-open-feedback', () => {
+      if (!eventSource) {
+        console.warn('[Feedback Launcher] Cannot open feedback - iframe not ready')
+        return
+      }
+      sendStartupInfo().then(() => {
+        if (!iframeDisplayState) {
+          openFeedbackIframe()
+        }
+        hideDialog()
+      })
+    })
+  })
+})()

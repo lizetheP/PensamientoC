@@ -1,0 +1,609 @@
+﻿
+/*  00000000000000000000000000000000000000000000000000
+            0000            Estilo globales del bot           0000
+            00000000000000000000000000000000000000000000000000  */
+:root {
+    --scrollbar-background: rgb(0, 166, 248);
+    --scrollbar-background-track: rgba(0, 166, 248, 0.3);
+    --ancho-bot: 360px;
+}
+
+
+
+
+
+
+
+/*  11111111111111111111111111111111111111111111111111
+        1111                Estilo del CHAT               1111
+        11111111111111111111111111111111111111111111111111  */
+
+/*  ##################################################
+        ####      Estilo del llamado del bot          ####
+        ##################################################  */
+
+.saludo_bot {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 0px !important;
+    z-index: 100 !important;
+    background-color: var(--scrollbar-background) !important;
+    height: 80px !important;
+    width: 75px !important;
+    transition: all 0.6s !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    cursor: pointer !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+    .saludo_bot:hover {
+        width: 200px !important;
+    }
+
+        .saludo_bot:hover .bot_mensaje {
+            right: 5px !important;
+        }
+
+.bot_mensaje {
+    transition: right 0.6s !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    position: fixed !important;
+    right: -130px !important;
+    min-width: 120px !important;
+    width: 120px !important;
+    height: 50px !important;
+    border-radius: 20px !important;
+    padding-top: 5px !important;
+    padding-bottom: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    text-align: center !important;
+    color: white;
+    font-family: Roboto, Serif;
+    font-size: 14px;
+}
+
+
+
+.bot {
+    margin-top: 5px !important;
+    float: left !important;
+    width: 70px !important;
+    height: 70px !important;
+}
+
+    .bot:hover {
+        cursor: pointer !important;
+    }
+
+
+
+/*  ##################################################
+        ####      Estilo del contenedor del chat      ####
+        ##################################################  */
+.floating-chat {
+    position: fixed !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    z-index: 100 !important;
+    cursor: default !important;
+}
+
+
+/*  ##################################################
+        ####      Estilo del encabezado del chat      ####
+        ##################################################  */
+.bot_encabezado {
+    /* background: linear-gradient(to bottom, rgb(208,226,248),  rgb(204,238,254)) ; */
+    background: rgb(59,133,206) !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    height: 45px !important;
+    color: white !important;
+    width: var(--ancho-bot) !important;
+    transition: opacity 0.6s, visibility 0.6s !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.left {
+    padding-left: 15px !important;
+    padding-top: 5px !important;
+    width: 50% !important;
+}
+
+.right {
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+}
+
+
+/*  #########################################################################
+        ####      Estilo del encabezado del chat para dispositivo movil      ####
+        #########################################################################  */
+.bot_encabezado_movil {
+    /* background: linear-gradient(to bottom, rgb(208,226,248),  rgb(204,238,254)) ; */
+    background: rgb(59,133,206) !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    height: 25px !important;
+    color: white !important;
+    width: var(--ancho-bot) !important;
+    transition: opacity 0.6s, visibility 0.6s !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.left_movil {
+    padding-left: 15px !important;
+    width: 50% !important;
+}
+
+.right_movil {
+    padding-right: 10px !important;
+}
+
+/*  ##################################################
+        ####      Estilo de botoenes de encabezado    ####
+        ##################################################  */
+.material-icons {
+    font-size: 22px !important;
+    color: white !important;
+}
+
+.btn_encabezado {
+    background: transparent !important;
+    border: none !important;
+    min-width: 0em !important;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+    .btn_encabezado:focus {
+        border: none !important;
+        outline: 0 !important;
+        box-shadow: 0px 0px 7px 1px #FFFFFF !important;
+        border-radius: 3px !important;
+    }
+
+    .btn_encabezado:hover {
+        cursor: pointer !important;
+    }
+
+    .btn_encabezado:disabled {
+        cursor: not-allowed !important;
+    }
+
+/*  #########################################################################
+        ####      Estilo de botoenes de encabezado para dispositivo movil    ####
+        #########################################################################  */
+
+.btn_encabezado_movil {
+    background: transparent !important;
+    border: none !important;
+    width: 40px !important;
+    min-width: 0em !important;
+}
+
+    .btn_encabezado_movil:focus {
+        border: none !important;
+        outline: 0 !important;
+        box-shadow: 0px 0px 7px 1px #FFFFFF !important;
+        border-radius: 3px !important;
+        width: 40px !important;
+    }
+
+    .btn_encabezado_movil:hover {
+        cursor: pointer !important;
+    }
+
+    .btn_encabezado_movil:disabled {
+        cursor: not-allowed !important;
+    }
+
+
+
+
+
+
+
+/*  22222222222222222222222222222222222222222222222222
+        2222                 Estilo del BOT               2222
+        22222222222222222222222222222222222222222222222222  */
+
+.webchat__bubble__content > div > p > a {
+    color: white !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    font-family: Roboto, Serif !important;
+}
+
+/*  ##################################################
+        ####               Estilo Webchat             ####
+        ##################################################  */
+.webchat {
+    width: var(--ancho-bot) !important;
+    /* // height: 600px; */
+    cursor: default !important;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    transition: opacity 0.6s, visibility 0.6s !important;
+}
+
+.webchat__send-icon {
+    cursor: pointer !important;
+}
+
+
+/*  ##################################################
+        ####      Estilo burbujas del Chatbot         ####
+        ##################################################  */
+.webchat__bubble {
+    min-width: 100% !important;
+}
+
+/* Texto de la burbuja de usuario */
+.webchat__bubble--from-user .webchat__bubble__content {
+    color: black !important;
+}
+
+.webchat__bubble__content {
+    color: white !important;
+    font-size: 14px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    background: linear-gradient(to bottom, rgb(18, 109, 217), rgb(0, 166, 248)) !important;
+}
+
+    .webchat__bubble__content > p {
+        margin: 0px !important;
+    }
+
+
+/*  ##################################################
+        ####         Estilo imagen de Avatar          ####
+        ##################################################  */
+.webchat__imageAvatar__image {
+    padding: 1px !important;
+}
+
+/* Separación de burbujas e imagen de bordes*/
+.webchat__basic-transcript {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+
+/*  ##################################################
+        ####      Estilo de Adaptive Cards            ####
+        ##################################################  */
+/* Adaptivecard estilos*/
+.ac-image {
+    border-radius: 5px !important;
+}
+
+.ac-input {
+    border-radius: 5px !important;
+    border-color: rgb(0, 120, 215) !important;
+}
+
+    .ac-input:focus {
+        outline: none !important;
+    }
+
+
+/*  ##################################################
+        ####    Estilo de Botones dentro de Chatbot   ####
+        ##################################################  */
+.ac-pushButton {
+    font-size: 14px !important;
+    padding: 6px 10px 6px 10px !important;
+    border-style: none !important;
+    border-radius: 10px !important;
+    transition-duration: 0.6s !important;
+    font-weight: normal !important;
+    margin: 0px !important;
+}
+
+    /* Iconos junto a botones */
+    .ac-pushButton img {
+        width: 14px !important;
+        height: 14px !important;
+        max-width: 14px !important;
+        max-height: 14px !important;
+    }
+
+
+    /*  ##################################################
+        ####    COLORES de Botones dentro de Chatbot  ####
+        ##################################################  */
+    /* Version POSITIVO AZUL */
+    .ac-pushButton.style-positive {
+        background-color: rgb(0, 120, 215) !important;
+    }
+
+        .ac-pushButton.style-positive:hover {
+            background-color: rgb(0, 84, 154) !important;
+        }
+
+        .ac-pushButton.style-positive:focus {
+            background-color: rgb(160, 204, 240) !important;
+            border: 1px solid rgb(0, 120, 215) !important;
+            outline: none !important;
+        }
+
+    /* Version DESTRUCTIVO GRIS */
+    .ac-pushButton.style-destructive {
+        background-color: rgb(113, 113, 113) !important;
+    }
+
+        .ac-pushButton.style-destructive:hover {
+            background-color: rgb(69, 69, 69) !important;
+        }
+
+        .ac-pushButton.style-destructive:focus {
+            background-color: rgb(165, 165, 165) !important;
+            border: 1px solid rgb(113, 113, 113) !important;
+            outline: none !important;
+        }
+
+
+
+/*  ##################################################
+        ####      Estilo caja de texto Chatbot        ####
+        ##################################################  */
+/* Texto de superficie de escritura */
+.webchat__send-box-text-box__input {
+    font-size: 14px !important;
+    background-color: white !important;
+    padding-left: 13px !important;
+    /* // font-family: 'Roboto' !important; */
+    margin: 0px !important;
+    box-shadow: none !important;
+}
+
+    .webchat__send-box-text-box__input::placeholder {
+        font-size: 14px !important;
+    }
+
+/* Superficie contenedora de escritura y speech*/
+div.main {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    cursor: default !important;
+}
+
+    div.main > form {
+        /* margin-bottom: 0px !important; */
+        margin: 0px !important;
+    }
+
+        div.main > form > input {
+            min-height: 20px !important;
+        }
+
+    div.main > p {
+        margin: 0px !important;
+        min-height: 40px !important;
+        background-color: white !important;
+        border-top-left-radius: 20px !important;
+        border-bottom-left-radius: 20px !important;
+        font-size: 14px !important;
+        padding-left: 23px !important;
+    }
+
+        div.main > p > span {
+            color: rgb(173, 161, 161) !important;
+        }
+
+/* Superficie de escritura derecha */
+.webchat__icon-button {
+    background-color: white !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer !important;
+    margin: 0px !important;
+    min-width: 0em !important;
+}
+
+/* // .webchat__icon-button:hover {
+        //   color: red !important
+        // } */
+
+/* Superficie de escritura izquierda */
+.webchat__send-box-text-box {
+    background-color: white !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+/* Cuando se pulsa el botón speech*/
+.status {
+    background-color: white !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    opacity: 1 !important;
+    color: rgb(127, 127, 127) !important;
+}
+
+
+/*  ##################################################
+        ####      Estilo scroll para Firefox          ####
+        ##################################################  */
+.webchat__basic-transcript__scrollable {
+    scrollbar-color: var(--scrollbar-background) var(--scrollbar-background-track) !important;
+    scrollbar-width: thin !important;
+}
+
+
+    /*  ##################################################
+        ####      Estilo scroll para Chrome           ####
+        ##################################################  */
+    .webchat__basic-transcript__scrollable::-webkit-scrollbar {
+        width: 8px !important;
+    }
+
+    /* Track */
+    .webchat__basic-transcript__scrollable::-webkit-scrollbar-track {
+        margin: 3px !important;
+        border-radius: 4px !important;
+        background: var(--scrollbar-background-track) !important;
+    }
+
+    /* Handle */
+    .webchat__basic-transcript__scrollable::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-background) !important;
+        border-radius: 4px !important;
+    }
+
+        /* Handle on hover */
+        .webchat__basic-transcript__scrollable::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, .30) !important;
+        }
+
+
+/*  ##################################################
+        ####         Estilos del botón mute           ####
+        ##################################################  */
+
+.svg_mute {
+    fill: rgb(127, 127, 127) !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+    .svg_mute:hover {
+        fill: rgb(255, 51, 51) !important;
+        cursor: pointer !important;
+    }
+
+.svg_mute_disabled {
+    fill: gray !important;
+    cursor: not-allowed !important;
+}
+
+
+
+
+
+
+/*  ##############################################
+              ####      Estilo de menu del bot         ####
+              ##################################################  */
+.menu_bot_nav {
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(59,133,206);
+    border: 2px solid rgb(59,133,206);
+    color: #FFFFFF;
+    height: 35%;
+    max-height: 300px;
+    width: 356px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+    overflow-y: scroll;
+    overflow: auto;
+    box-shadow: 0px 12px 7px rgba(0, 0, 0, 0.5);
+    /*  ##################################################
+        ####      Estilo scroll para Firefox          ####
+        ##################################################  */
+    scrollbar-color: rgb(255, 255, 255) rgb(0, 104, 156);
+    scrollbar-width: thin;
+}
+
+    /*  ##################################################
+        ####      Estilo scroll para Chrome           ####
+        ##################################################  */
+    .menu_bot_nav::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    .menu_bot_nav::-webkit-scrollbar-track {
+        margin: 10px;
+        border-radius: 4px;
+        background: rgb(0, 104, 156);
+    }
+
+    /* Handle */
+    .menu_bot_nav::-webkit-scrollbar-thumb {
+        background: rgb(255, 255, 255);
+        /* //var(--scrollbar-background); */
+        border-radius: 4px;
+    }
+
+
+
+.menu_bot_principal {
+    background-color: rgb(59,133,206);
+    color: white;
+    /* // font-weight: bold; */
+    /* // Sin bolas */
+    list-style: none;
+    /* // Crear la sangría */
+    padding-left: 0px;
+    margin-left: 0px;
+    text-align: left;
+    font-size: 14px;
+}
+
+    .menu_bot_principal ul {
+        margin: 0px;
+    }
+
+    .menu_bot_principal li:hover {
+        background-color: rgb(0, 104, 156);
+        /* // border-radius: 10px;  */
+    }
+
+
+
+.menu_bot_secundario {
+    display: none;
+    transition: display 1s;
+    cursor: pointer;
+    background-color: rgb(59,133,206);
+}
+
+    .menu_bot_secundario ul {
+        background-color: rgb(0, 166, 248);
+        /* // Sin bolas */
+        list-style: none;
+        /* // Crear la sangría */
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .menu_bot_secundario li:hover {
+        background-color: rgb(0, 104, 156);
+    }
+
+
+.webchat__suggested-action__button {
+    border-radius: 14px !important;
+    /*padding-left: 8px !important;
+    padding-right: 8px !important;*/
+    height: 30px !important;
+}
+
+.webchat__suggested-action {
+    /*padding-left: 3px !important;
+    padding-right: 3px !important;*/
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
