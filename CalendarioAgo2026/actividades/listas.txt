@@ -1,0 +1,41 @@
+pesos = [70, 69.5, 71, 70, 69, 68.5]
+
+print(pesos)
+#print("pesos[0]:", pesos[0])
+#print("pesos[1]:", pesos[1])
+#print("Longitud:", len(pesos))
+
+#print("\nError al imprimir el elemento de la lista que está en la posición 6")
+#print("pesos[6]:", pesos[6])
+
+#print("\nImprimir el último elemento de la lista")
+#print("pesos[-1]:", pesos[-1])
+
+#print("\nAgregar 68 al final de la lista")
+#pesos = pesos + [68]
+#print(pesos)
+
+#print("\nImprime los primeros tres elementos de la lista")
+#print("pesos[:3]", pesos[:3])
+
+#print("\nImprime los elementos de la posición 2 y hasta menor a 4")
+#print("pesos[2:4]", pesos[2:4])
+
+#print("\nBorrar el elemento de la lista que está en la posición 3")
+#print(pesos)
+#del pesos[3]
+#print(pesos)
+
+#print("\nInsertar el 70 en la posición 3 de la lista")
+#pesos.insert(3, 70)
+#print(pesos)
+
+#print("\nPegar 100 al final de la lista")
+#pesos.append(100)
+#print(pesos)
+
+#print("\nOrdenar la lista ascendentemente")
+#pesos.sort()
+#print(pesos)
+
+#print("\nNúmero de 70s e la lista:", pesos.count(70))
