@@ -9,21 +9,24 @@ def menu():
     print("a. Imprime Mensaje")
     print("s. Salir")
     
-def main():    
+def main():
+    # Carga la información del archivo de Excel en un DataFrame.
     continua = True
-    # Crear Dataframe del archivo de Excel
-    password = "Xmen24*" # Definir un password de entrada
-    comprueba_clave(password)
     while continua == True:
         menu()
         opcion = input("Introduce una opcion: ")
         if opcion == 1:
-            print("Hola a todos")
-        elif opcion == 's':
+
+        elif opcion == 2:
+        
+        elif opcion == 3:
+        
+        elif opcion == 4:
             print("Adios")
             continua = False
         else:
-            print("ERROR OPCION INVALIDA")
+            print("Opción inválida")
 
 main()
+
 
