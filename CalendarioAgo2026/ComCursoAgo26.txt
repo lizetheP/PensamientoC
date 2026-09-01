@@ -1,0 +1,55 @@
+5 minutos antes y después
+No califican laboratorios
+No elaboran ejercicios.
+Módulo de nivelación examen.
+
+Curso más fácil
+Poco tiempo.
+Listas llenar y hacer ejercicios con listas.
+* Arreglos
+ndim
+shape
+size
+itemsize
+dtype
+np.empty()
+np.zeros() 
+np.ones() 
+np.arange()
+np.linspace()
+np.min()
+np.max() 
+np.sum() 
+np.mean()
+np.var()
+np.std()
+
+* Matrices
+matriz.ndim
+matriz.shape
+matriz.size
+np.empty()
+np.zeros() 
+np.ones()
+np.sum(x, y)
+np.subtract(x, y)
+np.multiply(x, y)
+np.divide(x, y)
+np.power(x, y)
+random
+
+*Strings
+len
+find
+replace
+upper()
+lower()
+Split
++
+in
+
+Archivos lectura de archivos de Excel.
+Podemos usar Pandas para la lectura de archivos de Excel.
+
+
+

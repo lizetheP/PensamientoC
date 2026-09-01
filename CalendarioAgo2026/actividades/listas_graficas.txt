@@ -205,8 +205,8 @@ def main():
     continua = True
     pesos = [70, 69.5, 71, 69, 70, 68.5, 68]
     meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre"]
-    dolar = [20.45, 20.32, 19.94, 20.13, 19.49, 18.95, 18.81, 18.75, 18.36]
-    euro =  [21.06, 21.32, 21.69, 22.73, 21.81, 21.87, 21.83, 21.95, 21.60]
+    dolar = [17.15, 17.08, 17.22, 17.10, 17.05, 16.98, 16.92, 17.02, sept]
+    euro =  [20.09, 20.18, 19.90, 20.04, 19.91, 19.51, 19.30, 19.70, sept]
     while continua == True:
         menu()
         opcion = int(input("Dame una opción: "))
@@ -228,3 +228,8 @@ main()
 
 #https://wise.com/gb/currency-converter/usd-to-mxn-rate?amount=1000
 #https://wise.com/mx/currency-converter/eur-to-mxn-rate?amount=1000
+
+17.15, 17.08, 17.22, 17.10, 17.05, 16.98, 16.92, 17.02
+20.09, 20.18, 19.90, 20.04, 19.91, 19.51, 19.30, 19.70
+
+
