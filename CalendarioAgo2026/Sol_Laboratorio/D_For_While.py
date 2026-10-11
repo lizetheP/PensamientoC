@@ -1,4 +1,3 @@
-import math
 def factores_de(x):
     for i in range(1, x):
         if x % i == 0:
