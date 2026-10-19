@@ -39,7 +39,6 @@ def imprime_4_perfectos():
         num = num + 1      
 
 def menu():
-    print() # Imprime un salto de línea
     print("1. Imprime 20 primos")
     print("2. Imprime 4 perfectos")
     print("3. Salir")
@@ -47,6 +46,7 @@ def menu():
 def main():
     continua = True
     while continua == True:
+        print() # Imprime un salto de línea
         menu()
         opcion = int (input("Introduce una opción: "))
         if opcion == 1:
