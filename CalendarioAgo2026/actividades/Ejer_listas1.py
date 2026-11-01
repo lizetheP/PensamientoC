@@ -59,3 +59,46 @@ def main():
             print("Error Opción inválida")
     
 main()
+"""
+
+def main():
+    continua = True
+    t = int(input("Dame el tamaño de la lista: "))
+    lista = crea_lista(t)
+    while continua == True:
+        menu()
+        opcion = int(input("Dame una opción: "))
+        if opcion == 1:
+
+        elif opcion == 2:
+
+        elif opcion == 3:
+        
+        elif opcion == 4:
+            print("Adiós")
+            continua = False
+        else:
+            print("Opción inválida")
+    
+main()
+
+def main():
+    continua = True
+    t = int(input("Dame el tamaño de la lista: "))
+    lista = crea_lista(t)
+    while continua == True:
+        menu()
+        opcion = int(input("Dame una opción: "))
+        if opcion == 1:
+
+        elif opcion == 2:
+             pass
+        elif opcion == 3:
+            print("Adiós")
+            continua = False
+        else:
+            print("Opción inválida")
+    
+main()
+
+"""
