@@ -32,20 +32,24 @@ def menu():
     
 def main():
     continua = True
-    t = int(input("Dame el tamaño de la lista: "))
-    lista = crea_lista(t)
     while continua == True:
         menu()
         opcion = int(input("Dame una opción: "))
         if opcion == 1:
+            t = int(input("Dame el tamaño de la lista: "))
+            lista = crea_lista(t)
             print(lista)
             inicializa_lista(lista)
             print(lista)
         elif opcion == 2:
+            t = int(input("Dame el tamaño de la lista: "))
+            lista = crea_lista(t)
             print(lista)
             lista_positiva(lista)
             print(lista)
         elif opcion == 3:
+            t = int(input("Dame el tamaño de la lista: "))
+            lista = crea_lista(t)
             print(lista)
             if len(lista) > 0:
                 res = media(lista)
@@ -63,8 +67,6 @@ main()
 
 def main():
     continua = True
-    t = int(input("Dame el tamaño de la lista: "))
-    lista = crea_lista(t)
     while continua == True:
         menu()
         opcion = int(input("Dame una opción: "))
