@@ -1,0 +1,2458 @@
+﻿<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+                    
+                          
+   <meta content="es-mx" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Calendario</title>
+                                 
+  <style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+.style1 {
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style4 {
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+	color: #FFFFFF;
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.Estilo13 {font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+
+
+
+
+
+
+
+
+
+
+.style6 {
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style8 {
+
+
+
+
+
+
+
+
+
+
+
+	margin-left: 40px;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style12 {
+
+
+
+
+
+
+
+
+
+
+
+	border-left-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+	border-left-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	border-right-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	border-top-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+	border-top-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	border-bottom-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style13 {
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style15 {
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style16 {
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+.style19 {
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial, Helvetica;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style21 {
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style22 {
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial, Helvetica;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style23 {
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style24 {
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style27 {
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style29 {
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: x-small;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style30 {
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: bold;
+
+
+
+
+
+
+
+
+
+
+
+	font-size: -1;
+
+
+
+
+
+
+
+
+
+
+
+	color: #FFFFFF;
+
+
+
+
+
+
+
+
+
+
+
+	text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style31 {
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style32 {
+
+
+
+
+
+
+
+
+
+
+
+	border-width: 1px;
+
+
+
+
+
+
+
+
+
+
+
+	text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+	background-color: #C0C0C0;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style33 {
+
+
+
+
+
+
+
+
+
+
+
+	font-weight: normal;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.style34 {
+
+
+
+
+
+
+
+
+
+
+
+	font-family: Arial;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  *{box-sizing:inherit}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style5 {
+	  margin-left: 280px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style16 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style17 {
+	color: #330033;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.auto-style19 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #FFFFFF;
+}
+.auto-style20 {
+	border-width: 1px;
+	margin-left: 280px;
+	background-color: #510851;
+}
+.auto-style21 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style24 {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.auto-style26 {
+	color: #000000;
+}
+.auto-style28 {
+	color: #000000;
+	font-size: medium;
+}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style37 {
+	color: #510851;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style39 {
+	margin-left: 360px;
+}
+.auto-style43 {
+	color: #FFFFFF;
+	font-size: xx-small;
+}
+.auto-style45 {
+	color: #510851;
+}
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style47 {
+	  font-size: small;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  h4{ color:#000099; font-size:14px;
+}
+h5 {color:#990066;font-size:12px
+}
+.img_ent {
+	background-image: url('../../../C_Soluciones/SolucionesFinal_2020/Laboratorios/imagenes/idisco.jpg');
+}
+.img_icon {
+	background-position: left 15px top 20px;
+	background-repeat: no-repeat;
+	padding-left:100px;
+	min-height:100px;
+}
+article {
+	border-style:solid;
+	border-width:1px; 
+	padding-top: 10px;
+	padding-left:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style53 {
+	margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style91 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style97 {
+	  color: #000000;
+	  font-size: small;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  .auto-style111 {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style114 {
+	color: #0000FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style116 {
+	list-style-type: square;
+	margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style118 {
+	  list-style-type: disc;
+	  margin-left: 120px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style119 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #510851;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .auto-style120 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+.auto-style121 {
+	color: #FF0000;
+}
+.auto-style122 {
+	color: #000000;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+  <body>
+     
+<center>    
+<table border="1" cols="1" width="90%">
+     <tbody>
+      <tr>
+     <td class="auto-style20"><strong><br class="auto-style21">
+	 <span class="auto-style19">TC1037. Pensamiento algorítmico&nbsp;</span><br class="auto-style21"><span class="auto-style17">.</span></strong><span class="auto-style21">&nbsp;&nbsp;</span></td>
+     </tr>
+                 
+      <tr>
+     <td class="auto-style5">                             
+                                  
+      <table border="0" cols="2" width="100%">
+     <tbody>
+              <tr>
+      <td class="style21">
+	  <br><span class="auto-style37"><strong>
+	  Tarea: Listas y gráficas</strong></span><br class="auto-style21"><span class="auto-style16">
+	  .</span></td>
+     </tr>
+                                         
+        </tbody>                            
+      </table>
+                                  
+     	 </td>
+     </tr>
+                 
+      <tr>
+     <td class="auto-style39"> 
+	 <span class="auto-style43">.</span><br> 
+	 <img src="../imagenes/info3.jpg" height="50" width="50" align="left" class="auto-style24"><b><font color="#330033" face="Arial,Helvetica"><br>
+	 &nbsp; 
+	 <span class="auto-style26">&nbsp;Descripción:</span></font></b> 
+        &nbsp;                             
+      <ul>
+                                         
+        <ul>
+     <li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Desarrolla, algunos problemas que implican el uso de listas 
+	 y gráficas con matplotlib. </font></li>
+                                         
+        </ul>
+                                 
+      </ul>
+                                  
+      <hr width="100%"> 
+	 <img src="../imagenes/iobj.jpg" height="70" width="70" align="left"><b><font color="#330033" face="Arial,Helvetica"><br>
+	 &nbsp;<span class="auto-style26">Objetivos:</span></font></b> 
+        &nbsp;                             
+      <ul>
+                                         
+        <ul>
+     <li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Aplicar el concepto de listas 
+	 y gráficos en la solución de problemas en Python.</font></li>
+                                         
+        </ul>
+                                 
+      </ul>
+                                  
+      <hr width="100%"> <b><font color="#330033" face="Arial,Helvetica">
+	 <img src="../imagenes/iper.jpg" height="70" width="70" align="left"><br>
+	 &nbsp;<span class="auto-style26">Modalidad: </span> </font></b>&nbsp;<ul>
+                                         
+         <ul>
+     		<li> <font
+ size="-1" color="#333333" face="Arial,Helvetica">Individual.</font></li>
+                                         
+        </ul>
+                                 
+      </ul>
+                               
+      <hr width="100%"> 
+	  <img alt="" height="54" src="../imagenes/web_modalidad.gif" width="60"><b><font color="#330033" face="Arial,Helvetica"><span class="auto-style26"> &nbsp;&nbsp; 
+	  Uso de IA: </span> </font></b>&nbsp;<ul>
+                                         
+         <ul>
+     		<li> <font
+ size="-1" face="Arial,Helvetica">No</font></li>
+                                         
+        </ul>
+                                 
+      </ul>
+                               
+      <hr width="100%"> 
+          <font color="#330033" face="Arial,Helvetica">
+          <span class="auto-style26">
+                               
+      <class="auto-style49">
+          <span class="auto-style45">
+             <p><font size="-1" face="Arial,Helvetica">
+                                  
+          <img src="../imagenes/web_descripcion.gif" height="53" width="60" align="left" class="auto-style91">&nbsp;
+     <br><font face="Arial,Helvetica"><strong><span class="auto-style47">&nbsp; </span>
+		     </strong></font></font>
+	 </span> 
+	 </span> 
+        	 <font face="Arial,Helvetica" size="-1"><strong>
+			 <span class="auto-style28">Instrucciones:</span></strong></font><span class="auto-style26"><span class="auto-style45">&nbsp;</span></span></p>
+	 <p>&nbsp;</p>
+	 <class="auto-style53">
+	 	 <class="auto-style49">
+                               
+        <span class="auto-style26">
+          <font face="Arial,Helvetica"><span class="auto-style45">
+          <font color="#330033" face="Arial,Helvetica">
+	 <p class="auto-style101">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <span class="auto-style97">&nbsp; Crea las siguientes funciones:</span>&nbsp;</p>
+	 <span class="auto-style97">
+	 <ul>
+		 <ul>
+			 <li class="auto-style48">
+			 <font class="auto-style21" color="#333333" size="-1">La función
+			 <span class="auto-style114"><strong>estadistica_descriptiva (calificaciones)</strong></span> 
+			 que reciba como parámetro de entrada una lista de calificaciones. 
+			 La función debe desplegar en pantalla la siguiente información 
+			 (utiliza las funciones vistas en clase): </font>
+			 </li>
+		 </ul>
+	 </ul>
+	 <ul class="auto-style53">
+				 <li class="auto-style97">Máxima calificación</li>
+				 <li class="auto-style97">Mínima calificación</li>
+				 <li class="auto-style97">Promedio</li>
+				 <li class="auto-style97">Mediana</li>
+				 <li class="auto-style97">Moda</li>
+				 <li class="auto-style97">Desviación estándar 
+				 </li>
+				 <li class="auto-style97">¿Cuántos 90s?</li>
+			 </ul>
+	 </span>
+	 <span class="auto-style97">
+	 </span>
+	 <class="auto-style49">
+	 		<class="auto-style49">
+	 		<class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <ul>
+		 <ul>
+			 <li class="auto-style97">Imagina que eres el administrador de una 
+			 tienda de autoservicio. Debes crear dos funciones para graficar la 
+			 información de tus principales productos y sus ventas del mes de 
+			 septiembre y octubre. </li>
+			 <li class="auto-style26"><font size="-1">
+			 <font class="auto-style21">La función <span class="auto-style114">
+			 <strong>ventas_productos1 (productos, ventasS, ventasO)</strong></span><span class="auto-style75"> 
+			 que reciba como parámetros de entrada una lista de productos (<strong>productos</strong>), 
+			 una lista ventas de septiembre (<strong>ventasS</strong>) y una 
+			 lista de ventas de octubre (<strong>ventasO</strong>). La función debe crear 
+			 <strong>dos subgráficas</strong>:</span></font></font></li>
+			 <li class="auto-style26"><font size="-1">U<font class="auto-style21"><span class="auto-style75">na
+			 <strong>gráfica de 
+			 barras </strong>que muestre en el <strong>eje X</strong> los 
+			 nombres de los productos (<strong>productos</strong>) y en el <strong>eje Y</strong> 
+			 las ventas del mes de septiembre (<strong>ventasS</strong>) </span></font>
+			 </font></li>
+		 </ul>
+	 </ul>
+                               
+          <ul class="auto-style116">
+			  <font color="#330033" face="Arial,Helvetica">
+			  <span class="auto-style26"><span class="auto-style45">
+			  
+				  <li class="auto-style97">Asigna un color distinto a cada 
+				  barra (elige los colores que más te agraden).</li>
+				  <li class="auto-style97">Coloca un título a la gráfica que 
+				  diga <strong>"Ventas de septiembre"</strong>. </li>
+				  <li class="auto-style97">Coloca una leyenda en el eje X que diga "<strong>Productos</strong>".</li>
+				  <li class="auto-style97">
+				  <font color="#330033" face="Arial,Helvetica">
+				  <span class="auto-style26">Coloca una leyenda en el eje Y que diga
+				  <strong>"Ventas"</strong>.</span></font></li>
+			  </ul>
+	 <ul>
+		 <ul>
+			 <li class="auto-style26"><font size="-1">U<font class="auto-style21"><span class="auto-style75">na
+			 <strong>gráfica de 
+			 barras </strong>que muestre en el <strong>eje X</strong> los 
+			 nombres de los productos (<strong>productos</strong>) y en el <strong>eje Y</strong> 
+			 las ventas del mes de octubre (<strong>ventasO</strong>) </span></font>
+			 </font></li>
+		 </ul>
+	 </ul>
+                               
+          <ul class="auto-style116">
+			  
+				  <li class="auto-style97">Asigna un color distinto a cada 
+				  barra (elige los colores que más te agraden).</li>
+				  <li class="auto-style97">Coloca un título a la gráfica que 
+				  diga <strong>"Ventas de octubre"</strong>. </li>
+				  <li class="auto-style97">Coloca una leyenda en el eje X que diga "<strong>Productos</strong>".</li>
+				  <li class="auto-style97">
+				  Coloca una leyenda en el eje Y que diga
+				  <strong>"Ventas"</strong>.</li>
+			  </ul>
+			  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <img alt="" height="245" src="img37.jpg" width="500"></p>
+			  </li>
+	 <ul>
+		 <ul>
+			 <li class="auto-style122"><font size="-1">
+			 <font class="auto-style21">La función <span class="auto-style114">
+			 <strong>ventas_productos2 (productos, ventasS, ventasO)</strong></span><span class="auto-style75"> 
+			 que reciba como parámetros de entrada una lista de productos (<strong>productos</strong>), 
+			 una lista ventas de septiembre (<strong>ventasS</strong>) y una 
+			 lista de ventas de octubre (<strong>ventasO</strong>). La función debe crear 
+			 una gráfica que muestre las ventas del mes de septiembre y octubre 
+			 en una sola gráfica. Utiliza <strong>una gráfica con dos líneas
+			 </strong>que muestre en el <strong>eje X</strong> los 
+			 nombres de los productos (<strong>productos</strong>) y en el
+			 <strong>eje Y</strong> 
+			 las ventas del mes de septiembre (<strong>ventasS</strong>) y las 
+			 ventas del mes de octubre (<strong>ventasO</strong>) </span></font></font></li>
+		 </ul>
+	 </ul>
+                               
+          <ul class="auto-style116">
+			  
+				  <li class="auto-style97">Usa el tipo de líneas y colores de tu 
+				  preferencia (se creativo). </li>
+				  <li class="auto-style97">Coloca un título a la gráfica que 
+				  diga <strong>"Ventas de productos"</strong>. </li>
+				  <li class="auto-style97">Coloca una leyenda en el eje X que diga "<strong>Productos</strong>".</li>
+				  <li class="auto-style97">
+				  Coloca una leyenda en el eje Y que diga
+				  <strong>"Ventas"</strong>.</li>
+			  <li class="auto-style97">
+				  Coloca una leyenda para identificar las ventas de septiembre y 
+				  octubre. Utiliza la instrucción: <strong>plt.legend</strong></li>
+			  </ul>
+			  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <img alt="" height="257" src="img38.jpg" width="500"></p>
+			  </li>
+	 </span></span></font>
+	 </font>
+		 </span></font>
+	 </span>
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <span class="auto-style26">
+          <font color="#330033" face="Arial,Helvetica">
+        <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+          <span class="auto-style21">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <span class="auto-style45">
+                               
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+        <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+			 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <class="auto-style43">
+	 <class="auto-style46">
+	 <ul>
+		 <ul>
+			 <li>
+             <font face="Arial,Helvetica">
+             <font size="-1" color="#330033" class="auto-style21">
+			 <font color="#000000">
+			 La función </font> <span class="auto-style114"><strong>menu ()</strong></span><font color="#000000">
+			 que despliegue el siguiente menú en pantalla:</font></font></font></li>
+		 </ul>
+		 <ul>
+			 <div>
+				 <blockquote class="auto-style45">
+					 <span class="auto-style45">
+					 <font size="-1"><strong>1. Estadística descriptiva</strong></font><strong><br class="auto-style21">
+					 </strong>
+					 </span>
+					 <font size="-1"><strong>2. Gráfica de ventas en barras
+					 <font face="Arial,Helvetica" class="auto-style26"><br class="auto-style119">
+					 </font>
+					 </strong><font face="Arial,Helvetica" class="auto-style26"><span class="auto-style45"><strong>3. Gráfica de ventas 
+					 en líneas<br></strong></span></font>
+					 <span class="auto-style129">
+					 <strong>4. Salir</strong></span></blockquote>
+			 </div>
+		 </ul>
+	 	</font>
+		 <class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+          <font color="#330033" face="Arial,Helvetica" size="-1">
+          <class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="style8">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="style8">
+	 	<class="auto-style84">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49"><span class="auto-style6">
+	 </ul>
+	 <font face="Arial,Helvetica" size="-1">
+	 <font face="Arial,Helvetica" size="-1" color="#330033">
+	 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+	 	<class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+	 	 <class="auto-style53">
+	                                 
+	 	 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53">
+		 <class="auto-style53"><span class="auto-style26">
+		 <span class="auto-style45">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53"><span class="auto-style85">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53"><font face="Arial,Helvetica" class="auto-style45">
+	 <font color="#330033" face="Arial,Helvetica">
+          <ul>
+		 	 <ul>
+			 	<li class="auto-style48">
+				<font color="#000000" face="Arial,Helvetica" size="-1">La función
+			    <span class="auto-style114">
+			    <span class="auto-style134"><strong>main ()</strong></span></span><span class="auto-style76"><span class="auto-style114">
+				</span>
+				</span>
+				</font>
+				<font face="Arial,Helvetica" size="-1" class="auto-style26"><span class="auto-style21"> que utilice la función 
+			 <strong>menu</strong> para desplegar el menú 
+			 correspondiente y, de acuerdo a la opción seleccionada por el 
+			 usuario, le de la oportunidad de ejecutar cualquiera de las 
+			 funciones que han sido construidas.  
+			 </span></font>
+				<ul>
+					<li class="auto-style48">
+					<font face="Arial,Helvetica" size="-1" class="auto-style26">
+					<span class="auto-style21">Utiliza 
+				 la estructura de control <strong>if anidada</strong> (o 
+				 if-elif-else).</span></font></li>
+					<li class="auto-style48">
+					<font face="Arial,Helvetica" size="-1" color="#330033">
+					<span class="auto-style21"><span class="auto-style26">La 
+				 captura de datos y la v</span><font face="Arial,Helvetica" class="auto-style26">alidación 
+				 de los parámetros de entrada debe realizarse dentro de la 
+				 función <strong>main()</strong>. </font></span></font>
+					</li>
+					<li class="auto-style48">
+					<font face="Arial,Helvetica" size="-1" color="#330033">
+					<font face="Arial,Helvetica" class="auto-style45">
+	 			   <font size="-1" color="#330033" face="Arial,Helvetica">
+					<span class="auto-style21">
+					<font color="#330033" face="Arial,Helvetica">
+					<font face="Arial,Helvetica" class="auto-style26">Debes 
+			 utilizar un ciclo <strong>while</strong> para repetir el programa 
+					hasta que el usuario elija la opción de salir.</font></font></span></font></font></font></li>
+					<li class="auto-style26">
+					<span>Antes del ciclo </span>
+					<code data-index-in-node="16" data-path-to-node="22">
+					<span class="auto-style120"><strong>while continua == True</strong></span></code><span>, 
+					define las siguientes listas iniciales:</span></li>
+				</ul>
+				 </li>
+		 </ul>
+	 </ul>
+          <span class="auto-style21">
+          <font color="#330033" face="Arial,Helvetica" size="-1">
+	 <ul class="auto-style118">
+					 <li class="auto-style26">
+          <font color="#330033" face="Arial,Helvetica">
+	 <span class="auto-style97">
+			 <font class="auto-style21" size="-1">calificaciones = [100, 90, 84, 
+					 63, 95, 98, 90, 75]</font></span></font></li>
+					 <li class="auto-style26">
+	 				productos = 
+          		   <font color="#330033" face="Arial,Helvetica">
+	 				<span class="auto-style97">
+			 		<font class="auto-style21" size="-1">["Aceite", "Arroz", 
+					 "Atún", "Jabón", "Suavizante"]</font></span></font></li>
+					 <li class="auto-style26">
+	 				ventasS = [47, 35, 54, 28, 16] </li>
+					 <li class="auto-style26">
+	 				 ventasO = [35, 40, 19, 58, 27] </li>
+				 </ul>
+	 </font></span>
+	 <ul>
+		 	 <ul>
+			 	 <ul>
+					<li class="auto-style48">
+	 			   <font size="-1" color="#330033" face="Arial,Helvetica">
+				 <span class="auto-style21">
+				 <font face="Arial,Helvetica" class="auto-style26">
+				    Utiliza la siguiente estructura para 
+				 definir el <strong>main</strong>: </font></span></font>
+				    </li>
+				</ul>
+		 </ul>
+	 </ul>
+	 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 <img alt="" height="303" src="img36.jpg" width="450"></p>
+	 <p>
+          <strong class="style8"><span class="auto-style137">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+		  </span><span class="auto-style26">Instrucciones finales:&nbsp;</span>&nbsp;&nbsp;</strong></p>
+	 <ul>
+		 <ul class="auto-style26">
+			 <li class="auto-style73"><font size="-1">
+			 <span class="auto-style50">En el </span>
+			 <span class="auto-style114">
+			 <strong>script principal</strong></span><span class="auto-style21"> 
+			 manda llamar a la función <strong>main</strong>.</span></font></li>
+			 <li class="auto-style48"><font size="-1">
+			 Guarda tu archivo como: <span class="auto-style121"><strong>T6_Matricula.py</strong></span></font></li>
+		 </ul>
+	 </ul>
+	 </font>
+	 </font>
+	 </span></span>
+	 </span>
+	 </font>
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53"><strong>
+	 <class="auto-style49">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style49">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style119">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 </strong>
+	 </font>
+	 </span>
+	 </font>
+                                  
+	 </span></span></font></span>
+	 <class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+          <class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="style8">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="auto-style84">
+	 	<class="style8">
+	 	<class="auto-style84">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+	 	<class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+          <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="style8">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="auto-style84">
+	 	 <class="style8">
+	 	 <class="auto-style84">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+	 	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style49">
+             <class="auto-style53">
+	 	 <class="auto-style49">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	      <class="auto-style49">
+	 <class="auto-style53">
+		 <class="auto-style49">
+          <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <span class="auto-style26">
+	 <font face="Arial,Helvetica" size="-1" color="#330033">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49"><font face="Arial,Helvetica" size="-1">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style53">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <hr width="100%"> 
+	 <img src="../imagenes/idisco.jpg" height="69" width="69" align="left" class="auto-style111">
+	 <br><b><font color="#330033" face="Arial,Helvetica">&nbsp;&nbsp;<span class="auto-style28">Especificaciones 
+	 de entrega:</span></font></b> <span class="auto-style6"><strong>
+	 <span class="auto-style7"> &nbsp;</span>&nbsp;<span class="auto-style7"> </span></strong>
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49"> 
+          <font face="Arial,Helvetica">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <font color="#330033" face="Arial,Helvetica">
+          <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="auto-style84">
+	 <class="style8">
+	 <class="auto-style84">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 <font face="Arial,Helvetica">
+	 <class="auto-style47">
+	 <class="auto-style46">
+	 <class="auto-style47">
+	 <class="auto-style46">
+	 <class="auto-style47">
+	 <class="auto-style46">
+	 <class="auto-style47">
+	 <class="auto-style46">
+	 <class="auto-style47">
+	 <class="auto-style46">
+	 <class="auto-style47">
+	 <class="auto-style46">
+	 <font size="-1" face="Arial,Helvetica" color="#330033">
+                                  
+      	    <class="auto-style53">
+	  <class="auto-style53">
+	  <class="auto-style53">
+	  <class="auto-style53">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="style8">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="auto-style84">
+	  <class="style8">
+	  <class="auto-style84">
+	  <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+		 <class="auto-style49">
+	 
+      <font size="-1">
+                                  
+      	  &nbsp;<strong><span class="auto-style7"> <br> </span></strong>
+	 <ul>
+                                         
+         	 <ul>
+			 	 <li class="auto-style26">Formato de entrega: <strong>py</strong></li>
+			 <li class="auto-style6"><span class="auto-style26">Nombre del entregable: 
+	 </span>
+	 		 <strong><span class="auto-style26">T6_Matrícula</span></strong><span class="auto-style26"><strong>.py </strong>
+	 			</li>
+			 <li class="auto-style6"><span class="auto-style26">Medio de entrega:&nbsp;En 
+			 la sección de <strong>Tarea: Gráficas</strong></span></li>
+		 </ul>
+                                 
+      </ul>
+	 </span>
+                                  
+      </font>
+     </font>
+                                  
+	 </font>
+
+	 </font>
+                                  
+     </font>
+	 </font>
+	 	  </td>
+     </tr>
+                 
+  </tbody>    
+</table>
+    </center>
+          
+</body>
+</html>
