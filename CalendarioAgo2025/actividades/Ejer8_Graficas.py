@@ -7,24 +7,20 @@ import statistics
 # --------- Estadística descriptiva ---------------------------------
 # -------------------------------------------------------------------
 
-def estadistica_descriptiva(pesos):
-    print()
-    print("ESTADÍSTICA DESCRIPTIVA")
-    print()
-    print("Pesos:", pesos)
-    maximo = np.max(pesos)
-    minimo = np.min(pesos)
-    promedio = statistics.mean(pesos)
-    mediana = statistics.median(pesos)
-    moda = statistics.mode(pesos)
-    desviacion = statistics.stdev(pesos)
-    print("Máximo = %i" % maximo)
-    print("Mínimo = %i" % minimo)
+def estadistica_descriptiva(moneda):
+    print(moneda)
+    maximo = np.max(moneda)
+    minimo = np.min(moneda)
+    promedio = statistics.mean(moneda)
+    mediana = statistics.median(moneda)
+    moda = statistics.mode(moneda)
+    desviacion = statistics.stdev(moneda)
+    print("Máximo = %.2f" % maximo)
+    print("Mínimo = %.2f" % minimo)
     print("Promedio = %.2f" % promedio)
     print("Mediana = %.2f" % mediana)
     print("Moda = %.2f" % moda)
     print("Desviación estándar = %.2f" % desviacion)
-    print("Número de 70s =", pesos.count(70))
     
 def tipos_cambio(meses, dolar, euro):
     plt.title("Tipos de cambio")
@@ -48,6 +44,8 @@ def tipos_cambio2(meses, dolar, euro):
     plt.ylabel("Dólar")
     plt.title("Peso vs Dólar")
     plt.plot(meses, dolar, "c*-") # Estrellas color cian unidas por raya continua
+    plt.xticks(rotation = 45)
+
 
     #divide la pantalla en 1 renglón, 2 columnas e inicio en el cuadrante 2
     plt.subplot(122)
@@ -55,12 +53,12 @@ def tipos_cambio2(meses, dolar, euro):
     plt.ylabel("Euro")
     plt.title("Peso vs Euro")
     plt.plot(meses, euro, "mD:") #"mD:" Diamantes color magenta unidos por dos puntos :
+    plt.xticks(rotation = 45)
 
-    # Salva la gráfica con el nombre de Graficos.png
-    plt.savefig("Graficos.png")
-
-    # Muestra la gráfica
     plt.show()
+    # Salva la gráfica con el nombre de Graficos.png
+ #   plt.savefig("Graficos.png")
+
     
 def menu():
     print()
@@ -71,15 +69,17 @@ def menu():
     
 def main():
     continua = True
-    pesos = [70, 69.5, 71, 69, 70, 68.5, 68]
-    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre"]
-    dolar = [20.45, 20.32, 19.94, 20.13, 19.49, 18.95, 18.81, 18.75, 18.36]
-    euro =  [21.06, 21.32, 21.69, 22.73, 21.81, 21.87, 21.83, 21.95, 21.60]
+    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", ]
+    dolar = [17.15, 17.08, 17.22, 17.10, 17.05, 16.98, 16.92, 17.02]
+    euro =  [20.09, 20.18, 19.90, 20.04, 19.91, 19.51, 19.30, 19.70]
     while continua == True:
         menu()
         opcion = int(input("Dame una opción: "))
-        if opcion == 1:      
-            estadistica_descriptiva(pesos)
+        if opcion == 1:
+            print("\nDOLAR")
+            estadistica_descriptiva(dolar)
+            print("\nEURO")
+            estadistica_descriptiva(euro)
         elif opcion == 2:
             tipos_cambio(meses, dolar, euro)
         elif opcion == 3:

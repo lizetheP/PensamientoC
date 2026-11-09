@@ -92,4 +92,29 @@ def main():
             print("Opción inválida")
         
 main()
+"""
+def main():
+    continua = True
+    calificaciones = [100, 90, 84, 63, 95, 98, 90, 75]
+    productos = ["Aceite", "Arroz", "Atún", "Jabón", "Suavizante"]
+    ventas1 = [47, 35, 54, 28, 16]
+    ventas2 = [35, 40, 19, 58, 27]
+    while continua == True:
+        menu()
+        opcion = int(input("Dame una opción: "))
+        if opcion == 1:      
+
+        elif opcion == 2:
+
+        elif opcion == 3:
+        
+        elif opcion == 4:
+            print("Adiós")
+            continua = False
+        else:
+            print("Opción inválida")
+        
+main()
+"""
+
 

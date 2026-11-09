@@ -72,7 +72,7 @@ def main():
             print("Opción inválida")
         
 main()
-
+"""
 def main():
     continua = True
     productos = ["Aceite", "Arroz", "Atún", "Jabón", "Suavizante"]
@@ -92,5 +92,6 @@ def main():
             continua = False
         else:
             print("Opción inválida")
-        
+       
 main()
+"""

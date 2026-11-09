@@ -8,18 +8,15 @@ import statistics
 # -------------------------------------------------------------------
 
 def estadistica_descriptiva(pesos):
-    print()
-    print("ESTADÍSTICA DESCRIPTIVA")
-    print()
-    print("Pesos:", pesos)
+    print(pesos)
     maximo = np.max(pesos)
     minimo = np.min(pesos)
-    promedio = statistics.mean(pesos)
-    mediana = statistics.median(pesos)
+    promedio = np.mean(pesos)
+    mediana = np.median(pesos)
     moda = statistics.mode(pesos)
     desviacion = statistics.stdev(pesos)
-    print("Máximo = %i" % maximo)
-    print("Mínimo = %i" % minimo)
+    print("Máximo = %.2f" % maximo)
+    print("Mínimo = %.2f" % minimo)
     print("Promedio = %.2f" % promedio)
     print("Mediana = %.2f" % mediana)
     print("Moda = %.2f" % moda)
@@ -33,7 +30,7 @@ def main():
 
 main()
 
-# Guardar como estadistica.py
+# Guardar como estadistica2.py
 
 # -------------------------------------------------------------------
 # -------- Gráfica de barras simple ---------------------------------
@@ -108,6 +105,7 @@ def linea(ejex, ejey):
 
     # Graficando
     plt.plot(ejex, ejey)
+    # plt.plot(ejex, ejey, "r*-.")
 
     # Mostrando el gráfico
     plt.show()
@@ -133,8 +131,10 @@ def dos_lineas(estados, contingencias, emergencias):
     plt.xlabel("Contingencias climatológicas")
     plt.ylabel("Emergencias / Desastres")
 
+    #"color(r - red) | figura (* - Estrella) | tipo de línea (-. raya y puntos alternados)"
     #"r*-." Estrellas color rojo unidas por raya y puntos alternados
     #"g>-" Flechas color verde unidos por raya continua
+
     plt.plot(estados, contingencias, "r*-.", estados, emergencias, "g>-") 
     plt.legend(["Contingencias", "Emergencias"])
 
@@ -191,22 +191,20 @@ main()
 # Guardar como graficas.py
 
 # -------------------------------------------------------------------
-# -------- Laboratorio ----------------------------------------------
+# -------- Ejercicio : Listas y gráficas-----------------------------
 # -------------------------------------------------------------------
 
 def menu():
     print()
-    print("1. Estadística descriptiva")
-    print("2. Tipos de cambio en un gráfico")
-    print("3. Tipos de cambio en dos gráficos")
-    print("4. Salir")
+    print("1. Tipos de cambio en un gráfico")
+    print("2. Tipos de cambio en dos gráficos")
+    print("3. Salir")
     
 def main():
     continua = True
-    pesos = [70, 69.5, 71, 69, 70, 68.5, 68]
-    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre"]
-    dolar = [17.15, 17.08, 17.22, 17.10, 17.05, 16.98, 16.92, 17.02, sept]
-    euro =  [20.09, 20.18, 19.90, 20.04, 19.91, 19.51, 19.30, 19.70, sept]
+    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", ]
+    dolar = [17.15, 17.08, 17.22, 17.10, 17.05, 16.98, 16.92, 17.02]
+    euro =  [20.09, 20.18, 19.90, 20.04, 19.91, 19.51, 19.30, 19.70]
     while continua == True:
         menu()
         opcion = int(input("Dame una opción: "))
@@ -224,12 +222,4 @@ def main():
         
 main()
 
-# Guardar como lab5_matrícula.py
-
-#https://wise.com/gb/currency-converter/usd-to-mxn-rate?amount=1000
-#https://wise.com/mx/currency-converter/eur-to-mxn-rate?amount=1000
-
-17.15, 17.08, 17.22, 17.10, 17.05, 16.98, 16.92, 17.02
-20.09, 20.18, 19.90, 20.04, 19.91, 19.51, 19.30, 19.70
-
-
+# Guardar como U_matrícula.py
