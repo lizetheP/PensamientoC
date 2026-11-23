@@ -14,7 +14,7 @@ def estadisticas (consumo):
     print("Varianza = %.2f" % varianza)
     print("Desviación estándar = %.2f" % desviacion)
     
-def operaciones():
+def operaciones1():
     print("\nOPERACIONES CON ARREGLOS")
     
     print("\nEJERCICIO 1")
@@ -69,7 +69,7 @@ def main():
             consumo = np.array([120, 135, 128, 142, 150, 95, 88])
             estadisticas(consumo)
         elif opcion == 2:
-            operaciones()
+            operaciones1()
         elif opcion == 3:
             operaciones2()
         elif opcion == 4:
