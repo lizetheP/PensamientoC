@@ -1,0 +1,32 @@
+import numpy as np
+
+    
+def menu():
+    print()
+    print("1. Promedio")
+    print("2. Suma dos")
+    print("3. Imprime")
+    print("4. Salir")
+    
+def main():
+    continua = True
+    arreglo = np.array([2.8, 8.3, 5.4, 6.0, 5.2, 1.5, 6.4, 12, 7.1, 3.6])
+    while continua == True:
+        menu()
+        opcion = int(input("Dame una opción: "))
+        if opcion == 1:
+            print(arreglo)
+
+        elif opcion == 2:
+            print(arreglo)
+
+        elif opcion == 3:
+            print(arreglo)
+
+        elif opcion == 4:
+            print("Adiós")
+            continua = False
+        else:
+            print("Opción inválida")
+    
+main()
